@@ -1,0 +1,9 @@
+enabled: '1'
+url: /
+target: _self
+image: 'gantry-media://aquamed_logo.png'
+height: 80px
+link: '1'
+svg: ''
+text: 'Aqua Med Pools'
+class: ''

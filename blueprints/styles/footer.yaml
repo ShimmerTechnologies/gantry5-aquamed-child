@@ -1,0 +1,27 @@
+name: Footer Colors
+description: Footer colors for the Aquapools theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#ffffff"
+    heading-color:
+      type: input.colorpicker
+      label: Headings
+      default: "#ffffff"
+    link-color:
+      type: input.colorpicker
+      label: Link
+      default: "#ffffff"
+    hover-color:
+      type: input.colorpicker
+      label: Link Hover
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#666666"

@@ -1,0 +1,53 @@
+preset: preset1
+header:
+  background: '#ffffff'
+  text-color: '#333333'
+  hover: '#ffffff'
+showcase:
+  background: '#28bceb'
+  image: ''
+  text-color: '#ffffff'
+subfeature:
+  background: '#f0f0f0'
+  text-color: '#929292'
+feature:
+  background: '#ffffff'
+  text-color: '#617585'
+footer:
+  background: '#28bceb'
+  heading-color: '#ffffff'
+  link-color: '#ffffff'
+  hover-color: '#0067a3'
+  text-color: '#ffffff'
+main:
+  background: '#ffffff'
+  text-color: '#666666'
+navigation:
+  background: '#ffffff'
+  text-color: '#333333'
+  hover: '#0067a3'
+  overlay: 'rgba(0, 0, 0, 0)'
+offcanvas:
+  background: '#142d53'
+  text-color: '#ffffff'
+  width: 17rem
+  toggle-color: '#ffffff'
+  toggle-visibility: '1'
+base:
+  background: '#ffffff'
+  text-color: '#333333'
+  body-font: 'family=Open+Sans:300, sans-serif'
+  heading-font: 'Lato, sans-serif'
+accent:
+  color-1: '#0067a3'
+  color-2: '#005395'
+breakpoints:
+  large-desktop-container: 75rem
+  desktop-container: 65rem
+  tablet-container: 50rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 50rem
+menu:
+  col-width: 180px
+  animation: g-fade
+  hide-on-mobile: '0'

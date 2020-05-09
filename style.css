@@ -1,0 +1,29 @@
+/*
+Theme Name: Aqua Pools Child
+Theme URI: http://gantry.org
+Author: RocketTheme, LLC
+Author URI: http://rockettheme.com
+Template: g5_aquapools
+Description: Child Theme for AquaPools
+Version: 5.4.32
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.fa, .fas {
+	font-family: FontAwesome;
+}
+#menu-header {
+    margin: 0;
+}
+#g-footer .g-container .contactdetail i.fas {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 34px;
+    height: auto;
+    margin: 0 5px 5px 0;
+    padding: 2px;
+    text-align: center;
+    display: inline-block;
+    font-style: normal !important;
+}

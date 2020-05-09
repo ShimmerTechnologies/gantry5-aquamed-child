@@ -1,0 +1,88 @@
+#g-footer {
+	
+	background: $footer-background;
+	background-image: url('http://localhost/aquamed/wp-content/themes/g5_aquapools-child/images/footer.webp');
+	color: $footer-text-color;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	@include breakpoint(mobile-only) {
+		text-align: center;
+		background-image: url('http://localhost/aquamed/wp-content/themes/g5_aquapools-child/images/footer_mobile.webp');
+	}
+	@include breakpoint(tablet-range) {
+		background-image: url('http://localhost/aquamed/wp-content/themes/g5_aquapools-child/images/footer_tablet.webp');
+	}
+
+	.g-container {
+		margin: 0 auto;
+		padding: 0 50px 20px;
+
+		a {
+			color: $footer-link-color;
+			&:hover {
+				color: $footer-hover-color;
+			}
+		}
+
+		.g-grid {
+
+			&:nth-child(2) {
+				border: 2px solid #fff;
+				border-radius: 20px;
+				width: 95%;
+				margin: -15px auto 0;
+
+				.g-block .g-content {
+					padding: .5rem 1rem;
+				}
+
+				.size-50 .g-particle {
+				    margin-top: 56px;
+				}
+
+				.g-social.social {
+					margin-top: 18px;
+					float: right;
+				}
+
+				.g-social a {
+				    padding: .3rem;
+				    background: transparent;
+				    border: 4px solid #fff;
+				    border-radius: 50%;
+				    width: 45px;
+				    text-align: center;
+				    font-size: 1.2rem;
+			    }
+
+			    .totop {
+			    	margin-top: 25px;
+			    }
+				
+			}
+
+
+		}
+
+		.widgettitle {
+			color: $footer-heading-color;
+			text-transform:uppercase;
+			font-size: $core-font-size + .4;
+		}
+
+		.widget {
+			padding-right: 30px;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
+	}
+
+}
+
+@media print {
+	#g-footer {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

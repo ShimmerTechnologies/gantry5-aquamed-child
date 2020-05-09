@@ -1,0 +1,39 @@
+name: _offline
+timestamp: 1588097782
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+positions:
+  header: Header
+  breadcrumbs: Breadcrumbs
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-3511: Logo
+  position:
+    position-header: Header
+    position-breadcrumbs: Breadcrumbs
+    position-footer: Footer
+  menu:
+    menu-5424: Menu
+  messages:
+    system-messages-6142: 'System Messages'
+  content:
+    system-content-5929: 'Page Content'
+  copyright:
+    copyright-2296: Copyright
+  spacer:
+    spacer-3570: Spacer
+  branding:
+    branding-8760: Branding
+  mobile-menu:
+    mobile-menu-3589: Mobile-menu
+inherit: {  }

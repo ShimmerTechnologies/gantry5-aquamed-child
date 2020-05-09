@@ -1,0 +1,8 @@
+context:
+  -
+    is_home: true
+menu: {  }
+language: {  }
+post: {  }
+taxonomy: {  }
+archive: {  }

@@ -1,0 +1,80 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+layout:
+  /header/:
+    -
+      - 'logo-2741 75'
+      - 'position-header 25'
+  /navigation/:
+    -
+      - menu-9729
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-7126
+    -
+      - system-content-6091
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'logo-4026 25'
+      - 'copyright-4409 50'
+      - 'social-7254 20'
+      - 'totop-8211 5'
+  offcanvas:
+    -
+      - mobile-menu-9981
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+content:
+  position-header:
+    attributes:
+      key: header
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-footer:
+    attributes:
+      key: footer
+  logo-4026:
+    title: 'Logo / Image'
+  copyright-4409:
+    block:
+      class: center
+  social-7254:
+    attributes:
+      target: _blank
+      display: icons_only
+      items:
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          title: 'AquaMed Pools facebook'
+          link: 'https://www.facebook.com/AquaMedPool'
+          name: Facebook
+  totop-8211:
+    title: 'To Top'
+    attributes:
+      css:
+        class: 'totop alignright'
+      icon: 'fa fa-angle-up fa-lg'
+      content: ''
