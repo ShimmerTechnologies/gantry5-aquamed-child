@@ -1,0 +1,28 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+	<div class="order_steps_particle">	
+
+			<div class="g-content">
+						{% if particle.headline %}<h2>{{ particle.headline|raw }}</h2>{% endif %}
+						{% if particle.description %}<div class="sample-description">{{ particle.description|raw }}</div>{% endif %}						
+			</div>
+			<div class="g-grid">
+					{% set stepNumber = 1 %}
+					{% for step in particle.steps %}
+						<div {% if step.id %}id="{{ step.id|e }}"{% endif %} class="g-block {{ step.class }} {{ step.variations }}">
+							<span class="stepcircle {% if stepNumber / 2 matches '/^\\d+$/' %} step2 {% else %} step1 {% endif %}">{{ stepNumber }}</span>
+							<div class="g-content">
+								{% if step.title %}<h4>{{ step.title|raw }}</h4>{% endif %}
+								{% if step.description %}<p>{{ step.description|raw }}</p>{% endif %}
+							</div>
+						</div>
+					{% set stepNumber = stepNumber + 1 %}
+					{% endfor %}
+			</div>
+		<div class="order_steps_bgcolor"></div>
+		<div class="order_steps_image" style="background-image: url('{{ url(particle.image) }}');"></div>	
+	</div>
+
+{% endblock %}

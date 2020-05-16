@@ -10,20 +10,93 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+/* font awesome class */
 .fa, .fas {
 	font-family: FontAwesome;
 }
+
+/*main menu*/
 #menu-header {
     margin: 0;
 }
-#g-footer .g-container .contactdetail i.fas {
-    border: 2px solid #fff;
+
+/* home page silder */
+.hero_bg_image, .hero_bg_image1 {
+    opacity: .6 !important;
+}
+.slider_hero_btn_cls_one2 {
+    border-radius: 10px !important;
+}
+/* home page how it works */
+.order_steps_particle .g-grid div.g-block {
+    flex: 0 50%;
+}
+.order_steps_particle .g-block div.g-content {
+    width: 95%;
+    margin-bottom: 80px;
+}
+.order_steps_particle{
+	position: relative;
+	height: 600px;
+}
+.order_steps_particle h2 {
+    padding: 30px 0;
+}
+.order_steps_image, .order_steps_bgcolor {
+	position: absolute;
+	height: 600px;
+	width:100%;
+	top: 0;
+}
+.order_steps_image{
+	opacity: .3;
+}
+.order_steps_bgcolor {
+	background-color: #0067a3;
+}
+.order_steps_particle .g-grid, .order_steps_particle .g-content {
+    z-index: 1;
+    position: relative;
+ }
+.order_steps_particle .g-grid {
+	width: 75rem;
+	margin: 0 auto;
+}
+ .order_steps_particle h2, .order_steps_particle h4, .order_steps_particle p {
+ 	color: #ffffff;
+}
+.stepcircle {
+    float: left;
     border-radius: 50%;
-    width: 34px;
-    height: auto;
-    margin: 0 5px 5px 0;
-    padding: 2px;
-    text-align: center;
-    display: inline-block;
-    font-style: normal !important;
+    padding: 10px 25px 5px;
+    margin-right: 25px;
+    font-size: 2.25rem;
+	font-family: Lato;
+}
+.step1 {
+    background-color: #28bceb;
+    color: #fff;
+ }
+ .step2 {
+    background-color: #fff;
+    color: #005395;
+ }
+ .order_steps_particle .g-content p {
+    margin-left: 85px;
+}
+
+/* footer */
+
+/*social links*/
+#g-footer .g-container .contactdetail i {
+ 	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 34px;
+	height: auto;
+	margin: 0 5px 5px 0;
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+	font-style: normal;
+	font-weight: normal;
 }

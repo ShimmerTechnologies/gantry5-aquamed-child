@@ -13,8 +13,6 @@ layout:
       - menu-9729
   /main/:
     -
-      - position-breadcrumbs
-    -
       - system-messages-7126
     -
       - system-content-6091
@@ -49,9 +47,6 @@ content:
   position-header:
     attributes:
       key: header
-  position-breadcrumbs:
-    attributes:
-      key: breadcrumbs
   position-footer:
     attributes:
       key: footer

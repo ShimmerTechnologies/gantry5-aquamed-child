@@ -12,7 +12,7 @@ form:
     heading-color:
       type: input.colorpicker
       label: Headings
-      default: "#ffffff"
+      default: "#666666"
     link-color:
       type: input.colorpicker
       label: Link

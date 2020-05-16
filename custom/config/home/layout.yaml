@@ -1,16 +1,21 @@
 version: 2
 preset:
-  image: 'gantry-admin://images/layouts/default.png'
-  name: default
-  timestamp: 1587844427
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1589570910
 layout:
   header: {  }
   navigation: {  }
   /main/:
     -
-      - position-position-5933
+      - custom-7960
     -
       - system-messages-1543
+    -
+      - sample-7236
+  /mainbottom/:
+    -
+      - order_steps_particle-3390
   footer: {  }
   offcanvas: {  }
 structure:
@@ -32,6 +37,10 @@ structure:
   main:
     attributes:
       boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: '2'
       class: ''
       variations: ''
   footer:
@@ -49,14 +58,13 @@ structure:
         - block
         - children
 content:
-  position-position-5933:
-    title: Breadcrumbs
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-      particle: position-breadcrumbs
+  custom-7960:
+    title: 'Custom HTML'
+    attributes:
+      html: '[qcld_hero id=2]'
+      filter: '1'
+    block:
+      variations: 'nopaddingall nomarginall'
   system-messages-1543:
     inherit:
       outline: default
@@ -64,3 +72,70 @@ content:
         - attributes
         - block
       particle: system-messages-7126
+  sample-7236:
+    title: Why
+    attributes:
+      image: ''
+      headline: 'Why choose us?'
+      description: ''
+      link: 'http://localhost/aquamed/pools/'
+      linktext: 'MORE INFO'
+      samples:
+        -
+          icon: 'fas fa-award'
+          subtitle: ''
+          description: 'Aqua Med Pools offers the best products and  warranty for our homeowners and lifelong clients.'
+          id: ''
+          class: ''
+          variations: ''
+          title: WARRANTY
+        -
+          icon: 'fa fa-handshake-o'
+          subtitle: ''
+          description: 'We strive to offer the best builder to customer relationship and keep a great relationship for years to come. '
+          id: ''
+          class: ''
+          variations: ''
+          title: 'CUSTOMER RELATIONSHIPS'
+        -
+          icon: 'fas fa-tools'
+          subtitle: ''
+          description: 'Aqua Med Pools has been creating backyard dreams for years. We are dedicated to providing you a great experience.'
+          id: ''
+          class: ''
+          variations: ''
+          title: EXPERIENCED
+    block:
+      variations: center
+  order_steps_particle-3390:
+    title: 'Order Steps'
+    attributes:
+      image: 'gantry-media://steps.png'
+      headline: 'How it works'
+      steps:
+        -
+          description: 'Review pools and submit a quote or request an on site visit. Send the quote request with your name, city, contact info, chosen pool, color, and size. '
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'Submit Your Request'
+        -
+          description: 'We will review the order placed and communicate with you to schedule a delivery and install date.'
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'We Will Reach Out to You'
+        -
+          description: 'Once the delivery is complete we begin the construction and installation of your fiberglass pool.'
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'We Begin installing'
+        -
+          description: "Once construction is complete and everyhing is in working order,\nrelax and enjoy your new fiberglass pool."
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'Enjoy Your Pool'
+    block:
+      variations: 'center full-width'

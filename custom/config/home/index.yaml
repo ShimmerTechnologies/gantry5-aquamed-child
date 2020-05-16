@@ -1,54 +1,58 @@
 name: home
-timestamp: 1588796275
+timestamp: 1589576331
 version: 7
 preset:
-  image: 'gantry-admin://images/layouts/default.png'
-  name: default
-  timestamp: 1587844427
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1589570910
 positions:
-  breadcrumbs: Breadcrumbs
   header: Header
   footer: Footer
 sections:
   header: Header
   navigation: Navigation
+  mainbottom: Mainbottom
   main: Main
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  logo:
+    logo-5127: Logo
+    logo-9210: 'Logo / Image'
   position:
-    position-position-5933: Breadcrumbs
-    position-position-8873: Header
-    position-position-6741: Footer
+    position-position-5859: Header
+    position-position-2513: Footer
+  menu:
+    menu-3550: Menu
+  custom:
+    custom-7960: 'Custom HTML'
   messages:
     system-messages-1543: 'System Messages'
-  logo:
-    logo-2538: Logo
-    logo-8251: 'Logo / Image'
-  menu:
-    menu-8117: Menu
+  sample:
+    sample-7236: Why
+  order_steps_particle:
+    order_steps_particle-3390: 'Order Steps'
   copyright:
-    copyright-5025: Copyright
+    copyright-3536: Copyright
   social:
-    social-8928: Social
+    social-6816: Social
   totop:
-    totop-4880: 'To Top'
+    totop-2266: 'To Top'
   mobile-menu:
-    mobile-menu-2816: Mobile-menu
+    mobile-menu-2417: Mobile-menu
 inherit:
   default:
     header: header
+    logo-5127: logo-2741
+    position-position-5859: position-header
     navigation: navigation
-    position-position-5933: position-breadcrumbs
+    menu-3550: menu-9729
     system-messages-1543: system-messages-7126
     footer: footer
+    position-position-2513: position-footer
+    logo-9210: logo-4026
+    copyright-3536: copyright-4409
+    social-6816: social-7254
+    totop-2266: totop-8211
     offcanvas: offcanvas
-    logo-2538: logo-2741
-    position-position-8873: position-header
-    menu-8117: menu-9729
-    position-position-6741: position-footer
-    logo-8251: logo-4026
-    copyright-5025: copyright-4409
-    social-8928: social-7254
-    totop-4880: totop-8211
-    mobile-menu-2816: mobile-menu-9981
+    mobile-menu-2417: mobile-menu-9981

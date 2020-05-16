@@ -1,5 +1,5 @@
 name: default
-timestamp: 1588796275
+timestamp: 1589208280
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -7,7 +7,6 @@ preset:
   timestamp: 1587844427
 positions:
   header: Header
-  breadcrumbs: Breadcrumbs
   footer: Footer
 sections:
   header: Header
@@ -21,7 +20,6 @@ particles:
     logo-4026: 'Logo / Image'
   position:
     position-header: Header
-    position-breadcrumbs: Breadcrumbs
     position-footer: Footer
   menu:
     menu-9729: Menu

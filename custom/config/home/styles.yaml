@@ -1,0 +1,3 @@
+preset: preset1
+base:
+  heading-font: 'family=Open+Sans:600,700'
