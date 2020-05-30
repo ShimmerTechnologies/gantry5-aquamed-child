@@ -154,7 +154,6 @@ h3, h4, h5, h6, strong {
   display: inline-block;
 }
 @media only all and (max-width: 49.99rem) {
-  /* line 25, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   .gantry-logo {
     display: block;
     text-align: center;
@@ -548,7 +547,6 @@ hr {
   display: none;
 }
 @media only all and (max-width: 50rem) {
-  /* line 33, wp-content/themes/g5_aquapools/scss/aquapools/_offcanvas.scss */
   .g-offcanvas-toggle {
     display: block;
   }
@@ -841,7 +839,7 @@ hr {
 /* line 1, wp-content/themes/g5_aquapools/scss/aquapools/_feature.scss */
 #g-feature {
   padding: 1.5rem 0;
-  background: #fff;
+  background: #f0f6f9;
   color: #617585;
 }
 @media print {
@@ -898,20 +896,19 @@ hr {
 /* line 1, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
 #g-footer {
   background: #28bceb;
-  background-image: url('//localhost/aquamed/wp-content/themes/g5_aquapools-child/images/footer.png');
+  background-image: url('//dev.shimmertechno.com/aquamed/wp-content/themes/g5_aquapools-child/images/footer.png');
   color: #fff;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 @media only all and (max-width: 49.99rem) {
   #g-footer {
     text-align: center;
-    background-image: url('//localhost/aquamed/wp-content/themes/g5_aquapools-child/images/footer_mobile.png');
+    background-image: url('//dev.shimmertechno.com/aquamed/wp-content/themes/g5_aquapools-child/images/footer_mobile.png');
   }
 }
 @media only all and (min-width: 50rem) and (max-width: 64.99rem) {
-  /* line 13, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   #g-footer {
-    background-image: url('//localhost/aquamed/wp-content/themes/g5_aquapools-child/images/footer_tablet.png');
+    background-image: url('//dev.shimmertechno.com/aquamed/wp-content/themes/g5_aquapools-child/images/footer_tablet.png');
   }
 }
 /* line 15, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
@@ -1190,7 +1187,6 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   font-weight: normal;
 }
 @media only all and (min-width: 50rem) {
-  /* line 22, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   /* line 33, wp-content/themes/g5_aquapools-child/scss/aquapools/_sample.scss */
   .sample-content .device-promo {
     width: 356px;
@@ -1288,7 +1284,6 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   font-size: 6rem;
 }
 @media only all and (min-width: 65rem) {
-  /* line 10, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   /* line 117, wp-content/themes/g5_aquapools-child/scss/aquapools/_sample.scss */
   /* line 118, wp-content/themes/g5_aquapools-child/scss/aquapools/_sample.scss */
   #g-showcase .sample-description {
@@ -1541,7 +1536,6 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   width: 75rem;
 }
 @media only all and (min-width: 65rem) and (max-width: 74.99rem) {
-  /* line 7, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   .g-container {
     width: 65rem;
   }
@@ -1552,13 +1546,11 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   }
 }
 @media only all and (min-width: 30.01rem) and (max-width: 49.99rem) {
-  /* line 16, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   .g-container {
     width: 30rem;
   }
 }
 @media only all and (max-width: 30rem) {
-  /* line 19, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   .g-container {
     width: 100%;
   }
@@ -1655,7 +1647,6 @@ input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focu
   }
 }
 @media only all and (min-width: 75rem) {
-  /* line 4, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   /* line 41, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/theme/breakpoints/_utilities.scss */
   .visible-large {
     display: block !important;

@@ -10,6 +10,11 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+/*custom classes*/
+.width75 {
+	width: 75rem;
+}
+
 /* font awesome class */
 .fa, .fas {
 	font-family: FontAwesome;
@@ -20,72 +25,31 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     margin: 0;
 }
 
-/* home page silder */
+/* home page */
 .hero_bg_image, .hero_bg_image1 {
     opacity: .6 !important;
 }
 .slider_hero_btn_cls_one2 {
     border-radius: 10px !important;
 }
-/* home page how it works */
-.order_steps_particle .g-grid div.g-block {
-    flex: 0 50%;
+#g-mainsection-2 .g-block.size-100.center.full-width .g-content {
+	margin: 0 auto !important;
+	max-width: 100%;
+	padding: 0;
+	display: inline-block;
 }
-.order_steps_particle .g-block div.g-content {
-    width: 95%;
-    margin-bottom: 80px;
+#g-mainsection-2 .g-block.size-100.center.full-width .g-content .alignleft.widget {
+    margin: 0 !important;
+	padding-left: 54px;
 }
-.order_steps_particle{
-	position: relative;
-	height: 600px;
+.img_page_widget {
+    margin-top: 50%;
 }
-.order_steps_particle h2 {
-    padding: 30px 0;
-}
-.order_steps_image, .order_steps_bgcolor {
-	position: absolute;
-	height: 600px;
-	width:100%;
-	top: 0;
-}
-.order_steps_image{
-	opacity: .3;
-}
-.order_steps_bgcolor {
-	background-color: #0067a3;
-}
-.order_steps_particle .g-grid, .order_steps_particle .g-content {
-    z-index: 1;
-    position: relative;
- }
-.order_steps_particle .g-grid {
-	width: 75rem;
-	margin: 0 auto;
-}
- .order_steps_particle h2, .order_steps_particle h4, .order_steps_particle p {
- 	color: #ffffff;
-}
-.stepcircle {
-    float: left;
-    border-radius: 50%;
-    padding: 10px 25px 5px;
-    margin-right: 25px;
-    font-size: 2.25rem;
-	font-family: Lato;
-}
-.step1 {
-    background-color: #28bceb;
-    color: #fff;
- }
- .step2 {
-    background-color: #fff;
-    color: #005395;
- }
- .order_steps_particle .g-content p {
-    margin-left: 85px;
+.img_page_widget .button {
+	background-color: #28bceb;
 }
 
-/* footer */
+/* footer 
 
 /*social links*/
 #g-footer .g-container .contactdetail i {

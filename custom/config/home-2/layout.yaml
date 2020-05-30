@@ -1,0 +1,120 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home2
+  timestamp: 1590095068
+layout:
+  header: {  }
+  navigation: {  }
+  main: {  }
+  mainbottom: {  }
+  /mainsection/:
+    -
+      - sample-3705
+    -
+      - custom-4341
+  /mainsection-2/:
+    -
+      - sample-9218
+    -
+      - position-position-6000
+    -
+      - 'custom-7270 65'
+      - 'position-position-9059 35'
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  main:
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - children
+  mainbottom:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - children
+  mainsection:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  mainsection-2:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  sample-3705:
+    title: 'Sample Content'
+    attributes:
+      image: ''
+      headline: 'Project Gallery'
+      description: "Our company pays special attention to the details of every project to ensure the complete satisfaction of each client. ​\nView photo examples of our previous work in the gallery below, or contact us for more information.  "
+      link: ''
+      linktext: ''
+      samples: {  }
+    block:
+      variations: center
+  custom-4341:
+    title: 'Custom HTML'
+    attributes:
+      html: '[modula id="59"]'
+      filter: '1'
+    block:
+      variations: 'full-width center'
+  sample-9218:
+    title: 'Sample Content'
+    attributes:
+      headline: Partners
+      description: ''
+      samples: {  }
+  position-position-6000:
+    title: partners
+    attributes:
+      key: partners
+    block:
+      variations: 'center full-width'
+  custom-7270:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h2>Testimonials</h2>\n<hr>\n[testimonial_view id=\"1\"]"
+      filter: '1'
+    block:
+      variations: center
+  position-position-9059:
+    title: 'Home Quote'
+    attributes:
+      key: widget-quote
+    block:
+      variations: center

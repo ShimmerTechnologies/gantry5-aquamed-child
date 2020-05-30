@@ -11,7 +11,7 @@ subfeature:
   background: '#f0f0f0'
   text-color: '#929292'
 feature:
-  background: '#ffffff'
+  background: '#f0f6f9'
   text-color: '#617585'
 footer:
   background: '#28bceb'
@@ -40,6 +40,7 @@ base:
   body-font: 'family=Open+Sans:300, san-serif'
   text-font: 'Lato, sans-serif'
   heading-font: 'family=Open+Sans:300, san-serif'
+  quote-font: Georgia+Italic
 accent:
   color-1: '#0067a3'
   color-2: '#005395'

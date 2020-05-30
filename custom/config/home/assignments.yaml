@@ -1,6 +1,4 @@
-context:
-  -
-    is_home: true
+context: {  }
 menu: {  }
 language: {  }
 post: {  }

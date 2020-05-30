@@ -14,6 +14,10 @@
 	.sample-description {
 		font-size: $core-font-size + 0.2;
 	}
+	.g-block .g-content {
+		margin: 0.625rem 0;
+		padding: 0.938rem 0;
+	}
 	p {
     	font-weight: 300;
 	}

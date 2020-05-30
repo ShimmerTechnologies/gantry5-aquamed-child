@@ -6,11 +6,10 @@ preset:
 layout:
   /header/:
     -
-      - 'logo-2741 75'
-      - 'position-header 25'
-  /navigation/:
-    -
-      - menu-9729
+      - 'logo-2741 15'
+      - 'menu-4332 65'
+      - 'position-header 20'
+  /navigation/: {  }
   /main/:
     -
       - system-messages-7126
@@ -44,9 +43,17 @@ structure:
       class: ''
       variations: ''
 content:
+  logo-2741:
+    block:
+      variations: 'align-left nopaddingall'
+  menu-4332:
+    block:
+      variations: 'align-right nopaddingall'
   position-header:
     attributes:
       key: header
+    block:
+      variations: 'nopaddingall align-right'
   position-footer:
     attributes:
       key: footer

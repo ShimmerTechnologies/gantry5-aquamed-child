@@ -41,6 +41,8 @@ configuration:
       400: 'gantry-theme://fonts/lato_regular_macroman/Lato-Regular'
       500: 'gantry-theme://fonts/lato_medium_macroman/Lato-Medium'
       700: 'gantry-theme://fonts/lato_bold_macroman/Lato-Bold'
+    Georgia Italic:
+      400: 'gantry-theme://fonts/georgia_italic_macroman/Geogia-Italic'
 
   css:
     compiler: \Gantry\Component\Stylesheet\ScssCompiler

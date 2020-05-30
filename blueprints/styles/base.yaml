@@ -29,3 +29,7 @@ form:
       type: input.fonts
       label: Heading Font
       default: 'roboto, sans-serif'
+    quote-font:
+      type: input.fonts
+      label: Quote Font
+      default: 'roboto, sans-serif'

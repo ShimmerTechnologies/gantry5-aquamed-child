@@ -1,0 +1,86 @@
+ @import "dependencies";
+
+.order_steps_particle {
+	position: relative;
+	height: 600px;
+	h2 {
+    	padding: 30px 0;
+    	color: $white;
+	}
+	.g-content, .g-grid {
+		z-index: 1;
+		position: relative;
+	}
+	.g-grid {
+	    width: 75rem;
+		margin: 0 auto;
+		div.g-block {
+		    flex: 0 50%;
+		     div.g-content {
+			    width: 95%;
+			    margin-bottom: 80px;
+			}
+		}
+		.stepcircle {
+		    float: left;
+		    border-radius: 50%;
+		    padding: 10px 25px 5px;
+		    margin-right: 25px;
+		    font-size: 2.25rem;
+			font-family: get-font-family($base-text-font);
+		}
+		.step1 {
+		    background-color: $showcase-background;
+		    color: $white;
+		 }
+		 .step2 {
+		    background-color: $white;
+		    color: $base-header-color;
+		 }
+		.g-content {
+		    z-index: 1;
+		    position: relative;
+		    h4, p {
+		 		color: $white;
+			}
+			p {
+				margin-left: 99px;
+			}
+ 		}
+ 	}
+	.order_steps_image, .order_steps_bgcolor {
+		position: absolute;
+		height: 600px;
+		width:100%;
+		top: 0;
+	}
+	.order_steps_image {
+		opacity: .3;
+	}
+	.order_steps_bgcolor {
+		background-color: $accent-color-1;
+	}
+}
+
+
+
+.wpmtst-testimonial-inner.testimonial-inner {
+	.wpmtst-testimonial-content::before, .wpmtst-testimonial-content::after {
+		background-color:  $accent-color-2;
+	}
+	p{
+		font-family: get-font-family($base-quote-font);
+			color: $feature-text-color;
+			background-color: $feature-background;
+		    border-radius: 16px;
+		    padding: 45px 30px !important;	
+	}
+	.testimonial-name {
+	    font-weight: 600;
+	    letter-spacing: .05rem;
+	    margin-top: 15px;
+	}
+}
+
+
+
