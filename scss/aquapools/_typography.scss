@@ -3,6 +3,11 @@
 @include import-font($base-text-font);
 @include import-font($base-heading-font);
 
+.g-content {
+	margin: 0;
+	padding:0;
+}
+
 body {
 	font-family: get-font-family($base-body-font);
 	font-weight: $font-weight-regular;

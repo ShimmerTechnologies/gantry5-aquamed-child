@@ -7,9 +7,6 @@ preset:
 layout:
   /header/:
 
-  /navigation/:
-    - menu
-
   /main/:
     - system-messages
     - sample-2

@@ -187,51 +187,56 @@ h3, h4, h5, h6, strong {
   src: url('../../fonts/lato_bold_macroman/Lato-Bold.eot#iefix') format("embedded-opentype"), url('../../fonts/lato_bold_macroman/Lato-Bold.woff2') format("woff2"), url('../../fonts/lato_bold_macroman/Lato-Bold.woff') format("woff"), url('../../fonts/lato_bold_macroman/Lato-Bold.ttf') format("truetype"), url('../fonts/lato_bold_macroman/Lato-Bold.svg#lato') format("svg");
 }
 /* line 6, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+.g-content {
+  margin: 0;
+  padding: 0;
+}
+/* line 11, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 body {
   font-family: "Open Sans";
   font-weight: 400;
 }
-/* line 11, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 16, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 h1, h2 {
   font-family: "Open Sans";
   font-weight: 700;
 }
-/* line 16, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 21, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 h3, h4, h5, h6 {
   color: #1a1a1a;
   font-family: "Lato", sans-serif;
   font-weight: font-weight-semibold;
 }
-/* line 22, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 27, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 bold, strong {
   font-weight: 700;
 }
-/* line 26, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 31, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 .button {
   font-weight: 500;
 }
-/* line 31, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 36, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 blockquote {
   border-left: 10px solid #ccc;
 }
-/* line 33, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 38, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 blockquote p {
   font-size: 1.1rem;
   color: #666;
 }
-/* line 37, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 42, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 blockquote cite {
   display: block;
   text-align: right;
   color: #333;
   font-size: 1.2rem;
 }
-/* line 46, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 51, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 code {
   background: #f9f2f4;
   color: #9c1d3d;
 }
-/* line 51, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 56, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 pre {
   padding: 1rem;
   margin: 2rem 0;
@@ -241,23 +246,23 @@ pre {
   line-height: 1.15;
   font-size: 0.9rem;
 }
-/* line 60, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 65, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 pre code {
   color: #237794;
   background: inherit;
   font-size: 0.9rem;
 }
-/* line 68, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 73, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 hr {
   border-bottom: 1px solid #ccc;
 }
-/* line 71, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 76, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 .home hr {
   width: 50px;
   margin: 0 auto;
   position: relative;
 }
-/* line 76, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
+/* line 81, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
 .home hr::before {
   content: "V";
   position: absolute;
