@@ -1,0 +1,21 @@
+@include import-font($base-text-font);
+
+.g-title {
+	margin: 0 0 .5rem;
+	color: $header-text-color; 
+	font-family: get-font-family($base-text-font);
+}
+.g-social {
+	a {
+		display: inline-block;
+		padding: 0;
+		background: #fafafa;
+		border: medium none;
+		border-radius: $core-border-radius;
+		margin-bottom: 4px;
+		text-decoration: none;
+		.fa-lg {
+    		font-size: 2.333em;
+		}
+	}
+}

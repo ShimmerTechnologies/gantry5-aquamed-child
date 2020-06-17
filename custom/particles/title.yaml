@@ -1,0 +1,28 @@
+name: Title
+description: Displays title
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    headline:
+      type: input.text
+      label: Headline
+      description: Customize the headline text.
+      placeholder: Enter headline
+      overridable: false
+
+    description:
+      type: textarea.textarea
+      label: Text
+      description: Create or modify your description.
+
+    css.class:
+      type: input.text
+      label: Class
+      description: CSS class name for the particle.

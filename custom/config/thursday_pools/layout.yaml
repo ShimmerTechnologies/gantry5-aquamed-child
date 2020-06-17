@@ -1,0 +1,58 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+layout:
+  header: {  }
+  navigation: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-6504
+    -
+      - title-2900
+    -
+      - system-content-2067
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  title-2900:
+    attributes:
+      headline: 'Thursday Pools'
+      description: "Create a style that is all your own with a fiberglass pool. Whether you’re looking to transform your backyard into a place to entertain family and friends, create a tranquil private getaway or establish an exercise routine that your friends will envy, Thursday Pools has a variety of in ground pool designs to meet your needs. We crafted our pools based on the way our customers use them most. Here you’ll find a variety of shapes, sizes, and designs to help you create a style that is uniquely yours.\n"
+    block:
+      variations: center

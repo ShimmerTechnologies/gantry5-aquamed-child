@@ -1,0 +1,96 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/2-col-left.png'
+  name: form_sidebar
+  timestamp: 1591397015
+layout:
+  header: {  }
+  /Heading/:
+    -
+      - title-6984
+  /container-main/:
+    -
+      -
+        'sidebar 20':
+          -
+            - position-sidebar
+          -
+            - social-5318
+      -
+        'main 80':
+          -
+            - position-breadcrumbs
+          -
+            - system-messages-4471
+          -
+            - system-content-2345
+  /mainbottom/:
+    -
+      - position-mainbottom
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  Heading:
+    type: section
+    attributes:
+      boxed: ''
+  sidebar:
+    type: section
+    subtype: aside
+    block:
+      fixed: 1
+  container-main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  title-6984:
+    attributes:
+      headline: 'Contact Us'
+    block:
+      variations: center
+  position-sidebar:
+    title: 'Contact Page'
+    attributes:
+      key: widget-contact-sidebar
+  social-5318:
+    attributes:
+      title: 'Follow Us'
+      target: ''
+      display: icons_only
+      items:
+        -
+          icon: 'fa fa-facebook-official fa-lg'
+          text: ''
+          title: facebook
+          link: 'https://www.facebook.com/AquaMedPool'
+          name: facebook
+    block:
+      class: size-small
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-mainbottom:
+    attributes:
+      key: mainbottom

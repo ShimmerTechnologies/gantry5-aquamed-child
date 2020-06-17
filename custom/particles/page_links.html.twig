@@ -1,0 +1,26 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+	<div class="page_links_particle">	
+		<div class="g-grid {{ particle.css.class }}">
+			{% set pageNumber = 1 %}
+			{% for page in particle.pages %}
+			<div {% if page.id %}id="{{ page.id|e }}"{% endif %} class="page g-block {{ page.class }} {{ page.variations }}">
+				<div class="page_link">
+					<div class="page_links_bgcolor"></div>
+					<div class="page_links_image" style="background-image: url('{{ url(page.image) }}');"></div>
+					{% if page.title %}<h4>{{ page.title|raw }}</h4>{% endif %}
+				</div>
+				{% if page.description %}
+				<p class="description">
+				{{ page.description|raw }}
+				</p>
+				{% endif %}
+			</div>
+			{% set pageNumber = pageNumber + 1 %}
+			{% endfor %}
+		</div>
+	</div>
+
+{% endblock %}

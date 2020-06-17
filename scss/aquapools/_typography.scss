@@ -73,12 +73,12 @@ pre {
 hr {
 	border-bottom: 1px solid $rule-color;
 }
-.home hr {
+.home hr, .page hr {
     width: 50px;	
     margin: 0 auto;
     position: relative;
 }
-.home hr::before {
+.home hr::before, .page hr::before  {
    	content: "V";
 	position: absolute;
 	font-size: 10px;

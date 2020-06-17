@@ -1,5 +1,6 @@
  @import "dependencies";
 
+//order steps particle on home page
 .order_steps_particle {
 	position: relative;
 	height: 600px;
@@ -62,6 +63,80 @@
 	}
 }
 
+//page link particle
+.title-description {
+    margin-bottom: 65px;
+}
+
+.page.g-block {
+    display: inline-block;
+}
+.page .description {
+    margin-top: 0;
+}
+.page_link {
+    position: relative;
+	height: 260px;
+	width: 100%;
+}
+.page_link h4 {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	padding-left: 15px;
+}
+.page_links_bgcolor
+{
+	position: absolute;
+	top: 0;
+	opacity: 0.3;
+	background-color: #333;
+}
+.page_links_image, .page_links_bgcolor {
+	border-radius: 15px;
+	width: 95%;
+	height: 245px;
+	max-width: 370px;
+}
+
+//pool page
+.pool figure {
+	margin: 0 auto 30px;
+}
+.pool {
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.pool figure img {
+    border-radius: 15px;
+}
+.pool figure a.post-thumbnail {
+    position: relative;
+}
+.pool figcaption, .pool .bg-color {
+	position: absolute;
+    bottom: 0;	
+    width: 100%;
+}
+.pool .bg-color {
+	background-color: #000;
+	height: 50px;
+	border-radius: 0 0 15px 15px;
+	opacity: .3;
+}
+.pool figcaption {
+    padding: 0 0 10px 20px;
+    color: #fff;
+    font-weight: 600;
+    font-family: lato;
+    text-transform: uppercase;
+    font-size: 1.24rem;
+}
+.pool:nth-child(3n+0) {
+	grid-column-gap: 0;
+}
 
 
 .wpmtst-testimonial-inner.testimonial-inner {

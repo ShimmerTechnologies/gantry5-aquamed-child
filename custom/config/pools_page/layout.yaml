@@ -1,0 +1,116 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+layout:
+  header: {  }
+  navigation: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - title-4207
+    -
+      - page_links-4295
+    -
+      - title-4784
+    -
+      - custom-8237
+    -
+      - custom-4639
+    -
+      - system-messages-6637
+    -
+      - system-content-8969
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  title-4207:
+    attributes:
+      headline: Pools
+      description: "Aqua Med Pools has been installing fiberglass swimming pools throughout Cape Cod and Southeastern MA for over a decade. \nWhether you’re looking to transform your backyard into a place to entertain family and friends, create a tranquil private getaway or establish an exercise routine that your friends will envy, Thursday Pools has a variety of in ground pool designs to meet your needs. We crafted our pools based on the way our customers use them most, a style that is uniquely yours. Our experience and commitment to superior quality service has earned us a reputation as The Go To contractor in the areas we serve. "
+    block:
+      variations: center
+  page_links-4295:
+    title: 'Page links'
+    attributes:
+      css:
+        class: pages
+      pages:
+        -
+          image: 'gantry-media://leisure-models.png'
+          description: 'Leisure Pools manufactures the strongest, more durable fiberglass pool on the market today with a warranty no other manufacturer comes close to.'
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'LEISURE POOLS MODELS'
+        -
+          image: 'gantry-media://thursday-models.png'
+          description: 'Thursday Pools designs and manufactures fiberglass pool shells that are hand-crafted with the highest standards and craftsmanship.'
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'THURSDAY POOL MODELS'
+        -
+          image: 'gantry-media://pool-services.png'
+          description: 'Our pool repair services can help you fix any leak, valve replacement or pump malfunctions.'
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'OTHER POOL SERVICES'
+    block:
+      variations: center
+  title-4784:
+    title: why
+    attributes:
+      headline: 'Why Choose Fiberglass Pools?'
+      description: "We have been creating backyard dreams since 2005 and one thing we’ve found over the years is that our customers spend a lot of time researching the options available before they call us. They’ve discovered the three major pool types out there, fiberglass is the one that will give them MOST BEAUTIFUL pool with the LEAST MAINTENANCE. We offer numerous options for water features, landscape lighting, pool cleaners, and all come with our 100% satisfaction guarantee!\n\nMaybe you had a pool before and remember the hours and hours of cleaning and scrubbing, trying to get the water clear, balance the chemicals, the expense of replacing a liner, or resurfacing the pool. Those frustrations (and expenses) are in the past! Take a look at the chart below and compare the costs of maintaining a fiberglass pool over ten years."
+    block:
+      variations: center
+  custom-8237:
+    title: 'Custom HTML'
+    attributes:
+      html: '[table id=1 /]'
+      filter: '1'
+    block:
+      variations: center
+  custom-4639:
+    title: 'Custom HTML'
+    attributes:
+      html: '[table id=2 /]'
+      filter: '1'
+    block:
+      variations: center

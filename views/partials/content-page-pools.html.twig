@@ -1,0 +1,27 @@
+    {% block content %}
+    
+    <div id="pools">
+    {% for post in pools %}
+
+    <div class="pool">
+        <figure>
+            {# Begin Featured Image and Link #}
+                    <a href="{{ post.link }}" class="post-thumbnail" aria-hidden="true">
+                    {% if post.thumbnail.src %}
+                    <img src="{{ post.thumbnail.src('large-thumbnails') }}" alt="{{ post.title }}" />
+                    <div class="bg-color"></div>
+                    <figcaption>{{ post.title }}</figcaption>
+                    {% else %}
+                    {{ post.title }}
+                    {% endif %}
+                    
+                    </a>
+            {# End Featured Image #}          
+        </figure>
+    </div> 
+
+    {% endfor %}
+    </div>
+    {% endblock %}
+
+

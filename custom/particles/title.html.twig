@@ -1,0 +1,15 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+        {# Begin Entry Header #}
+        <section class="entry-header">
+
+			{% if particle.headline %}<h1>{{ particle.headline|raw }}</h1>{% endif %}
+			<hr>
+			{% if particle.description %}<div class="title-description"><p>{{ particle.description|raw }}</p></div>{% endif %}			
+
+        </section>
+        {# End Entry Header #}
+
+{% endblock %}

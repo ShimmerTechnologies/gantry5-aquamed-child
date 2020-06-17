@@ -1,14 +1,14 @@
 name: home-2
-timestamp: 1590870030
+timestamp: 1591389157
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home2
   timestamp: 1590095068
 positions:
+  header: Header
   partners: partners
   widget-quote: 'Home Quote'
-  header: Header
   footer: Footer
 sections:
   header: Header
@@ -20,24 +20,28 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  sample:
-    sample-3705: 'Sample Content'
-    sample-9218: 'Sample Content'
-    sample-1616: Why
-  custom:
-    custom-4341: 'Custom HTML'
-    custom-7270: 'Custom HTML'
-    custom-3984: 'Custom HTML'
-  position:
-    position-position-6000: partners
-    position-position-9059: 'Home Quote'
-    position-position-7603: Header
-    position-position-3130: Footer
   logo:
     logo-9935: Logo
     logo-3192: 'Logo / Image'
   menu:
     menu-6428: Menu
+  position:
+    position-position-7603: Header
+    position-position-6000: partners
+    position-position-9059: 'Home Quote'
+    position-position-3130: Footer
+  custom:
+    custom-3984: 'Custom HTML'
+    custom-4341: 'Custom HTML'
+    custom-7270: 'Custom HTML'
+  messages:
+    system-messages-5848: 'System Messages'
+  sample:
+    sample-1616: Why
+    sample-3705: 'Sample Content'
+    sample-9218: 'Sample Content'
+  order_steps_particle:
+    order_steps_particle-6284: 'Order Steps'
   copyright:
     copyright-6576: Copyright
   social:
@@ -46,29 +50,25 @@ particles:
     totop-5951: 'To Top'
   mobile-menu:
     mobile-menu-1706: Mobile-menu
-  messages:
-    system-messages-5848: 'System Messages'
-  order_steps_particle:
-    order_steps_particle-6284: 'Order Steps'
 inherit:
   default:
     header: header
-    navigation: navigation
-    footer: footer
-    offcanvas: offcanvas
     logo-9935: logo-2741
     menu-6428: menu-4332
     position-position-7603: position-header
+    navigation: navigation
+    footer: footer
     position-position-3130: position-footer
     logo-3192: logo-4026
     copyright-6576: copyright-4409
     social-3020: social-7254
     totop-5951: totop-8211
+    offcanvas: offcanvas
     mobile-menu-1706: mobile-menu-9981
   home:
     main: main
-    mainbottom: mainbottom
     custom-3984: custom-7960
     system-messages-5848: system-messages-1543
     sample-1616: sample-7236
+    mainbottom: mainbottom
     order_steps_particle-6284: order_steps_particle-3390

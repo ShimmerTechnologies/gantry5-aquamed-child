@@ -14,6 +14,32 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .width75 {
 	width: 75rem;
 }
+.size-small .g-title {
+	font-size: 1.8rem;
+}
+/* forms */
+#contact-form .form-row {
+    max-width: 960px;
+    width: 100%;
+}
+#contact-form .form-row textarea, #contact-form .form-row input[type="text"], #contact-form .form-row input[type="email"] {
+	width: 100%;
+}
+.form-row .grid-50 {
+    width: 50%;
+    float: left;
+    padding: 0 15px 20px 0;
+}
+.form-row .grid-50:last-child {
+    padding-right: 0;
+}
+span.wpcf7-list-item {
+    display: block;
+    margin: 0;
+}
+.wpcf7-list-item-label {
+    margin-left: 10px;
+}
 
 /* font awesome class */
 .fa, .fas {
@@ -43,7 +69,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	padding-left: 54px;
 }
 .img_page_widget {
-    margin-top: 50%;
+    margin-top: 40%;
 }
 .img_page_widget .button {
 	background-color: #28bceb;
@@ -52,15 +78,32 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* footer 
 
 /*social links*/
-#g-footer .g-container .contactdetail i {
+.fa_contact_slinks_widget h5 {
+	margin: 0.25rem 0 0;
+}
+.fa_contact_slinks_widget .contactdetail div {
+	margin: 0.75rem 0 1.5rem 0;
+}
+.phone, .address, .email {
+    display: inline-block;
+}
+#g-footer .fa_contact_slinks_widget h5 {
+	color: #fff;
+}
+#g-footer .g-container .contactdetail i, #g-container-main .g-container .contactdetail i {
  	border: 2px solid #fff;
 	border-radius: 50%;
 	width: 34px;
 	height: auto;
-	margin: 0 5px 5px 0;
+	margin: 0 10px 5px 0;
 	padding: 5px;
 	text-align: center;
-	display: inline-block;
+	display: block;
 	font-style: normal;
 	font-weight: normal;
+	float: left;
+}
+#g-container-main .g-container .contactdetail i {
+	border: 2px solid #005395;
+	color: #005395;
 }

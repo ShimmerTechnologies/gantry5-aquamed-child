@@ -257,13 +257,13 @@ hr {
   border-bottom: 1px solid #ccc;
 }
 /* line 76, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
-.home hr {
+.home hr, .page hr {
   width: 50px;
   margin: 0 auto;
   position: relative;
 }
 /* line 81, wp-content/themes/g5_aquapools-child/scss/aquapools/_typography.scss */
-.home hr::before {
+.home hr::before, .page hr::before {
   content: "V";
   position: absolute;
   font-size: 10px;
@@ -939,7 +939,7 @@ hr {
   border: 2px solid #fff;
   border-radius: 20px;
   width: 95%;
-  margin: -15px auto 0;
+  margin: -15px auto 0 0;
 }
 /* line 34, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
 #g-footer .g-container .g-grid:nth-child(2) .g-block .g-content {
@@ -1146,16 +1146,26 @@ input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hove
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus {
   border-color: #0067a3;
 }
-/* line 1, wp-content/themes/g5_aquapools/scss/aquapools/_social.scss */
-/* line 2, wp-content/themes/g5_aquapools/scss/aquapools/_social.scss */
+/* line 3, wp-content/themes/g5_aquapools-child/scss/aquapools/_social.scss */
+.g-title {
+  margin: 0 0 0.5rem;
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+/* line 8, wp-content/themes/g5_aquapools-child/scss/aquapools/_social.scss */
+/* line 9, wp-content/themes/g5_aquapools-child/scss/aquapools/_social.scss */
 .g-social a {
   display: inline-block;
-  padding: 0.1rem 0.4rem;
+  padding: 0;
   background: #fafafa;
-  border: 1px solid #ddd;
+  border: medium none;
   border-radius: 0.1875rem;
   margin-bottom: 4px;
   text-decoration: none;
+}
+/* line 17, wp-content/themes/g5_aquapools-child/scss/aquapools/_social.scss */
+.g-social a .fa-lg {
+  font-size: 2.333em;
 }
 /* line 1, wp-content/themes/g5_aquapools-child/scss/aquapools/_sample.scss */
 .sample-content {
