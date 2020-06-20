@@ -1,0 +1,71 @@
+<article class="tease tease-{{ pool.post_type }} {{ pool.class }} clearfix" id="tease-{{ pool.ID }}">
+    {% block content %}
+        <header class="entry-header center">
+            <h1>
+                {% if gantry.config.get('content.' ~ scope ~ '.title.link', '0') %}
+                    <a href="{{ pool.link }}" title="{{ pool.title }}">{{ pool.title }}</a>
+                {% else %}
+                    {{ pool.title }}
+                {% endif %}
+            </h1>          
+            <hr>
+        </header>
+
+        {# Check if post is password protected #}
+        {% if not function( 'post_password_required', pool.ID ) %}
+
+            {# Begin Entry Content #}
+            <section class="entry-content">
+
+                {# Begin Tease #}
+                {% if gantry.config.get('content.' ~ scope ~ '.content.enabled', '1') %}
+                    {% if gantry.config.get('content.' ~ scope ~ '.content.type', 'content') == 'excerpt' and pool.post_excerpt is not empty %}
+                        <div class="post-excerpt">{{ pool.post_excerpt|apply_filters('the_excerpt')|raw }}</div>
+                    {% elseif gantry.config.get('content.' ~ scope ~ '.content.type', 'content') == 'gexcerpt' %}
+                        <div class="post-excerpt">{{ pool.preview.length(gantry.config.get('content.' ~ scope ~ '.content.gexcerpt-length', '50')).read_more(false)|apply_filters('the_excerpt')|raw }}</div>
+                    {% else %}
+                        <div class="post-content">
+                            {% set readmore = preg_match('/<!--more(.*?)?-->/', pool.post_content) %}
+                            {% if readmore %}
+                                {% set split_content = pool.post_content|split(readmore[0], 2) %}
+                                {{ split_content[0]|apply_filters('the_content')|raw }}
+                            {% elseif '<!--nextpage-->' in pool.post_content %}
+                                {% set split_content = pool.post_content|split('<!--nextpage-->', 2) %}
+                                {{ split_content[0]|apply_filters('the_content')|raw }}
+                            {% else %}
+                                {{ pool.content|raw }}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                {% endif %}
+
+                {% if gantry.config.get('content.' ~ scope ~ '.read-more.mode', 'auto') == 'always' or (gantry.config.get('content.' ~ scope ~ '.read-more.mode', 'auto') == 'auto' and (readmore or pool.post_excerpt is not empty or gantry.config.get('content.' ~ scope ~ '.content.type', 'content') == 'gexcerpt') )  %}
+                    <a href="{{ pool.link }}" class="read-more button">
+                        {% if readmore[1] is not empty %}
+                            {{- readmore[1] -}}
+                        {% else %}
+                            {{ gantry.config.get('content.' ~ scope ~ '.read-more.label', 'Read More') }}
+                        {% endif %}
+                    </a>
+                {% endif %}
+                {# End Tease #}
+
+            </section>
+            {# End Entry Content #}
+
+        {% else %}
+
+            {# Begin Password Protected Form #}
+            <div class="password-form">
+
+                {# Include the password form #}
+                {% include 'partials/password-form.html.twig' %}
+
+            </div>
+            {# End Password Protected Form #}
+
+        {% endif %}
+
+    {% endblock %}
+
+</article>

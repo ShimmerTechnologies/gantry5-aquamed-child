@@ -37,6 +37,12 @@ form:
           type: textarea.textarea
           label: Description
 
+        .link:
+            type: input.text
+            label: Link
+            description: Specify the link address.
+            default: "#"
+
         .id:
           type: input.text
           label: CSS ID

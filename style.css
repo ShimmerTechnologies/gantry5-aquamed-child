@@ -17,6 +17,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .size-small .g-title {
 	font-size: 1.8rem;
 }
+
+/* single pool post type 
+
+/*slider*/
+.wp-block-soliloquy-soliloquywp .soliloquy-container {
+    text-align: center;
+    margin: 0 auto;
+}
 /* forms */
 #contact-form .form-row {
     max-width: 960px;

@@ -3,10 +3,10 @@
     <div id="pools">
     {% for post in pools %}
 
-    <div class="pool">
+    <div class="single-pool-post">
         <figure>
             {# Begin Featured Image and Link #}
-                    <a href="{{ post.link }}" class="post-thumbnail" aria-hidden="true">
+                    <a href="{{ post.link }}" class="post-thumbnail" aria-hidden="true" title="{{ post.title }}">
                     {% if post.thumbnail.src %}
                     <img src="{{ post.thumbnail.src('large-thumbnails') }}" alt="{{ post.title }}" />
                     <div class="bg-color"></div>

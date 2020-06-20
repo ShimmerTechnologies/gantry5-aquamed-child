@@ -73,6 +73,7 @@ content:
         -
           image: 'gantry-media://leisure-models.png'
           description: 'Leisure Pools manufactures the strongest, more durable fiberglass pool on the market today with a warranty no other manufacturer comes close to.'
+          link: 'http://localhost/aquamed/pools/leisure-pools/'
           id: ''
           class: ''
           variations: align-left
@@ -80,6 +81,7 @@ content:
         -
           image: 'gantry-media://thursday-models.png'
           description: 'Thursday Pools designs and manufactures fiberglass pool shells that are hand-crafted with the highest standards and craftsmanship.'
+          link: 'http://localhost/aquamed/pools/thursday-pools/'
           id: ''
           class: ''
           variations: align-left
@@ -87,6 +89,7 @@ content:
         -
           image: 'gantry-media://pool-services.png'
           description: 'Our pool repair services can help you fix any leak, valve replacement or pump malfunctions.'
+          link: '#'
           id: ''
           class: ''
           variations: align-left

@@ -27,7 +27,7 @@
 		    border-radius: 50%;
 		    padding: 10px 25px 5px;
 		    margin-right: 25px;
-		    font-size: 2.25rem;
+		    font-size: $core-font-size + 1.25;
 			font-family: get-font-family($base-text-font);
 		}
 		.step1 {
@@ -63,81 +63,80 @@
 	}
 }
 
-//page link particle
-.title-description {
-    margin-bottom: 65px;
+//title particle & page link particle
+.g-particle {
+	.title-description {
+	    margin-bottom: 65px;
+	}
+	.page.g-block {
+	    display: inline-block;
+	    .page_link {
+		    position: relative;
+			height: 260px;
+			width: 100%;
+			.page_links_image, .page_links_bgcolor {
+				border-radius: 15px;
+				width: 95%;
+				height: 245px;
+				max-width: 370px;
+			}
+			.page_links_bgcolor	{
+				position: absolute;
+				top: 0;
+				opacity: 0.3;
+				background-color: $base-text-color;
+			}
+		}
+		.description {
+		    margin-top: 0;
+		}
+		 h4 {
+			position: absolute;
+			color: $white;
+			bottom: 0;
+			padding-left: 15px;
+		}
+	}
 }
 
-.page.g-block {
-    display: inline-block;
-}
-.page .description {
-    margin-top: 0;
-}
-.page_link {
-    position: relative;
-	height: 260px;
-	width: 100%;
-}
-.page_link h4 {
-	position: absolute;
-	color: #fff;
-	bottom: 0;
-	padding-left: 15px;
-}
-.page_links_bgcolor
-{
-	position: absolute;
-	top: 0;
-	opacity: 0.3;
-	background-color: #333;
-}
-.page_links_image, .page_links_bgcolor {
-	border-radius: 15px;
-	width: 95%;
-	height: 245px;
-	max-width: 370px;
-}
-
-//pool page
-.pool figure {
-	margin: 0 auto 30px;
-}
-.pool {
+//pools page
+.single-pool-post {
 	display: inline-grid;
 	grid-template-columns: auto auto auto;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
+	&:nth-child(3n+0) {
+		grid-column-gap: 0;
+	}
+	figure {
+		margin: 0 auto 30px;
+		img {
+		    border-radius: 15px;
+		}
+		a.post-thumbnail {
+		    position: relative;
+		}
+	}
+	figcaption, .bg-color {
+		position: absolute;
+	    bottom: 0;	
+	    width: 100%;
+	}
+	.bg-color {
+		background-color: $black;
+		height: 50px;
+		border-radius: 0 0 15px 15px;
+		opacity: .3;
+	}
+	figcaption {
+	    padding: 0 0 10px 20px;
+	    color: $white;
+	    font-weight: $font-weight-semibold;
+	    font-family: get-font-family($base-text-font);;
+	    text-transform: uppercase;
+	    font-size: $core-font-size + .24;
+	}
 }
-.pool figure img {
-    border-radius: 15px;
-}
-.pool figure a.post-thumbnail {
-    position: relative;
-}
-.pool figcaption, .pool .bg-color {
-	position: absolute;
-    bottom: 0;	
-    width: 100%;
-}
-.pool .bg-color {
-	background-color: #000;
-	height: 50px;
-	border-radius: 0 0 15px 15px;
-	opacity: .3;
-}
-.pool figcaption {
-    padding: 0 0 10px 20px;
-    color: #fff;
-    font-weight: 600;
-    font-family: lato;
-    text-transform: uppercase;
-    font-size: 1.24rem;
-}
-.pool:nth-child(3n+0) {
-	grid-column-gap: 0;
-}
-
 
 .wpmtst-testimonial-inner.testimonial-inner {
 	.wpmtst-testimonial-content::before, .wpmtst-testimonial-content::after {
@@ -151,11 +150,13 @@
 		    padding: 45px 30px !important;	
 	}
 	.testimonial-name {
-	    font-weight: 600;
+	    font-weight: $font-weight-semibold;
 	    letter-spacing: .05rem;
 	    margin-top: 15px;
 	}
 }
 
-
-
+//single pool post
+.pool .entry-header {
+    margin-bottom: 40px;
+}

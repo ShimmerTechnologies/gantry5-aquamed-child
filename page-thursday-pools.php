@@ -47,7 +47,7 @@ $args = array(
 	        )
 	    ),
 	    'orderby' => array(
-	    	'date' => 'ASC'
+	    	'date' => 'DESC'
 ));
 
 $post            = Timber::get_posts( $args );

@@ -1,10 +1,17 @@
+.page, .single {
+	#g-header {
+		border-bottom: 3px solid $base-header-color;
+	}
+}
 #g-header {
 	background: $header-background;
 	margin: 15px auto 0;
 	color: $header-text-color;
 	position: relative;
 	z-index: 3;
-
+	.g-container {
+		padding-bottom: 5px;
+	}
 	a {
 		color: lighten($header-background, 40%);
 		&:hover {
@@ -15,7 +22,7 @@
     	display: none;
 	}
 	.search-submit.button {
-	    color: #005395;
+	    color: $base-header-color;
 	    background-color: transparent;
 	    border: none;
 	    box-shadow: none;

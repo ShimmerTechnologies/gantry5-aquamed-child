@@ -27,10 +27,11 @@
 
 				&.active {
 					background: $section-active-background;
+					
 
 					> .g-menu-item-container {
-						color: $section-active-text-color;
-
+						color: $navigation-hover;
+						
 						&:hover {
 					        color: $navigation-hover;
 					    }
@@ -60,18 +61,27 @@
 	}
 
 	.g-dropdown {
-		background: darken($section-background, 6%);
+		background-color: $section-background;
+		box-shadow: 0 2px 4px -3px #000;
 	}
 
 	.g-sublevel {
 		> li {
 			> .g-menu-item-container {
 				color: $section-text-color;
+				
+				.g-menu-item-title {
+					font-weight: $font-weight-low;
+					&:hover, &.active {
+						color: $navigation-hover;
+						font-weight: $font-weight-regular;
+					}
+				}
 			}
 
 			&:not(.g-menu-item-type-particle):not(.g-menu-item-type-module) {
 				&:hover, &.active {
-					background: darken($section-background, 10%);
+					background: $section-background;
 				}
 			}
 		}

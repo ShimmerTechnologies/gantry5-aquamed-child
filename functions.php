@@ -39,6 +39,7 @@ function aquamed_pool_types_init(){
 		'capability_type'	=> 'post',
 		'has_archive'		=> false,
 		'menu_position'		=> null,
+		'show_in_rest'		=> true,
 		'supports'			=> array('title', 'editor', 'author', 'thumbnail', 'excerpt')
 	);
 
@@ -101,5 +102,31 @@ function pool_sortable_columns( $columns ){
 	$columns['cat'] = 'cat';
 	return $columns;
 }
+
+if( is_Admin() ){
+
+	//meta callback functions for pools
+	$dir = get_stylesheet_directory_uri();
+
+	// https://wordpress.stackexchange.com/questions/1403/
+	include( __DIR__  . '/includes/pool.php');
+
+	function amp_pool_post_metaboxes(){
+		add_meta_box('pool-specs-title', 'Pool Specifications Title', 'amp_pool_specs_title', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-specs-text', 'Pool Specifications', 'amp_pool_specs', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-video-title', 'Pool Video Title', 'amp_pool_video_title', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-videos', 'Pool Videos', 'amp_pool_videos', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-size-title', 'Pool Size Title', 'amp_pool_size_title', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-size-image', 'Pool Size Image', 'amp_pool_size_image', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-size-dimensions', 'Pool Size Dimensions', 'amp_pool_size_dimensions', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-color-title', 'Pool Color Title', 'amp_pool_color_title', 'pool', 'advanced', 'high');
+		//add_meta_box('pool-color-images', 'Pool Color Images', 'amp_pool_color_images', 'pool', 'advanced', 'high');
+	}
+	add_action('admin_init', 'amp_pool_post_metaboxes');
+
+
+
+}
+
 
 ?>
