@@ -33,7 +33,7 @@
                                 {% set split_content = pool.post_content|split('<!--nextpage-->', 2) %}
                                 {{ split_content[0]|apply_filters('the_content')|raw }}
                             {% else %}
-                                {{ pool.content|raw }}
+                                {{ pool.content|raw|trim }}
                             {% endif %}
                         </div>
                     {% endif %}
@@ -52,6 +52,155 @@
 
             </section>
             {# End Entry Content #}
+
+            {% set specs_title = function('get_post_meta', pool.ID, 'specs_title', 'true') %}
+            {% if specs_title %}
+            <section class="meta-content">  
+            <div class="g-container">                
+                {% set specs_text = function('get_post_meta', pool.ID, 'specs_text', 'true') %}
+                <header class="center g-content">
+                <h2 class="nomarginbottom">{{ specs_title }}</h2>
+                </header>
+                <div class="specs_text alignleft nomarginall g-content">
+                {% if specs_text %}
+                    {% set html_content = function( 'htmlspecialchars_decode', specs_text ) %}
+                    {{ html_content|e('wp_kses_post')|wpautop|trim }}   
+                {% endif %}                   
+                </div>
+            </div>
+            </section>
+            {% endif %}
+
+            {% set video_title = function('get_post_meta', pool.ID, 'video_title', 'true') %}
+            {% if video_title %}
+            <section class="meta-videos center">  
+            <div class="g-container">                 
+                {% set video_content = function('get_post_meta', pool.ID, 'video_content', 'true') %}
+                <header class="g-content">
+                <h2 class="nomarginbottom">{{ video_title }}</h2>
+                </header>
+                <div class="video_content g-content">
+                {% if video_content %}
+                    {% set html_video_content = function( 'htmlspecialchars_decode', video_content ) %}
+                    {{ html_video_content|shortcodes|e('wp_kses_post')|wpautop }}   
+                {% endif %}                   
+                </div>
+                <br>
+            </div>
+            </section>
+            {% endif %}
+
+            <section class="meta-sizes center">
+                <div class="g-container">   
+                {% set size_title = function('get_post_meta', pool.ID, 'size_title', 'true') %}
+                {% set size_image_url = function('get_post_meta', pool.ID, 'size_image_url', 'true') %}
+                <header class="g-content">
+                {% if size_title %}<h2 class="nomarginbottom">{{ size_title }}</h2>{% endif %}
+                </header>
+                {% if size_image_url %}<img alt={{ size_title }} src="{{ size_image_url }}" />{% endif %}
+
+                {% set size_length = function('get_post_meta', pool.ID, 'size_length', 'true') %}
+                {% set size_width = function('get_post_meta', pool.ID, 'size_width', 'true') %}
+                {% set size_shallow  = function('get_post_meta', pool.ID, 'size_shallow', 'true') %}
+                {% set size_deep = function('get_post_meta', pool.ID, 'size_deep', 'true') %}
+
+                {% set add_size_length = function('get_post_meta', pool.ID, 'add_size_length', 'true') %}
+                {% set add_size_width = function('get_post_meta', pool.ID, 'add_size_width', 'true') %}
+                {% set add_size_shallow  = function('get_post_meta', pool.ID, 'add_size_shallow', 'true') %}
+                {% set add_size_deep = function('get_post_meta', pool.ID, 'add_size_deep', 'true') %}
+
+                {% if size_length %}
+                <div class="sizes_content center g-content">
+                <table id="pool_sizes" title="pool sizes">
+                    <thead>
+                        <tr>
+                            <td><strong>Length</strong></td>
+                            <td><strong>Width</strong></td>
+                            {% if size_shallow %}
+                                <td><strong>Shallow Depth</strong></td>
+                                <td><strong>Deep Depth</strong></td>
+                            {% else %}
+                                <td><strong>Depth</strong></td>
+                            {% endif %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ size_length }}</td>
+                            {% if size_width %}<td>{{ size_width }}</td>{% endif %}
+                            {% if size_shallow %}
+                                <td>{{ size_shallow }}</td>
+                                {% if size_deep %}
+                                    <td>{{ size_deep }}</td>
+                                {% endif %}
+                            {% else %}
+                                {% if size_deep %}
+                                    <td>{{ size_deep }}</td>
+                                {% endif %}
+                             {% endif %}
+                        </tr>
+
+                        {% for size in add_size_length %}
+                        <tr>
+                            <td>{{ size }}                                
+                            </td>
+                            {% if add_size_width[ loop.index0 ] %}<td>{{ add_size_width[ loop.index0 ] }}</td>{% endif %}
+                            {% if size_shallow %}
+                                    <td>
+                                    {% if add_size_shallow[ loop.index0 ] %}
+                                        {{ add_size_shallow[ loop.index0 ] }}
+                                    {% endif %}
+                                    </td>
+                                    {% if add_size_deep[ loop.index0 ] %}
+                                        <td>{{ add_size_deep[ loop.index0 ] }}</td>
+                                    {% endif %}
+                            {% else %}
+                                {% if add_size_shallow[ loop.index0 ] %}
+                                    <td>{{ add_size_shallow[ loop.index0 ] }}</td>
+                                    {% if add_size_deep[ loop.index0 ] %}
+                                        <td>{{ add_size_deep[ loop.index0 ] }}</td>
+                                    {% endif %}
+                                {% else %}
+                                    {% if add_size_deep[ loop.index0 ] %}
+                                        <td>{{ add_size_deep[ loop.index0 ] }}</td>
+                                    {% endif %}
+                                 {% endif %}
+                            {% endif %}
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                    </table>                                  
+                </div>
+                {% endif %} 
+            </div>
+            </section>
+
+            {% set color_title = function('get_field', 'color_title', pool.ID, true) %}
+            {% set color_description = function('get_field', 'color_description', pool.ID, true) %}
+            {% set color_images = function('acf_photo_gallery', 'color_images', pool.ID) %}
+            {% if color_title %}
+            <section class="meta-colors center">   
+            <div class="g-container">                
+                <header class="g-content">
+                <h2 class="nomarginbottom">{{ color_title }}</h2>
+                </header >
+                {% if color_description %}
+                <div class="color_description g-content"> 
+                    <p>{{ color_description }}</p>
+                </div>
+                {% endif %}
+                <div class="color_content g-content"> 
+                {% for color in color_images %}
+                <div class="color">
+                    <img src="{{ color['full_image_url'] }}" alt="{{ color['title'] }}" />
+                </div>
+                 {% endfor %}          
+                </div>
+                <br>
+            </div>
+            </section>
+            {% endif %}
 
         {% else %}
 

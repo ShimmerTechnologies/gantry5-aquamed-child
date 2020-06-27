@@ -160,3 +160,42 @@
 .pool .entry-header {
     margin-bottom: 40px;
 }
+.single-pool h2 {
+	font-size: 3.2rem;
+}
+.video_content {
+    display: flex;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.epyt-video-wrapper {
+    min-height: 1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+	margin: 0 auto;
+}
+
+.epyt-video-wrapper iframe {
+    border: medium none;
+}
+.meta-sizes img  {
+	margin: 1.5rem 0;
+}
+.sizes_content table { 
+	margin: 1.5rem 0;
+}
+.sizes_content table td, .sizes_content table {
+    border: medium none;
+}
+.color_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+.color {
+    margin: 10px;
+}

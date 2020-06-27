@@ -12,9 +12,16 @@ form:
 
     headline:
       type: input.text
-      label: Headline
-      description: Customize the headline text.
+      label: H1 Headline
+      description: Customize the main headline text.
       placeholder: Enter headline
+      overridable: false
+
+    header:
+      type: input.text
+      label: H2 Header
+      description: Customize the header text.
+      placeholder: Enter header
       overridable: false
 
     description:

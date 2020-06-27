@@ -5,7 +5,11 @@
         {# Begin Entry Header #}
         <section class="entry-header">
 
-			{% if particle.headline %}<h1>{{ particle.headline|raw }}</h1>{% endif %}
+			{% if particle.headline %}
+			<h1>{{ particle.headline|raw }}</h1>
+			{% elseif particle.header %}
+			<h2>{{ particle.header|raw }}</h2>
+			{% endif %}
 			<hr>
 			{% if particle.description %}<div class="title-description"><p>{{ particle.description|raw }}</p></div>{% endif %}			
 

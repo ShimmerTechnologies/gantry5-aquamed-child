@@ -25,6 +25,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     text-align: center;
     margin: 0 auto;
 }
+.soliloquy-container .soliloquy-prev {
+	left: -47px !important;
+}
+.soliloquy-container .soliloquy-next {
+	right: -47px !important;
+}
+.soliloquy-container .soliloquy-prev, .soliloquy-container .soliloquy-next {
+	background-color: rgba(0, 83, 149, 0.7) !important;
+	border-radius: 16px;
+}
 /* forms */
 #contact-form .form-row {
     max-width: 960px;

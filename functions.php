@@ -112,21 +112,122 @@ if( is_Admin() ){
 	include( __DIR__  . '/includes/pool.php');
 
 	function amp_pool_post_metaboxes(){
-		add_meta_box('pool-specs-title', 'Pool Specifications Title', 'amp_pool_specs_title', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-specs-text', 'Pool Specifications', 'amp_pool_specs', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-video-title', 'Pool Video Title', 'amp_pool_video_title', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-videos', 'Pool Videos', 'amp_pool_videos', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-size-title', 'Pool Size Title', 'amp_pool_size_title', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-size-image', 'Pool Size Image', 'amp_pool_size_image', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-size-dimensions', 'Pool Size Dimensions', 'amp_pool_size_dimensions', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-color-title', 'Pool Color Title', 'amp_pool_color_title', 'pool', 'advanced', 'high');
-		//add_meta_box('pool-color-images', 'Pool Color Images', 'amp_pool_color_images', 'pool', 'advanced', 'high');
+		add_meta_box('pool-specs', 'Pool Specifications', 'amp_pool_specs', 'pool', 'normal', 'high');
+		add_meta_box('pool-videos', 'Pool Videos', 'amp_pool_videos', 'pool', 'normal', 'high');
+		add_meta_box('pool-size', 'Pool Sizes', 'amp_pool_size', 'pool', 'normal', 'high');
 	}
 	add_action('admin_init', 'amp_pool_post_metaboxes');
 
-
-
 }
 
+function save_meta_box($post_id){
+
+	global $post;
+	$metaID = get_The_ID();
+
+	if( get_post_type($metaID) == 'pool'){
+
+		if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE){
+				return;
+		} else {
+
+			if( isset($_POST['specs_title']) ){
+				update_post_meta($post_id, 'specs_title', esc_attr($_POST['specs_title']));
+			}
+			if( isset($_POST['specs_text']) ){
+				$data=htmlspecialchars($_POST['specs_text']);
+				update_post_meta($post_id, 'specs_text', $data);
+			}
+			if( isset($_POST['video_title']) ){
+				update_post_meta($post_id, 'video_title', esc_attr($_POST['video_title']));
+			}
+			if( isset($_POST['video_content']) ){
+					$data=htmlspecialchars($_POST['video_content']);
+					update_post_meta($post_id, 'video_content', $data);
+			}
+			if( isset($_POST['size_title']) ){
+				update_post_meta($post_id, 'size_title', esc_attr($_POST['size_title']));
+			}
+			if( isset($_POST['size_length']) ){
+				update_post_meta($post_id, 'size_length', esc_attr($_POST['size_length']));
+			}
+			if( isset($_POST['size_width']) ){
+				update_post_meta($post_id, 'size_width', esc_attr($_POST['size_width']));
+			}
+			if( isset($_POST['size_shallow']) ){
+				update_post_meta($post_id, 'size_shallow', esc_attr($_POST['size_shallow']));
+			}
+			if( isset($_POST['size_deep']) ){
+				update_post_meta($post_id, 'size_deep', esc_attr($_POST['size_deep']));
+			}
+			// now we can actually save the data
+			$allowed = array(
+			        'a' => array( // on allow a tags
+			            'href' => array() // and those anchors can only have href attribute
+			        )
+			);
+			// If any value present in input field, then update the post meta
+		    if(isset($_POST['add_size_length'])) {
+		        // $post_id, $meta_key, $meta_value
+
+		        update_post_meta( $post_id, 'add_size_length', $_POST['add_size_length'] );
+		    }
+		    if(isset($_POST['add_size_width'])) {
+		        // $post_id, $meta_key, $meta_value
+		    	
+		        update_post_meta( $post_id, 'add_size_width', $_POST['add_size_width'] );
+		    }
+		     if(isset($_POST['add_size_shallow'])) {
+		        // $post_id, $meta_key, $meta_value
+		    	
+		        update_post_meta( $post_id, 'add_size_shallow', $_POST['add_size_shallow'] );
+		    }
+		     if(isset($_POST['add_size_deep'])) {
+		        // $post_id, $meta_key, $meta_value
+		    	
+		        update_post_meta( $post_id, 'add_size_deep', $_POST['add_size_deep'] );
+		    }
+			if ( isset($_POST['size_image_url']) ) {
+				update_post_meta($post_id, "size_image_url", esc_attr($_POST["size_image_url"]));
+			}
+			if ( isset($_POST['size_image_id']) ) {
+				update_post_meta($post_id, "size_image_id", esc_attr($_POST["size_image_id"]));
+			}
+		}
+
+	}
+
+}
+add_action('save_post','save_meta_box');
+
+add_filter( 'the_content', 'wpse_257854_remove_empty_p', PHP_INT_MAX );
+add_filter( 'the_excerpt', 'wpse_257854_remove_empty_p', PHP_INT_MAX );
+function wpse_257854_remove_empty_p( $content ) {
+    return str_ireplace( '<p>&nbsp;</p>', '<br>', $content );
+}
+
+//Create extra fields called Altnative Text and Status
+function my_extra_gallery_fields( $args, $attachment_id, $field ){
+    $args['alt'] = array(
+        'type' => 'text', 
+        'label' => 'Altnative Text', 
+        'name' => 'alt', 
+        'value' => get_field($field . '_alt', $attachment_id)
+    );
+    $args['status'] = array(
+        'type' => 'select', 
+        'label' => 'Status', 
+        'name' => 'status', 
+        'value' => array(
+            array(
+                '1' => 'Active',
+                 '2' => 'Inactive'
+            ), 
+            get_field($field . '_status', $attachment_id)
+        )
+    );
+    return $args;
+}
+add_filter( 'acf_photo_gallery_image_fields', 'my_extra_gallery_fields', 10, 3 );
 
 ?>

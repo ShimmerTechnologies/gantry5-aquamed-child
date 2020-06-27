@@ -99,7 +99,8 @@ content:
   title-4784:
     title: why
     attributes:
-      headline: 'Why Choose Fiberglass Pools?'
+      headline: ''
+      header: 'Why Choose Fiberglass Pools?'
       description: "We have been creating backyard dreams since 2005 and one thing we’ve found over the years is that our customers spend a lot of time researching the options available before they call us. They’ve discovered the three major pool types out there, fiberglass is the one that will give them MOST BEAUTIFUL pool with the LEAST MAINTENANCE. We offer numerous options for water features, landscape lighting, pool cleaners, and all come with our 100% satisfaction guarantee!\n\nMaybe you had a pool before and remember the hours and hours of cleaning and scrubbing, trying to get the water clear, balance the chemicals, the expense of replacing a liner, or resurfacing the pool. Those frustrations (and expenses) are in the past! Take a look at the chart below and compare the costs of maintaining a fiberglass pool over ten years."
     block:
       variations: center
