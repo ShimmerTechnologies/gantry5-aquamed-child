@@ -1,0 +1,75 @@
+name: Other Services
+description: Displays a service with Title, Background Image, and price.
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    headline:
+      type: input.text
+      label: H1 Headline
+      description: Customize the main headline text.
+      placeholder: Enter headline
+      overridable: false
+
+    header:
+      type: input.text
+      label: H2 Header
+      description: Customize the header text.
+      placeholder: Enter header
+      overridable: false
+
+    description:
+      type: textarea.textarea
+      label: Text
+      description: Create or modify your description.
+
+    css.class:
+      type: input.text
+      label: Class
+      description: CSS class name for the particle.
+
+    services:
+      type: collection.list
+      array: true
+      label: Other Services
+      description: Create each service item to appear in the content row.
+      value: title
+      ajax: true
+      overridable: false
+
+      fields:
+        .title:
+          type: input.text
+          label: Title
+
+        .image:
+          type: input.imagepicker
+          description: Select the page image
+
+        .price:
+            type: input.text
+            label: Price
+            description: Specify the link address.
+            default:
+
+        .id:
+          type: input.text
+          label: CSS ID
+          description: 'Enter the ID for the block without the hash (#) (ie. <code>your-id</code>. You can then reference the element via CSS as <code>#your-id</code>'
+          default:
+
+        .class:
+          type: input.selectize
+          label: CSS Classes
+          description: Enter CSS class names.
+          default:
+
+        .variations:
+          type: input.block-variations
+          label: Variations

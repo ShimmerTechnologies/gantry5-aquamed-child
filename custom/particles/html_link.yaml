@@ -1,0 +1,66 @@
+name: HTML Link
+description: Create HTML/Link to Page/Post
+type: particle
+icon: fa-pencil-square-o
+
+configuration:
+  caching:
+    type: config_matches
+    values:
+      twig: '0'
+      filter: '0'
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    html:
+      type: textarea.textarea
+      label: Custom HTML
+      description: Enter custom HTML into here.
+      default: 
+
+    twig:
+       type: input.checkbox
+       label: Process Twig
+       description: Enable Twig template processing in the content. Twig will be processed before shortcodes.
+       default: '0'
+
+    filter:
+      type: input.checkbox
+      label: Process shortcodes
+      description: Enable shortcode processing / filtering in the content.
+      default: '0'
+
+    linkbefore:
+      type: input.text
+      label: Link Prev
+      description: Specify the link address.
+      default: 
+
+    linktextbefore:
+      type: input.text
+      label: Link Prev Text
+      description: Specify the link text.
+      default:
+
+    linkafter:
+      type: input.text
+      label: Link Next
+      description: Specify the link address.
+      default: 
+
+    linktextafter:
+      type: input.text
+      label: Link Next Text
+      description: Specify the link text.
+      default:
+
+    css.class:
+      type: input.text
+      label: Class
+      description: CSS class name for the particle.

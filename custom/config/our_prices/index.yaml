@@ -1,0 +1,57 @@
+name: our_prices
+timestamp: 1594063657
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593705436
+positions:
+  header: Header
+  footer: Footer
+sections:
+  header: Header
+  mainsection: Mainsection
+  mainsection-1: Mainsection-1
+  mainsection-2: Mainsection-2
+  mainsection-3: Mainsection-3
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-1002: Logo
+    logo-7657: 'Logo / Image'
+  menu:
+    menu-4841: Menu
+  position:
+    position-position-9260: Header
+    position-position-8201: Footer
+  messages:
+    system-messages-1261: 'System Messages'
+  title:
+    title-9849: Title
+  content:
+    system-content-3791: 'Page Content'
+  other_services:
+    other_services-7646: 'Other Services'
+  copyright:
+    copyright-4282: Copyright
+  social:
+    social-8043: Social
+  totop:
+    totop-2340: 'To Top'
+  mobile-menu:
+    mobile-menu-6429: Mobile-menu
+inherit:
+  default:
+    header: header
+    logo-1002: logo-2741
+    menu-4841: menu-4332
+    position-position-9260: position-header
+    footer: footer
+    position-position-8201: position-footer
+    logo-7657: logo-4026
+    copyright-4282: copyright-4409
+    social-8043: social-7254
+    totop-2340: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-6429: mobile-menu-9981

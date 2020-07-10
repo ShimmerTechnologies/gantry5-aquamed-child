@@ -1,0 +1,41 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="services-content">
+		<div class="g-content top center">
+			{% if particle.headline %}
+			<h1>{{ particle.headline|raw }}</h1>
+			{% elseif particle.header %}
+			<h2>{{ particle.header|raw }}</h2>
+			{% endif %}
+			<hr>
+			{% if particle.description %}<div class="title-description"><p>{{ particle.description|raw }}</p></div>{% endif %}	
+		</div>
+		<div class="g-grid">
+			{% set count = 0 %}
+			{% for item in particle.services %}
+				<div {% if item.id %} id="{{ item.id|e }}"{% endif %} class="g-block {{ item.class }} {{ item.variations }}">
+					<div class="g-content">
+						<div class="{% if count % 2 == 0 %} 
+						alignleft 
+						{% else %}
+						alignright 
+						{% endif %} item-text">
+						<h3>{{ item.title|raw }}</h3>			
+						{% if item.description %}<p>{{ item.description|raw }}</p>{% endif %}
+						<a href="{{ item.link }}" title="{{ item.title }}">{{ item.linktext }}</a>
+						</div>
+						<div class="{% if count % 2 == 0 %} 
+						alignleft 
+						{% else %}
+						alignright 
+						{% endif %}	item-image">
+						<img src="{{ item.image }}" alt="{{ item.title }}" />	
+						</div>
+					</div>
+				</div>
+			{% set count = count + 1 %}
+			{% endfor %}
+		</div>		
+	</div>
+{% endblock %}

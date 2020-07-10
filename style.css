@@ -76,13 +76,13 @@ span.wpcf7-list-item {
 .slider_hero_btn_cls_one2 {
     border-radius: 10px !important;
 }
-#g-mainsection-2 .g-block.size-100.center.full-width .g-content {
+#g-mainsection-3 .g-block.size-100.center.full-width .g-content {
 	margin: 0 auto !important;
 	max-width: 100%;
 	padding: 0;
 	display: inline-block;
 }
-#g-mainsection-2 .g-block.size-100.center.full-width .g-content .alignleft.widget {
+#g-mainsection-3 .g-block.size-100.center.full-width .g-content .alignleft.widget {
     margin: 0 !important;
 	padding-left: 54px;
 }
@@ -91,6 +91,67 @@ span.wpcf7-list-item {
 }
 .img_page_widget .button {
 	background-color: #28bceb;
+}
+
+/* prices slider */
+.soliloquy-container .soliloquy-caption {
+    right: 250px;
+    left: auto !important;
+    background: rgba(40, 168, 235, 0.85) !important;
+    height: 100%;
+    max-width: 750px !important;
+     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.soliloquy-container h2, .soliloquy-container h3, .soliloquy-container h4, .soliloquy-container h5, .soliloquy-container p {
+	color: #fff;
+}
+.soliloquy-container .soliloquy-caption .price-title {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 215px;
+}
+.price-title .border {
+	border-bottom: 1px solid #fff;
+	width: 80%;
+	padding-bottom: 60px;
+	margin: 0 auto 0 -10%;
+	display: block;
+}
+.price-title .price {
+    margin-top: -20px;
+}
+.outline-our_prices .soliloquy-caption-inside h2 {
+    font-size: 1.8rem;
+	margin-bottom: 80px;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 30px;
+	width: 10%;
+}
+.soliloquy-caption-inside .price p {
+    font-weight: normal;
+    margin-bottom: -10px;
+}
+.soliloquy-caption-inside .price p + p {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.outline-our_prices .soliloquy-controls-direction {
+    position: absolute !important;
+    max-width: 750px;
+    width: 100% !important;
+    right: 250px;
+    top: 55%;
+}
+.outline-our_prices .soliloquy-container .soliloquy-prev, .outline-our_prices .soliloquy-container .soliloquy-next {
+	background-color: transparent !important;
+}
+.outline-our_prices .soliloquy-container .soliloquy-prev {
+    left: 165px !important;
+}	
+.outline-our_prices .soliloquy-container .soliloquy-next {
+    right: 155px !important;
 }
 
 /* footer 

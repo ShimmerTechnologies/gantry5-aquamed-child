@@ -1,0 +1,38 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="partner-content">
+		<div class="g-content top center">
+				    {% set html = particle.twig ? gantry.theme.compile(particle.html) : particle.html %}
+    				{{ (particle.filter ? gantry.platform.filter(html) : html)|html|raw }}
+					{% if particle.description %}<p class="description">{{ particle.description|raw }}</p>{% endif %}	
+					{% if particle.linktext %}<p><a href="{{ particle.link|e }}" class="button">{{ particle.linktext|e }}</a></p>{% endif %}
+			</div>
+		<div class="g-grid">
+			{% set count = 0 %}
+			{% for item in particle.partner %}
+				<div {% if item.id %} id="{{ item.id|e }}"{% endif %} class="g-block {{ item.class }} {{ item.variations }}">
+					<div class="g-content">
+						<div class="{% if count % 2 == 0 %} 
+						alignleft 
+						{% else %}
+						alignright 
+						{% endif %} item-text">
+						<h3>{{ item.title|raw }}</h3>			
+						{% if item.description %}<p>{{ item.description|raw }}</p>{% endif %}
+						<a href="{{ item.link }}" title="{{ item.title }}">{{ item.linktext }}</a>
+						</div>
+						<div class="{% if count % 2 == 0 %} 
+						alignleft 
+						{% else %}
+						alignright 
+						{% endif %}	item-image">
+						<img src="{{ item.image }}" alt="{{ item.title }}" />	
+						</div>
+					</div>
+				</div>
+			{% set count = count + 1 %}
+			{% endfor %}
+		</div>		
+	</div>
+{% endblock %}

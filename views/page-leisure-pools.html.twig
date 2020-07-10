@@ -2,13 +2,21 @@
 {% set twigTemplate = 'page.html.twig' %}
 {% set scope = 'page' %}
 
+
+
 {% block content %}
 
     <div class="platform-content">
         <div class="content-wrapper">
             <section class="entry">
 
-                {% include ['partials/content-' ~ scope ~ '-pools.html.twig'] %}
+            {% set parentID = post.parent.ID %}
+
+            {% if parentID == 0 %}
+            {% include ['partials/content-' ~ scope ~ '-pools.html.twig'] %}
+            {% else %}
+            {% include ['partials/content-' ~ scope ~ '.html.twig'] %}
+            {% endif %}
 
             </section>
         </div> <!-- /content-wrapper -->

@@ -1,58 +1,58 @@
 name: home
-timestamp: 1590870030
+timestamp: 1593452226
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
-  timestamp: 1589570910
+  timestamp: 1593450754
 positions:
   header: Header
   footer: Footer
 sections:
   header: Header
   navigation: Navigation
-  mainbottom: Mainbottom
-  main: Main
+  mainsection: Mainsection
+  mainsection-1: Mainsection-1
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  custom:
-    custom-7960: 'Custom HTML'
+  logo:
+    logo-3055: Logo
+    logo-5917: 'Logo / Image'
+  menu:
+    menu-2140: Menu
+  position:
+    position-position-9312: Header
+    position-position-1706: Footer
   messages:
     system-messages-1543: 'System Messages'
+  custom:
+    custom-7960: 'Custom HTML'
   sample:
     sample-7236: Why
   order_steps_particle:
     order_steps_particle-3390: 'Order Steps'
-  logo:
-    logo-5127: Logo
-    logo-9210: 'Logo / Image'
-  menu:
-    menu-9606: Menu
-  position:
-    position-position-5859: Header
-    position-position-2513: Footer
   copyright:
-    copyright-3536: Copyright
+    copyright-8847: Copyright
   social:
-    social-6816: Social
+    social-2772: Social
   totop:
-    totop-2266: 'To Top'
+    totop-1512: 'To Top'
   mobile-menu:
-    mobile-menu-2417: Mobile-menu
+    mobile-menu-2442: Mobile-menu
 inherit:
   default:
     header: header
+    logo-3055: logo-2741
+    menu-2140: menu-4332
+    position-position-9312: position-header
     navigation: navigation
     system-messages-1543: system-messages-7126
     footer: footer
+    position-position-1706: position-footer
+    logo-5917: logo-4026
+    copyright-8847: copyright-4409
+    social-2772: social-7254
+    totop-1512: totop-8211
     offcanvas: offcanvas
-    logo-5127: logo-2741
-    menu-9606: menu-4332
-    position-position-5859: position-header
-    position-position-2513: position-footer
-    logo-9210: logo-4026
-    copyright-3536: copyright-4409
-    social-6816: social-7254
-    totop-2266: totop-8211
-    mobile-menu-2417: mobile-menu-9981
+    mobile-menu-2442: mobile-menu-9981

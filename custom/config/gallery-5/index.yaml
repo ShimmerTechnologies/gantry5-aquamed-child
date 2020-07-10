@@ -1,0 +1,62 @@
+name: gallery-5
+timestamp: 1593799875
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593705436
+positions:
+  header: Header
+  footer: Footer
+sections:
+  header: Header
+  mainsection: Mainsection
+  mainsection-1: Mainsection-1
+  mainsection-2: Mainsection-2
+  mainsection-3: Mainsection-3
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-1123: Logo
+    logo-7603: 'Logo / Image'
+  menu:
+    menu-3970: Menu
+  position:
+    position-position-8502: Header
+    position-position-5784: Footer
+  title:
+    title-8341: Title
+  content:
+    system-content-5575: 'Page Content'
+  html_link:
+    html_link-6144: 'HTML Link'
+  copyright:
+    copyright-7920: Copyright
+  social:
+    social-2497: Social
+  totop:
+    totop-9352: 'To Top'
+  mobile-menu:
+    mobile-menu-6074: Mobile-menu
+inherit:
+  default:
+    header: header
+    logo-1123: logo-2741
+    menu-3970: menu-4332
+    position-position-8502: position-header
+    footer: footer
+    position-position-5784: position-footer
+    logo-7603: logo-4026
+    copyright-7920: copyright-4409
+    social-2497: social-7254
+    totop-9352: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-6074: mobile-menu-9981
+  gallery:
+    mainsection: mainsection
+    title-8341: title-2592
+    mainsection-2: mainsection-2
+    mainsection-3: mainsection-3
+  gallery-4:
+    system-content-5575: system-content-8679

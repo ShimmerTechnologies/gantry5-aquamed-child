@@ -1,0 +1,24 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="experience-content">
+		<div class="g-content">
+					{% if particle.headline %}<h2>{{ particle.headline|raw }}</h2>{% endif %}									
+					<hr>
+		</div>
+		<div class="g-grid width75 center">
+			{% for experience in particle.clients %}
+				<div {% if experience.id %}id="{{ experience.id|e }}"{% endif %}
+					 class="g-block {{ experience.class }} {{ experience.variations }}">
+					<div class="g-content">
+						<i class="{{ experience.icon }} experience-icons"></i>
+						<h4>{{ experience.title|raw }}</h4>
+						{% if experience.subtitle %}<h5>{{ experience.subtitle|raw }}</h5>{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="experience_bgcolor"></div>
+		<div class="experience_image" style="background-image: url('{{ url(particle.image) }}');"></div>	
+	</div>
+{% endblock %}

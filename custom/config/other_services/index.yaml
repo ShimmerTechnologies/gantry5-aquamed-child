@@ -1,0 +1,60 @@
+name: other_services
+timestamp: 1593793185
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593705436
+positions:
+  header: Header
+  footer: Footer
+sections:
+  header: Header
+  mainsection: Mainsection
+  mainsection-1: Mainsection-1
+  mainsection-2: Mainsection-2
+  mainsection-3: Mainsection-3
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-8652: Logo
+    logo-6895: 'Logo / Image'
+  menu:
+    menu-8538: Menu
+  position:
+    position-position-2730: Header
+    position-position-7209: Footer
+  messages:
+    system-messages-5667: 'System Messages'
+  title:
+    title-2156: Title
+    title-6877: Title
+  sample:
+    sample-4027: 'Sample Content'
+  grid_two_by_two:
+    grid_two_by_two-4343: 'Pool Maintenance'
+  services:
+    services-4830: Services
+  copyright:
+    copyright-1049: Copyright
+  social:
+    social-6545: Social
+  totop:
+    totop-5101: 'To Top'
+  mobile-menu:
+    mobile-menu-1311: Mobile-menu
+inherit:
+  default:
+    header: header
+    logo-8652: logo-2741
+    menu-8538: menu-4332
+    position-position-2730: position-header
+    footer: footer
+    position-position-7209: position-footer
+    logo-6895: logo-4026
+    copyright-1049: copyright-4409
+    social-6545: social-7254
+    totop-5101: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-1311: mobile-menu-9981

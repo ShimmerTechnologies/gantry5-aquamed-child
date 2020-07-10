@@ -55,6 +55,8 @@ function aquamed_pool_types_init(){
 	);
 	register_taxonomy('pool-model', 'pool', $args );
 
+	add_image_size('pool_image', 655, 525, true);
+
 }
 
 add_filter('manage_edit-pool_columns', "pool_manager_edit_columns");

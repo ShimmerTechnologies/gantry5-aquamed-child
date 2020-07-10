@@ -1,0 +1,69 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593705436
+layout:
+  header: {  }
+  /mainsection/:
+    -
+      - title-2592
+  /mainsection-1/:
+    -
+      - system-content-7678
+    -
+      - html_link-6191
+  /mainsection-2/: {  }
+  /mainsection-3/: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  mainsection:
+    type: section
+    attributes:
+      boxed: ''
+  mainsection-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  mainsection-2:
+    type: section
+    attributes:
+      boxed: ''
+  mainsection-3:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  title-2592:
+    attributes:
+      headline: Gallery
+      header: ''
+      description: "Pool finishes offer a range of effects from fun to elegant. Pebble, Beadcrete, and many more options can give you just the look you want.\x03Combine them with custom mosaic and tile work for a truly special pool!"
+    block:
+      variations: center
+  html_link-6191:
+    title: 'HTML Link'
+    attributes:
+      linkafter: 'http://localhost/aquamed/gallery/page-2/'
+      linktextafter: 'MORE PHOTOS'

@@ -1,0 +1,56 @@
+name: thursday_pools_partner
+timestamp: 1593622542
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+positions:
+  header: Header
+  breadcrumbs: Breadcrumbs
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-5333: Logo
+    logo-3982: 'Logo / Image'
+  menu:
+    menu-7381: Menu
+  position:
+    position-position-9367: Header
+    position-breadcrumbs: Breadcrumbs
+    position-position-3920: Footer
+  messages:
+    system-messages-6372: 'System Messages'
+  title:
+    title-8183: Title
+  partner:
+    partner-5137: Partners
+  copyright:
+    copyright-4691: Copyright
+  social:
+    social-7715: Social
+  totop:
+    totop-1674: 'To Top'
+  mobile-menu:
+    mobile-menu-7898: Mobile-menu
+inherit:
+  default:
+    header: header
+    logo-5333: logo-2741
+    menu-7381: menu-4332
+    position-position-9367: position-header
+    navigation: navigation
+    footer: footer
+    position-position-3920: position-footer
+    logo-3982: logo-4026
+    copyright-4691: copyright-4409
+    social-7715: social-7254
+    totop-1674: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-7898: mobile-menu-9981

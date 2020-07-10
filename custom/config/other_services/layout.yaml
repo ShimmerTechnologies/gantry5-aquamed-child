@@ -1,0 +1,182 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593705436
+layout:
+  header: {  }
+  /mainsection/:
+    -
+      - system-messages-5667
+    -
+      - title-2156
+    -
+      - sample-4027
+  /mainsection-1/:
+    -
+      - grid_two_by_two-4343
+  /mainsection-2/:
+    -
+      - services-4830
+    -
+      - title-6877
+  /mainsection-3/: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  mainsection:
+    type: section
+    attributes:
+      boxed: ''
+  mainsection-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: center
+      variations: ''
+  mainsection-2:
+    type: section
+    attributes:
+      boxed: ''
+  mainsection-3:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+content:
+  title-2156:
+    attributes:
+      headline: 'Other Services'
+      header: ''
+      description: 'Are you going away? Or perhaps your life is too busy and need someone to take care of your pool? Aqua Med Pools is the Safe, Reliable, Professional, Trustworthy, and Easy choice for your pool needs.'
+    block:
+      variations: center
+  sample-4027:
+    title: 'Sample Content'
+    attributes:
+      image: ''
+      headline: ''
+      description: ''
+      link: ''
+      linktext: ''
+      samples:
+        -
+          icon: 'fas fa-swimming-pool'
+          subtitle: ''
+          description: 'We offer complete pool maintenance and servicing for all of our customers.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Pool Maintenance'
+        -
+          icon: 'fas fa-tools'
+          subtitle: ''
+          description: 'Vinyl liner leaking?  Do not allow leaks to go unchecked. Consult Aqua Med Pools for assistance.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Vinyl Repair'
+        -
+          icon: 'fas fa-swimmer'
+          subtitle: ''
+          description: 'Vinyl losing color or coming off it''s track? Let us replace it, modern vinyl liners are much more durable and resistant.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Vinyl Replacement'
+  grid_two_by_two-4343:
+    title: 'Pool Maintenance'
+    attributes:
+      image: ''
+      headline: 'Pool Maintenance'
+      description: ''
+      css:
+        class: ''
+      items:
+        -
+          icon: 'fa fa-handshake-o'
+          description: 'You’ll find our friendly, motivated and experienced office staff ready and trained to help answer, or get answers to many of your questions ranging from water chemistry issues to maintenance and service questions.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'ADVICE BY PHONE'
+        -
+          icon: 'fas fa-stethoscope'
+          description: 'The inspection we perform is a visual and operational inspection of the pool and equipment. An average inspection takes about an hour, sometimes less, often a little longer.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'POOL INSPECTIONS'
+        -
+          icon: 'fas fa-tint'
+          description: 'A Drain & Clean can revitalize your pool’s plaster or painted finish, and extend the need for a new surface. It can help make your water chemistry easier to balance. It is generally recommended every 5 to 7 years.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'DRAIN & CLEAN'
+        -
+          icon: 'fas fa-flask'
+          description: 'Take the guess work out of balancing your swimming pool''s water chemistry and let our trained staff test it for you. Its easy to see that a green pool needs attention.'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'WATER ANALYSIS'
+    block:
+      variations: center
+  services-4830:
+    attributes:
+      headline: ''
+      header: 'Vinyl Liner Repair & Replacement'
+      description: 'A vinyl liner pool has a custom made sheet of vinyl between the water and the pool structure. This is in contrast to a gunite or shotcrete pool which uses plaster as its waterproofing membrane. Vinyl liners typically lock their top edge, called a bead, into a track located on the bottom of the coping, which is at deck level. Underneath the liner is a sand or cementitious floor, specified in dimension to the “cut” of the liner that is to be used. The floors come up to meet the walls, which are commonly 3 ft by 8 ft panels made of galvanized steel or thermoplastic. These walls are supported from behind so that they won’t bow out against the weight of the water. All of the wall panels are secured together to make up the perimeter shape of the pool. For this reason, there are some limitations to the possible shapes of a vinyl liner pool.'
+      services:
+        -
+          image: 'gantry-media://liner-repair.jpg'
+          description: 'Liners are meant to fit tightly into the shape of the pool. If the liner was installed slightly off center, or if the liner is too large or too small for the pool’s shape, you might experience the bead popping out of the track. With the use of a heat gun or blow dryer and a lot of elbow grease (eat your wheaties), the liner can be stretched and locked back into the track. I was also informed by a pool tech recently that boiling hot water works well when you need to stretch a liner.  If this is a continuing problem, the use of liner lock can help in keeping the bead in the track. It is best to consult a professional for this problem, to avoid over stretching or melting the liner. I also caution about the use of electrical equipment (heat guns) around water (pool).'
+          link: ''
+          linktext: ''
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Liner bead coming out of the track?'
+        -
+          image: 'gantry-media://vinyl-pool-services.jpg'
+          description: 'The original color of your liner will fade with the use of sanitizing chemicals and the effects of ol’ Mr. Sun. Harsh chemicals and high concentrations of such are to be avoided. This will remove the plasticizers which give liners their resiliency, leading to brittle vinyl, which leads to new liners. The chemical makeup of modern vinyl allows manufacturers to create liners that are now much more durable and resistant to chemical, solar and algae problems. '
+          link: ''
+          linktext: ''
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Liner losing its color?'
+        -
+          image: 'gantry-media://vinyl-pool-repair-service.jpg'
+          description: 'If you are adding more than one inch of water to your pool per week, discounting splashed-out and backwash waste water, you probably have a leak. Do not allow leaks to go unchecked. Leaks can washout supporting back fill behind the walls, corrode the walls, and may wash away sand on the floor, creating large sinkholes. It is not advised to drain your vinyl liner pool, or allow it to leak out below the level of the walls. The water in the pool holds the liner tightly against the walls and floor. If the water is removed, the liner must be reset with a vacuum to suck the liner into place while filling. Otherwise, large wrinkles may appear when filling a loose fitting liner. In addition, an empty liner pool may allow rain water to seep in under the walls, washing away and destroying the specifically contoured shape of the floor. There also exists the risk of a wall collapsing or caving in. Consult a professional for assistance in these areas.'
+          link: ''
+          linktext: ''
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Vinyl liner leaking?'
+  title-6877:
+    attributes:
+      headline: ''
+      header: 'Vinyl Liner Installation'
+      description: " The labor involved in replacing a vinyl liner begins with the measuring of your pool for the  new liner. When the liner is delivered, we make a full day of removing and replacing. The pool is drained, the old liner is cut up and removed to the recycling plant. We then work on the walls. Joints are taped, rust or irregularities are scraped and sanded. If the wall is rough, pitted or corroded, we will recommend foaming the walls to prevent contact with the new liner, as well as provide a nice soft feel. All of the face plates surrounding the suction and return ports are removed. The tracking is inspected, and if necessary, cracked sections may be replaced.\n\n\nFloor work is the final step before “dropping” the new liner and setting with a vacuum. If the floor is sand, we will remove contaminated sand, and replace with new sand. The floor is hand troweled to remove any irregularities and achieve design specs for which the liner was manufactured. Pebbles and sand balls are removed while we back out of the pool very carefully. If the floor is cement or vermiculite, it is swept and cleaned. Irregularities such as cracks and divots are repaired.\n\nWhen ready, we drape the liner across the pool and lock it into the track. Positioning one or two vacuums, we set the liner into place, working out any wrinkles. We then “cut-in” the main drain and steps if they exist, and add a hose to fill. The vacuums continue to operate until the water level is at a predetermined point on the wall. We return to remove the vacuums and lock in the liner at these points. Then the pool continues to fill. When full, we return again to cut-in the wall face plates. New plates are purchased when available. The filter is then started up, and you’re in business!\n\nDon’t try this at home kids, we’re professionals. You have been given just enough information to be dangerous!\n"
+    block:
+      variations: center

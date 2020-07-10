@@ -2,16 +2,20 @@
 
 {% block particle %}
 	<div class="sample-content">
+		{% if particle.image or particle.headline or particle.description  %}
 		<div class="g-grid width75 aligncenter">
 			<div class="g-block">
 				<div class="g-content">
 					{% if particle.image %}<img src="{{ url(particle.image) }}" class="logo-large" alt="{{ particle.headline|e }}" />{% endif %}
-					{% if particle.headline %}<h2>{{ particle.headline|raw }}</h2>{% endif %}									
-				<hr>
+					{% if particle.headline %}
+					<h2>{{ particle.headline|raw }}</h2>
+					<hr>
+					{% endif %}	
 				{% if particle.description %}<p class="sample-description">{{ particle.description|raw }}</p>{% endif %}	
 				</div>
 			</div>
 		</div>
+		{% endif %}	
 		<div class="g-grid">
 			{% for sample in particle.samples %}
 				<div {% if sample.id %}id="{{ sample.id|e }}"{% endif %}

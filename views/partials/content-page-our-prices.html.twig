@@ -1,0 +1,65 @@
+    {% block content %}
+
+        <article class="post-type-{{ post.post_type }} {{ post.class }}" id="post-{{ post.ID }}">
+        {# Check if page is password protected #}
+        {% if not function( 'post_password_required', post.ID ) %}
+
+            {# Begin Entry Content #}
+            <section class="entry-content">
+
+                {# Begin Page Content #}
+                {{ post.content|raw }}
+
+                {{ function('wp_link_pages', {'before': '<div class="page-links" itemprop="pagination">', 'after': '</div>', 'link_before': '<span class="page-number page-numbers">', 'link_after': '</span>', 'echo': 0}) }}
+                {# End Page Content #}
+
+                {# Begin Edit Link #}
+                {{ function('edit_post_link', __('Edit', 'g5_hydrogen'), '<span class="edit-link">', '</span>') }}
+                {# End Edit Link #}
+
+            </section>
+            {# End Entry Content #}
+            {% set pool_includes_title = function('get_post_meta', post.ID, 'pool_includes_title', 'true') %}
+            {% set pool_includes = function('get_post_meta', post.ID, 'pool_includes', 'true') %}
+            {% if pool_includes_title or pool_includes %}
+            <section class="meta-content width75">  
+                <div class="g-container">                
+                    <div class="include_text alignleft nomarginall g-content">
+                    <header>
+                      {% if pool_includes_title %}  <h4 class="nomarginall">{{ pool_includes_title  }}</h4> {% endif %} 
+                    </header>
+                    {% if pool_includes %}
+                        {% set html_content = function( 'htmlspecialchars_decode', pool_includes ) %}
+                        {{ html_content|e('wp_kses_post')|wpautop|trim }}   
+                    {% endif %}                   
+                    </div>
+                    <div class="include_image alignleft nomarginall g-content">
+
+                        {# Begin Featured Image #}
+                        {% if post.thumbnail.src %}
+                                <img src="{{ post.thumbnail.src('pool_image') }}" class="featured-image tease-featured-image {{ position }}" alt="{% if pool_includes %}
+                                {{ pool_includes_title }}{% else %}{{ post.title }}{% endif %}" />
+                        {% endif %}
+                        {# End Featured Image #}
+
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+
+        {% else %}
+
+            {# Begin Password Protected Form #}
+            <div class="password-form">
+
+                {# Include the password form #}
+                {% include 'partials/password-form.html.twig' %}
+
+            </div>
+            {# End Password Protected Form #}
+
+        {% endif %}
+
+    {% endblock %}
+
+</article>

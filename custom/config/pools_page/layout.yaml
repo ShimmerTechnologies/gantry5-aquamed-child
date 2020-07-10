@@ -89,7 +89,7 @@ content:
         -
           image: 'gantry-media://pool-services.png'
           description: 'Our pool repair services can help you fix any leak, valve replacement or pump malfunctions.'
-          link: '#'
+          link: 'http://localhost/aquamed/pools/other-services/'
           id: ''
           class: ''
           variations: align-left

@@ -238,12 +238,7 @@ function amp_pool_size(){
 								
 					</div> 		    
 			</div>
-
-
 		</div>
-
 <?php
 }
-
 ?>
-

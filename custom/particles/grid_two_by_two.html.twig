@@ -1,0 +1,31 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+	<div class="grid_two_by_two_particle">	
+
+			<div class="g-content">
+						{% if particle.headline %}
+						<h2>{{ particle.headline|raw }}</h2>
+						<hr>
+						{% endif %}
+						{% if particle.description %}<div class="item-description">{{ particle.description|raw }}</div>{% endif %}						
+			</div>
+			<div class="g-grid width75">
+					{% for item in particle.items %}
+						<div {% if item.id %}id="{{ item.id|e }}"{% endif %} class="g-block {{ item.class }} {{ item.variations }}">
+							{% if item.title %}<h4>{{ item.title|raw }}</h4>{% endif %}
+							<div class="g-content">
+								{% if item.icon %}<i class="{{ item.icon }} item-icons"></i>{% endif %}
+								{% if item.description %}<p>{{ item.description|raw }}</p>{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+			</div>
+		{% if particle.image %}
+		<div class="grid_2x2_bgcolor"></div>
+		<div class="grid_2x2_image" style="background-image: url('{{ url(particle.image) }}');"></div>
+		{% endif %}
+	</div>
+
+{% endblock %}

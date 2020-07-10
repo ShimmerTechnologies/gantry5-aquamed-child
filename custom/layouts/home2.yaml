@@ -7,21 +7,21 @@ preset:
 layout:
   /header/:
 
-  /main/:
+  /mainsection/:
     - system-messages
     - sample-2
 
-  /mainbottom/:
+  /mainsection-1/:
     -
-     - position-mainbottom
-
-  /mainsection/:
-    -
-      - postion-mainsection
+     - position-mainsection-1
 
   /mainsection-2/:
     -
       - postion-mainsection-2 
+
+  /mainsection-3/:
+    -
+      - postion-mainsection-3
 
   /footer/:
     - position-footer

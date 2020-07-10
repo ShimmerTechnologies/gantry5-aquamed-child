@@ -1,0 +1,96 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593705436
+layout:
+  header: {  }
+  /mainsection/:
+    -
+      - system-messages-1261
+    -
+      - title-9849
+  /mainsection-1/:
+    -
+      - system-content-3791
+  /mainsection-2/:
+    -
+      - other_services-7646
+  /mainsection-3/: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  mainsection:
+    type: section
+    attributes:
+      boxed: ''
+  mainsection-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  mainsection-2:
+    type: section
+    attributes:
+      boxed: ''
+  mainsection-3:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  title-9849:
+    attributes:
+      headline: 'Our Prices'
+      header: ''
+      description: 'We are very upfront and transparent about costs.  All of our pools are priced as a pool package, including delivery, pump, filter, lights, and  salt system, see details below. Heaters, water features, and automation systems are extra. If our quote is in line with your budget, the next step is a site visit to go over the installation process and discuss the details. We will talk about what your overall vision is and how together we can make it happen, with keeping in mind that economics are just as important as quality.'
+    block:
+      variations: center
+  other_services-7646:
+    title: 'Other Services'
+    attributes:
+      headline: ''
+      header: 'Other Prices'
+      description: 'Thank you for considering Aqua Med Pools & More for your project. We look forward to speaking with you more about your project and how we can make your backyard dream a reality and live your Life of Leisure. AquaMed Pools will apply for building permits, but you are responsible for payment and electric/gas connections; however, we have subcontractors we can recommend.'
+      services:
+        -
+          image: 'gantry-media://heater.jpg'
+          price: '$3,000'
+          id: ''
+          class: ''
+          variations: ''
+          title: Heater
+        -
+          image: 'gantry-media://heat-pump.jpg'
+          price: '$4,500'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Electric Heat Pump'
+        -
+          image: 'gantry-media://automatic-cover.jpg'
+          price: '$15,500'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Automatic Cover'
+    block:
+      variations: center

@@ -10,13 +10,13 @@ layout:
   /navigation/:
     - menu
 
-  /main/:
+  /mainsection/:
     - system-messages
     - sample-2
 
-  /mainbottom/:
+  /mainsection-1/:
     -
-     - position-mainbottom
+     - position-mainsection-1
 
   /footer/:
     - position-footer

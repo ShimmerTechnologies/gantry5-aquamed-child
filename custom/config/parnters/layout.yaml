@@ -1,0 +1,78 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+layout:
+  header: {  }
+  navigation: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-6398
+    -
+      - title-5589
+    -
+      - sample-2217
+    -
+      - sample-5549
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  main:
+    attributes:
+      boxed: ''
+      class: center
+      variations: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  title-5589:
+    attributes:
+      headline: Partners
+      header: ''
+  sample-2217:
+    title: 'Sample Content'
+    attributes:
+      image: 'gantry-media://2020/04/leisure-pools_logo.png'
+      headline: ''
+      description: 'Fiberglass swimming pool manufacturer Leisure Pools, is one of the largest in the World. Leisure Pools has developed the United States’ most experienced fiberglass swimming pool dealer network where they install quality fiberglass in ground swimming pools, fiberglass plunge pools, fiberglass lap pools and water features throughout the country.'
+      link: '#'
+      linktext: 'LEARN MORE'
+      samples: {  }
+  sample-5549:
+    title: 'Sample Content'
+    attributes:
+      image: 'gantry-media://2020/04/thursday-pools_logo.png'
+      headline: ''
+      description: ' The fiberglass pools people used to know are now a thing of the past. Thursday Pools are a fiberglass pool manufacturer with a deep passion for excellence, a simple desire to build a better fiberglass pool, and a strong commitment to supporting everyone involved to make our customers’ dreams a reality. From sharing our knowledge and expertise with our valued dealers to manufacturing artfully crafted, durable fiberglass pools we pour our heart and soul into each endeavor.'
+      link: '#'
+      linktext: 'LEARN MORE'
+      samples: {  }

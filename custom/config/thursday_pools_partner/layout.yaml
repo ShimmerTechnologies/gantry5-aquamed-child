@@ -1,0 +1,101 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+layout:
+  header: {  }
+  navigation: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-6372
+    -
+      - title-8183
+    -
+      - partner-5137
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  title-8183:
+    attributes:
+      headline: 'Thursday Pools'
+      header: ''
+    block:
+      variations: center
+  partner-5137:
+    title: Partners
+    attributes:
+      html: '[embedyt]https://www.youtube.com/watch?v=tIyUmpCJqKc[/embedyt]'
+      twig: '1'
+      filter: '1'
+      partner:
+        -
+          image: 'gantry-media://thursday_pools_partner_01.jpg'
+          description: "Thursday Pools is dedicated to bringing cutting-edge innovations to the pool world. Thursday Pools designs and manufactures fiberglass pool shells that are hand-crafted with the highest standards and craftsmanship. Our one-piece, inground fiberglass swimming pool manufacturing facility is based out of Fortville, Indiana. At Thursday Pools we aspire to be the world’s most respected fiberglass pool manufacturer. We believe passion, care and attention to details make the difference. We aspire to deliver artfully crafted, durable fiberglass pools and innovative products that empower our customers to make a lifetime of remarkable moments with their family and friends.\n"
+          link: 'https://thursdaypools.com/thursday-story/'
+          linktext: 'Learn More'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'About Thursday Pools'
+        -
+          image: 'gantry-media://thursday_pools_partner_02.jpg'
+          description: 'As the industry’s only ISO 9001 certified fiberglass pool manufacturer we set the standard in fiberglass pool construction. Our quality is based on systems, and we have developed multiple methods to insure the quality of our masterpiece pools. We have strict systems, which control each step of the build process from incoming raw materials, equipment set-up, material application, loading and shipping. As with any system, we are striving for continuous improvement because it’s part of our company culture and a key requirement for ISO 9001:2015 certified companies.'
+          link: 'https://thursdaypools.com/why-buy-thursday-pools/'
+          linktext: 'Learn More'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Why Choose Thursday Pools?'
+        -
+          image: 'gantry-media://thursday_pools_partner_03.jpg'
+          description: 'Your Thursday Pool is built in our world-class manufacturing facility powered by the highest integrity and craftsmanship. Thursday Pools is dedicated to bringing cutting-edge innovations to the pool world. Thursday Pools designs and manufactures fiberglass pool shells that are handcrafted with the highest standards and craftsmanship.  Our one-piece inground fiberglass swimming pool manufacturing facility is based out of Fortville, Indiana.'
+          link: 'https://thursdaypools.com/our-process/'
+          linktext: 'Learn More'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'The Manufacturing Process'
+        -
+          image: 'gantry-media://thursday_pools_partner_04.jpg'
+          description: 'When you purchase a Fiberglass Pool from Thursday Pools, you get more than a warranty to protect your investment. With over 35 years in manufacturing fiberglass and composites, Thursday Pools brings new innovations to the fiberglass pool industry. These Innovations include a pool anchoring system, a lucky 7 skimmer, a backfill eliminator, and the world’s first fiberglass beach entry pool.'
+          link: 'https://thursdaypools.com/our-innovations/'
+          linktext: 'Learn More'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Thursday Pools Innovations'

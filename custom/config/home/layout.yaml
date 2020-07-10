@@ -2,18 +2,18 @@ version: 2
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
-  timestamp: 1589570910
+  timestamp: 1593450754
 layout:
   header: {  }
   navigation: {  }
-  /main/:
-    -
-      - custom-7960
+  /mainsection/:
     -
       - system-messages-1543
     -
+      - custom-7960
+    -
       - sample-7236
-  /mainbottom/:
+  /mainsection-1/:
     -
       - order_steps_particle-3390
   footer: {  }
@@ -34,10 +34,13 @@ structure:
         - attributes
         - block
         - children
-  main:
+  mainsection:
+    type: section
     attributes:
       boxed: ''
-  mainbottom:
+      class: ''
+      variations: ''
+  mainsection-1:
     type: section
     attributes:
       boxed: '2'
@@ -58,13 +61,6 @@ structure:
         - block
         - children
 content:
-  custom-7960:
-    title: 'Custom HTML'
-    attributes:
-      html: '[qcld_hero id=2]'
-      filter: '1'
-    block:
-      variations: 'nopaddingall nomarginall'
   system-messages-1543:
     inherit:
       outline: default
@@ -72,6 +68,13 @@ content:
         - attributes
         - block
       particle: system-messages-7126
+  custom-7960:
+    title: 'Custom HTML'
+    attributes:
+      html: '[qcld_hero id=2]'
+      filter: '1'
+    block:
+      variations: 'nopaddingall nomarginall'
   sample-7236:
     title: Why
     attributes:

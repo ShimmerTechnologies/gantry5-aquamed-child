@@ -1,0 +1,39 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+
+	<div class="other_services_particle">
+		<div class="g-content top center">
+			<header>
+				{% if particle.headline %}
+				<h1>{{ particle.headline|raw }}</h1>
+				<hr>
+				{% elseif particle.header %}
+				<h2>{{ particle.header|raw }}</h2>
+				<hr>
+				{% endif %}				
+			</header>
+			{% if particle.description %}<div class="title-description {{ particle.css.class }}"><p>{{ particle.description|raw|nl2br }}</p></div>{% endif %}	
+		</div>
+		<div class="g-grid {{ particle.css.class }}">
+			{% set itemNumber = 1 %}
+			{% for service in particle.services %}
+			<div {% if service.id %}id="{{ service.id|e }}"{% endif %} class="service g-block {{ service.class }} {{ service.variations }}">
+				<div class="service_item" >				
+					<div class="service_bgcolor"></div>
+					<div class="service_image" style="background-image: url('{{ url(service.image) }}');">
+						<div class="service-price">
+							<p>{{ service.price }}</p>
+						</div>					
+					</div>
+					{% if service.price %}
+					{% endif %}
+					{% if service.title %}<h4>{{ service.title|raw }}</h4>{% endif %}
+				</div>
+			</div>
+			{% set itemNumber = itemNumber + 1 %}
+			{% endfor %}
+		</div>
+	</div>
+
+{% endblock %}

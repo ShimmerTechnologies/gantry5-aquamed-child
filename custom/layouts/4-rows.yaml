@@ -1,0 +1,46 @@
+version: 2
+
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+
+layout:
+  /header/:
+
+  /mainsection/:
+    - system-messages
+    -
+
+  /mainsection-1/:
+    -
+     - 
+
+  /mainsection-2/:
+    -
+      - 
+
+  /mainsection-3/:
+    -
+      -  
+
+  /footer/:
+    - position-footer
+    -
+      - copyright 33.3
+      - social 33.3
+      - branding 33.3
+
+  offcanvas:
+    - mobile-menu
+
+structure:
+  subfeature:
+    attributes:
+      class: flush
+
+content:
+  branding:
+    block:
+      variations: align-right
+  mobile-menu:
+    title: 'Mobile Menu'

@@ -2,18 +2,17 @@ version: 2
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home2
-  timestamp: 1590095068
+  timestamp: 1593451023
 layout:
   header: {  }
-  navigation: {  }
-  main: {  }
-  mainbottom: {  }
-  /mainsection/:
+  mainsection: {  }
+  mainsection-1: {  }
+  /mainsection-2/:
     -
       - sample-3705
     -
       - custom-4341
-  /mainsection-2/:
+  /mainsection-3/:
     -
       - sample-9218
     -
@@ -30,33 +29,27 @@ structure:
       include:
         - attributes
         - children
-  navigation:
-    type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
-  main:
-    inherit:
-      outline: home
-      include:
-        - attributes
-        - children
-  mainbottom:
-    type: section
-    inherit:
-      outline: home
-      include:
-        - attributes
-        - children
   mainsection:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - children
+  mainsection-1:
+    type: section
+    inherit:
+      outline: home
+      include:
+        - attributes
+        - children
+  mainsection-2:
     type: section
     attributes:
       boxed: '2'
       class: ''
       variations: ''
-  mainsection-2:
+  mainsection-3:
     type: section
     attributes:
       boxed: ''

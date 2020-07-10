@@ -1,0 +1,28 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="mission-content">
+		<div class="g-content  {{ particle.css.class }}">
+			{% if particle.headline %}<h2>{{ particle.headline|raw }}</h2>{% endif %}
+			<hr>									
+		</div>
+		<div class="g-grid items">
+			{% set number = 1 %}
+			{% for item in particle.items %}
+			<div {% if item.id %}id="{{ item.id|e }}"{% endif %} class="item g-block {{ item.class }} {{ item.variations }}">
+			{% if item.title %}<h4>{{ item.title|raw }}</h4>{% endif %}
+			<div class="item_image_box">
+					<div class="item_image alignleft" style="background-image: url('{{ url(item.image) }}');"></div>
+					{% if item.description %}
+					<p class="description alignleft">
+						{{ item.description|raw }}
+					</p>
+					{% endif %}
+			</div>
+
+			</div>
+			{% set number = number + 1 %}
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

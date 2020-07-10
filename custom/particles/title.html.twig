@@ -3,17 +3,19 @@
 {% block particle %}
 
         {# Begin Entry Header #}
-        <section class="entry-header">
+        <div class="entry-header title-content {{ particle.variations }}">
 
 			{% if particle.headline %}
 			<h1>{{ particle.headline|raw }}</h1>
+			<hr>
 			{% elseif particle.header %}
 			<h2>{{ particle.header|raw }}</h2>
-			{% endif %}
 			<hr>
-			{% if particle.description %}<div class="title-description"><p>{{ particle.description|raw }}</p></div>{% endif %}			
+			{% endif %}
 
-        </section>
+			{% if particle.description %}<div class="title-description {{ particle.css.class }}"><p>{{ particle.description|raw|nl2br }}</p></div>{% endif %}			
+
+        </div>
         {# End Entry Header #}
 
 {% endblock %}

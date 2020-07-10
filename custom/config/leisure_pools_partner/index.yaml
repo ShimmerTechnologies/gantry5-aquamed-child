@@ -1,0 +1,56 @@
+name: leisure_pools_partner
+timestamp: 1593622781
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+positions:
+  header: Header
+  breadcrumbs: Breadcrumbs
+  footer: Footer
+sections:
+  header: Header
+  navigation: Navigation
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-5509: Logo
+    logo-6175: 'Logo / Image'
+  menu:
+    menu-6354: Menu
+  position:
+    position-position-7359: Header
+    position-breadcrumbs: Breadcrumbs
+    position-position-7357: Footer
+  messages:
+    system-messages-8489: 'System Messages'
+  title:
+    title-3448: Title
+  partner:
+    partner-3493: Partners
+  copyright:
+    copyright-9788: Copyright
+  social:
+    social-5298: Social
+  totop:
+    totop-8831: 'To Top'
+  mobile-menu:
+    mobile-menu-2840: Mobile-menu
+inherit:
+  default:
+    header: header
+    logo-5509: logo-2741
+    menu-6354: menu-4332
+    position-position-7359: position-header
+    navigation: navigation
+    footer: footer
+    position-position-7357: position-footer
+    logo-6175: logo-4026
+    copyright-9788: copyright-4409
+    social-5298: social-7254
+    totop-8831: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-2840: mobile-menu-9981

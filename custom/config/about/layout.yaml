@@ -1,0 +1,127 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593452544
+layout:
+  header: {  }
+  /mainsection/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-2630
+    -
+      - title-9051
+  /mainsection-1/:
+    -
+      - experience-6836
+  /mainsection-2/:
+    -
+      - mission-8453
+  /mainsection-3/: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  mainsection:
+    type: section
+    attributes:
+      boxed: ''
+  mainsection-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: center
+      variations: ''
+  mainsection-2:
+    type: section
+    attributes:
+      boxed: ''
+      class: center
+      variations: ''
+  mainsection-3:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  title-9051:
+    attributes:
+      headline: 'About Us'
+      header: ''
+      description: "Aqua Med Pools was founded in 1999 by owner/operator Jason Branco and is based in Dighton, MA. Aqua Med Pools services clients within 75 miles of Dighton. Our primary objective is our clients’ satisfaction. Maintaining a high level of quality service from all our knowledgeable staff members ensures a seamless project completion. Specializing in Fiberglass Pool and Spa installations, Aqua Med Pools can make your dream pool become a reality.\n\nOver the past couple of years, Aqua Med Pools has expanded our scope of services. In addition to being a premier source for all pool and spa needs, we now offer “hearth and patio” landscaping services and much more. Our landscaping services include but are not limited to concrete and wood pool decks and patios, stone walls, retaining walls, paver stone walkways, wood, vinyl and decorative fencing and much more. Be sure to contact Aqua Med Pools for all of your backyard needs."
+    block:
+      variations: center
+  experience-6836:
+    attributes:
+      image: 'gantry-media://about_us.jpg'
+      headline: 'More than 20 years of experience'
+      clients:
+        -
+          icon: 'fas fa-swimming-pool'
+          subtitle: 'pools serviced'
+          id: ''
+          class: ''
+          variations: ''
+          title: 1000+
+        -
+          icon: 'fas fa-tools'
+          subtitle: 'pools repaired'
+          id: ''
+          class: ''
+          variations: ''
+          title: 500+
+        -
+          icon: 'fas fa-hard-hat'
+          subtitle: 'pools built'
+          id: ''
+          class: ''
+          variations: ''
+          title: 1000+
+        -
+          icon: 'fas fa-user-friends'
+          subtitle: 'happy clients'
+          id: ''
+          class: ''
+          variations: ''
+          title: 2500+
+  mission-8453:
+    attributes:
+      headline: 'Mission & Vision'
+      description: ''
+      css:
+        class: ''
+      items:
+        -
+          image: 'gantry-media://aquamedpools-vision.jpg'
+          description: "Aqua Med Pools, as a company, will continue to place our clients’ needs above all else. Our goal is to provide exceptional customer service with up\nto date technology and build! We want to help build our customers dreams and vision for their backyard paradise."
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'aqua med Pools vision'
+        -
+          image: 'gantry-media://aquamedpools-mission.jpg'
+          description: 'The principal objective is to provide an exceptional level of service to our customers and a close and mutually beneficial partnership with our suppliers. And all while creating a comfortable swim, in pool design, building, service, and repair.'
+          id: ''
+          class: ''
+          variations: align-left
+          title: 'aqua med pools mission'

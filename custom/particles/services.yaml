@@ -1,0 +1,93 @@
+name: Services
+description: Displays Service Info
+type: particle
+icon: fa-pencil-square-o
+
+configuration:
+  caching:
+    type: config_matches
+    values:
+      twig: '0'
+      filter: '0'
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    headline:
+      type: input.text
+      label: H1 Headline
+      description: Customize the main headline text.
+      placeholder: Enter headline
+      overridable: false
+
+    header:
+      type: input.text
+      label: H2 Header
+      description: Customize the header text.
+      placeholder: Enter header
+      overridable: false
+
+    description:
+      type: textarea.textarea
+      label: Text
+      description: Create or modify your description.
+
+    css.class:
+      type: input.text
+      label: Class
+      description: CSS class name for the particle.
+
+    services:
+      type: collection.list
+      array: true
+      label: Service info items
+      description: Create each item to appear in the content row.
+      value: title
+      ajax: true
+      overridable: false
+
+      fields:
+        .title:
+          type: input.text
+          label: Title
+
+        .image:
+          type: input.imagepicker
+          description: Select the page image
+
+        .description:
+          type: textarea.textarea
+          label: Description
+
+        .link:
+            type: input.text
+            label: Link
+            description: Specify the link address.
+            default: "#"
+
+        .linktext:
+            type: input.text
+            label: Link Text
+            description: Specify the link text.
+            default: 
+      
+        .id:
+          type: input.text
+          label: CSS ID
+          description: 'Enter the ID for the block without the hash (#) (ie. <code>your-id</code>. You can then reference the element via CSS as <code>#your-id</code>'
+          default:
+
+        .class:
+          type: input.selectize
+          label: CSS Classes
+          description: Enter CSS class names.
+          default:
+
+        .variations:
+          type: input.block-variations
+          label: Variations

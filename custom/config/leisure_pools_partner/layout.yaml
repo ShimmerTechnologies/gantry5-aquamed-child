@@ -1,0 +1,74 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1587844427
+layout:
+  header: {  }
+  navigation: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-8489
+    -
+      - title-3448
+    -
+      - partner-3493
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  title-3448:
+    attributes:
+      headline: 'Leisure Pools'
+      header: ''
+    block:
+      variations: center
+  partner-3493:
+    title: Partners
+    attributes:
+      html: '[embedyt]https://www.youtube.com/watch?v=qOrlDXbQoyg[/embedyt]'
+      twig: '1'
+      filter: '1'
+      description: 'Leisure Pools are the leaders in swimming pool technology. Some advantages of leisure pools are the Leisure Pools Patented Composite Armour™, Patent Pending Full Vinyl Ester Resin Construction, Lifetime Structural Warranty, and a Lifetime Structural Osmosis Warranty on your pool. When you buy a Leisure Pool, you are swimming in quality and style.'
+      link: 'https://leisurepoolsusa.com/'
+      linktext: 'LEARN MORE'
+      css:
+        class: ''
+      partner: {  }
+    block:
+      variations: center

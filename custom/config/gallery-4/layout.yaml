@@ -1,0 +1,82 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: 4-rows
+  timestamp: 1593705436
+layout:
+  header: {  }
+  mainsection: {  }
+  /mainsection-1/:
+    -
+      - system-content-8679
+    -
+      - html_link-2778
+  mainsection-2: {  }
+  mainsection-3: {  }
+  footer: {  }
+  offcanvas: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  mainsection:
+    type: section
+    inherit:
+      outline: gallery
+      include:
+        - attributes
+        - block
+        - children
+  mainsection-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+      variations: ''
+  mainsection-2:
+    type: section
+    inherit:
+      outline: gallery
+      include:
+        - attributes
+        - block
+        - children
+  mainsection-3:
+    type: section
+    inherit:
+      outline: gallery
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  system-content-8679:
+    inherit:
+      outline: gallery-3
+      include:
+        - attributes
+        - block
+      particle: system-content-6946
+  html_link-2778:
+    title: 'HTML Link'
+    attributes:
+      html: ''
+      linkbefore: 'http://localhost/aquamed/gallery/page-3/'
+      linktextbefore: PREVIOUS
+      linkafter: 'http://localhost/aquamed/gallery/page-5/'
+      linktextafter: 'MORE PHOTOS'
