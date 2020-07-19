@@ -1,14 +1,14 @@
 name: quote_page
-timestamp: 1591466142
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/2-col-left.png'
   name: form_sidebar
   timestamp: 1591397015
 positions:
-  header: Header
   widget-quote-page: 'Quote Page'
   breadcrumbs: Breadcrumbs
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -19,18 +19,13 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-9339: Logo
-    logo-9373: 'Logo / Image'
-  menu:
-    menu-9927: Menu
-  position:
-    position-position-3262: Header
-    position-sidebar: 'Quote Page'
-    position-breadcrumbs: Breadcrumbs
-    position-position-2004: Footer
   title:
     title-6742: Title
+  position:
+    position-sidebar: 'Quote Page'
+    position-breadcrumbs: Breadcrumbs
+    position-position-2354: 'Widget Position'
+    position-position-2004: Footer
   social:
     social-8763: Social
     social-6894: Social
@@ -38,23 +33,28 @@ particles:
     system-messages-4752: 'System Messages'
   content:
     system-content-3154: 'Page Content'
+  logo:
+    logo-9339: Logo
+    logo-9373: 'Logo / Image'
+  menu:
+    menu-9927: Menu
   copyright:
     copyright-8461: Copyright
   totop:
     totop-9167: 'To Top'
   mobile-menu:
-    mobile-menu-2148: Mobile-menu
+    mobile-menu-3412: 'Mobile Menu'
 inherit:
   default:
     header: header
+    footer: footer
+    offcanvas: offcanvas
     logo-9339: logo-2741
     menu-9927: menu-4332
-    position-position-3262: position-header
-    footer: footer
+    position-position-2354: position-position-7248
     position-position-2004: position-footer
     logo-9373: logo-4026
     copyright-8461: copyright-4409
     social-6894: social-7254
     totop-9167: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-2148: mobile-menu-9981
+    mobile-menu-3412: mobile-menu-1009

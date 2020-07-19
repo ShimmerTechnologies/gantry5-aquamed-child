@@ -12,14 +12,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /*custom classes*/
 .width75 {
-	width: 75rem;
+	max-width: 75rem;
+    width: 100%;
 }
 .size-small .g-title {
 	font-size: 1.8rem;
 }
+/* font awesome class */
+.fa, .fas {
+    font-family: FontAwesome;
+}
 
 /* single pool post type 
-
 /*slider*/
 .wp-block-soliloquy-soliloquywp .soliloquy-container {
     text-align: center;
@@ -59,38 +63,12 @@ span.wpcf7-list-item {
     margin-left: 10px;
 }
 
-/* font awesome class */
-.fa, .fas {
-	font-family: FontAwesome;
-}
-
-/*main menu*/
-#menu-header {
-    margin: 0;
-}
-
-/* home page */
+/* home page slider */
 .hero_bg_image, .hero_bg_image1 {
     opacity: .6 !important;
 }
 .slider_hero_btn_cls_one2 {
     border-radius: 10px !important;
-}
-#g-mainsection-3 .g-block.size-100.center.full-width .g-content {
-	margin: 0 auto !important;
-	max-width: 100%;
-	padding: 0;
-	display: inline-block;
-}
-#g-mainsection-3 .g-block.size-100.center.full-width .g-content .alignleft.widget {
-    margin: 0 !important;
-	padding-left: 54px;
-}
-.img_page_widget {
-    margin-top: 40%;
-}
-.img_page_widget .button {
-	background-color: #28bceb;
 }
 
 /* prices slider */
@@ -152,37 +130,4 @@ span.wpcf7-list-item {
 }	
 .outline-our_prices .soliloquy-container .soliloquy-next {
     right: 155px !important;
-}
-
-/* footer 
-
-/*social links*/
-.fa_contact_slinks_widget h5 {
-	margin: 0.25rem 0 0;
-}
-.fa_contact_slinks_widget .contactdetail div {
-	margin: 0.75rem 0 1.5rem 0;
-}
-.phone, .address, .email {
-    display: inline-block;
-}
-#g-footer .fa_contact_slinks_widget h5 {
-	color: #fff;
-}
-#g-footer .g-container .contactdetail i, #g-container-main .g-container .contactdetail i {
- 	border: 2px solid #fff;
-	border-radius: 50%;
-	width: 34px;
-	height: auto;
-	margin: 0 10px 5px 0;
-	padding: 5px;
-	text-align: center;
-	display: block;
-	font-style: normal;
-	font-weight: normal;
-	float: left;
-}
-#g-container-main .g-container .contactdetail i {
-	border: 2px solid #005395;
-	color: #005395;
 }

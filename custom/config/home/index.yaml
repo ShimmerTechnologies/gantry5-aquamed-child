@@ -1,12 +1,12 @@
 name: home
-timestamp: 1593452226
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
   timestamp: 1593450754
 positions:
-  header: Header
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -16,14 +16,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-3055: Logo
-    logo-5917: 'Logo / Image'
-  menu:
-    menu-2140: Menu
-  position:
-    position-position-9312: Header
-    position-position-1706: Footer
   messages:
     system-messages-1543: 'System Messages'
   custom:
@@ -32,6 +24,14 @@ particles:
     sample-7236: Why
   order_steps_particle:
     order_steps_particle-3390: 'Order Steps'
+  logo:
+    logo-3055: Logo
+    logo-5917: 'Logo / Image'
+  menu:
+    menu-2140: Menu
+  position:
+    position-position-7859: 'Widget Position'
+    position-position-1706: Footer
   copyright:
     copyright-8847: Copyright
   social:
@@ -39,20 +39,20 @@ particles:
   totop:
     totop-1512: 'To Top'
   mobile-menu:
-    mobile-menu-2442: Mobile-menu
+    mobile-menu-6682: 'Mobile Menu'
 inherit:
   default:
     header: header
-    logo-3055: logo-2741
-    menu-2140: menu-4332
-    position-position-9312: position-header
     navigation: navigation
     system-messages-1543: system-messages-7126
     footer: footer
+    offcanvas: offcanvas
+    logo-3055: logo-2741
+    menu-2140: menu-4332
+    position-position-7859: position-position-7248
     position-position-1706: position-footer
     logo-5917: logo-4026
     copyright-8847: copyright-4409
     social-2772: social-7254
     totop-1512: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-2442: mobile-menu-9981
+    mobile-menu-6682: mobile-menu-1009

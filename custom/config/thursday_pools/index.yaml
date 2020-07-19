@@ -1,13 +1,13 @@
 name: thursday_pools
-timestamp: 1592408713
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
   breadcrumbs: Breadcrumbs
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -16,14 +16,9 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-4368: Logo
-    logo-2764: 'Logo / Image'
-  menu:
-    menu-7117: Menu
   position:
-    position-position-9143: Header
     position-breadcrumbs: Breadcrumbs
+    position-position-2195: 'Widget Position'
     position-position-4623: Footer
   messages:
     system-messages-6504: 'System Messages'
@@ -31,6 +26,11 @@ particles:
     title-2900: Title
   content:
     system-content-2067: 'Page Content'
+  logo:
+    logo-4368: Logo
+    logo-2764: 'Logo / Image'
+  menu:
+    menu-7117: Menu
   copyright:
     copyright-9603: Copyright
   social:
@@ -38,19 +38,19 @@ particles:
   totop:
     totop-3714: 'To Top'
   mobile-menu:
-    mobile-menu-4289: Mobile-menu
+    mobile-menu-8193: 'Mobile Menu'
 inherit:
   default:
     header: header
-    logo-4368: logo-2741
-    menu-7117: menu-4332
-    position-position-9143: position-header
     navigation: navigation
     footer: footer
+    offcanvas: offcanvas
+    logo-4368: logo-2741
+    menu-7117: menu-4332
+    position-position-2195: position-position-7248
     position-position-4623: position-footer
     logo-2764: logo-4026
     copyright-9603: copyright-4409
     social-4972: social-7254
     totop-3714: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-4289: mobile-menu-9981
+    mobile-menu-8193: mobile-menu-1009

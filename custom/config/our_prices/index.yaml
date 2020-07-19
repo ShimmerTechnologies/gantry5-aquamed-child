@@ -1,12 +1,12 @@
 name: our_prices
-timestamp: 1594063657
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: 4-rows
   timestamp: 1593705436
 positions:
-  header: Header
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -17,14 +17,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-1002: Logo
-    logo-7657: 'Logo / Image'
-  menu:
-    menu-4841: Menu
-  position:
-    position-position-9260: Header
-    position-position-8201: Footer
   messages:
     system-messages-1261: 'System Messages'
   title:
@@ -33,6 +25,14 @@ particles:
     system-content-3791: 'Page Content'
   other_services:
     other_services-7646: 'Other Services'
+  logo:
+    logo-1002: Logo
+    logo-7657: 'Logo / Image'
+  menu:
+    menu-4841: Menu
+  position:
+    position-position-5854: 'Widget Position'
+    position-position-8201: Footer
   copyright:
     copyright-4282: Copyright
   social:
@@ -40,18 +40,18 @@ particles:
   totop:
     totop-2340: 'To Top'
   mobile-menu:
-    mobile-menu-6429: Mobile-menu
+    mobile-menu-2592: 'Mobile Menu'
 inherit:
   default:
     header: header
+    footer: footer
+    offcanvas: offcanvas
     logo-1002: logo-2741
     menu-4841: menu-4332
-    position-position-9260: position-header
-    footer: footer
+    position-position-5854: position-position-7248
     position-position-8201: position-footer
     logo-7657: logo-4026
     copyright-4282: copyright-4409
     social-8043: social-7254
     totop-2340: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-6429: mobile-menu-9981
+    mobile-menu-2592: mobile-menu-1009

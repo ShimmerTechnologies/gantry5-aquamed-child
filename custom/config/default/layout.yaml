@@ -7,8 +7,8 @@ layout:
   /header/:
     -
       - 'logo-2741 15'
-      - 'menu-4332 65'
-      - 'position-header 20'
+      - 'menu-4332 73'
+      - 'position-position-7248 12'
   /navigation/: {  }
   /main/:
     -
@@ -25,7 +25,7 @@ layout:
       - 'totop-8211 5'
   offcanvas:
     -
-      - mobile-menu-9981
+      - mobile-menu-1009
 structure:
   header:
     attributes:
@@ -42,14 +42,27 @@ structure:
       boxed: ''
       class: ''
       variations: ''
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
 content:
   logo-2741:
     block:
+      class: logo
       variations: 'align-left nopaddingall'
   menu-4332:
+    attributes:
+      hoverExpand: '1'
+      mobileTarget: '1'
+      forceTarget: '1'
     block:
       variations: 'align-right nopaddingall'
-  position-header:
+  position-position-7248:
+    title: 'Widget Position'
     attributes:
       key: header
     block:
@@ -80,3 +93,5 @@ content:
         class: 'totop alignright'
       icon: 'fa fa-angle-up fa-lg'
       content: ''
+  mobile-menu-1009:
+    title: 'Mobile Menu'

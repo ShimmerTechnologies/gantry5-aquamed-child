@@ -1,0 +1,10 @@
+enabled: '1'
+html: ''
+twig: '0'
+filter: '0'
+linkbefore: ''
+linktextbefore: ''
+linkafter: ''
+linktextafter: ''
+css:
+  class: ''

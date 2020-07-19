@@ -2,6 +2,8 @@
 	
 	background: $footer-background;
 	background-image: url('http://dev.shimmertechno.com/aquamed/wp-content/themes/g5_aquapools-child/images/footer.png');
+	background-repeat: none;
+	background-size: cover;
 	color: $footer-text-color;
 	border-top: 1px solid rgba(0,0,0,0.05);
 	margin-top: 60px;
@@ -32,8 +34,18 @@
 				width: 100%;
 				margin: -15px auto 0 0;
 
-				.g-block .g-content {
-					padding: .5rem 1rem;
+				@include breakpoint(mobile-only){
+					padding: 10px 0;
+				}
+
+				.g-block {
+
+					display: block;
+
+					.g-content {
+						padding: .5rem 1rem;
+					}
+			
 				}
 
 				.size-50 .g-particle {
@@ -43,7 +55,13 @@
 				.g-social.social {
 					margin-top: 18px;
 					float: right;
+
+					@include breakpoint(mobile-only) {
+						float: left;
+					}
+
 				}
+
 
 				.g-social a {
 				    padding: .3rem;
@@ -61,7 +79,6 @@
 				
 			}
 
-
 		}
 
 		.widgettitle {
@@ -74,6 +91,12 @@
 		.widget {
 			padding-right: 30px;
 			margin-right: 1.833rem;
+			@include breakpoint(desktop-range){
+				margin-right: 0;
+			}
+			@include breakpoint(tablet-range){
+				margin-right: 0;
+			}
 			&:last-child {
 				padding-right: 0;
 				margin-right: 0;
@@ -82,6 +105,36 @@
 
 	}
 
+}
+
+@media only all and (max-width: $breakpoints-tablet-container) {
+	#g-footer {
+		.g-container {
+			.widget {
+				width: inherit;
+				margin: 0 10%;
+				padding: 0 2%;
+
+			}
+			.g-grid:nth-child(2) {
+				.g-block.size-20,  .g-block.size-5 {
+					display: inline-table;
+    				width: 50%;
+				}
+			} 
+		}
+	}
+}
+@media only all and (max-width: $breakpoints-mobile-menu-breakpoint) {
+	#g-footer {
+		.g-container {
+			.widget {
+				width: 100%;
+				margin: inherit;
+				padding: inherit;
+			}
+		} 
+	}
 }
 
 @media print {

@@ -1,12 +1,12 @@
 name: default
-timestamp: 1590870030
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -21,7 +21,7 @@ particles:
   menu:
     menu-4332: Menu
   position:
-    position-header: Header
+    position-position-7248: 'Widget Position'
     position-footer: Footer
   messages:
     system-messages-7126: 'System Messages'
@@ -34,5 +34,5 @@ particles:
   totop:
     totop-8211: 'To Top'
   mobile-menu:
-    mobile-menu-9981: Mobile-menu
+    mobile-menu-1009: 'Mobile Menu'
 inherit: {  }

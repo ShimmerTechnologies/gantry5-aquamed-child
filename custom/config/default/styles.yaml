@@ -28,10 +28,10 @@ navigation:
   hover: '#0067a3'
   overlay: 'rgba(0, 0, 0, 0)'
 offcanvas:
-  background: '#142d53'
+  background: '#28bceb'
   text-color: '#ffffff'
   width: 17rem
-  toggle-color: '#ffffff'
+  toggle-color: '#0067a3'
   toggle-visibility: '1'
 base:
   background: '#ffffff'
@@ -47,7 +47,7 @@ accent:
 breakpoints:
   large-desktop-container: 75rem
   desktop-container: 65rem
-  tablet-container: 50rem
+  tablet-container: 55rem
   large-mobile-container: 30rem
   mobile-menu-breakpoint: 50rem
 menu:

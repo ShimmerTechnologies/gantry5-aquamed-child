@@ -1,13 +1,13 @@
 name: pools_page
-timestamp: 1594062140
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
   breadcrumbs: Breadcrumbs
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -16,14 +16,9 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-5018: Logo
-    logo-3154: 'Logo / Image'
-  menu:
-    menu-7603: Menu
   position:
-    position-position-4607: Header
     position-breadcrumbs: Breadcrumbs
+    position-position-9657: 'Widget Position'
     position-position-8610: Footer
   title:
     title-4207: Title
@@ -37,6 +32,11 @@ particles:
     system-messages-6637: 'System Messages'
   content:
     system-content-8969: 'Page Content'
+  logo:
+    logo-5018: Logo
+    logo-3154: 'Logo / Image'
+  menu:
+    menu-7603: Menu
   copyright:
     copyright-1574: Copyright
   social:
@@ -44,19 +44,19 @@ particles:
   totop:
     totop-3944: 'To Top'
   mobile-menu:
-    mobile-menu-2293: Mobile-menu
+    mobile-menu-3355: 'Mobile Menu'
 inherit:
   default:
     header: header
-    logo-5018: logo-2741
-    menu-7603: menu-4332
-    position-position-4607: position-header
     navigation: navigation
     footer: footer
+    offcanvas: offcanvas
+    logo-5018: logo-2741
+    menu-7603: menu-4332
+    position-position-9657: position-position-7248
     position-position-8610: position-footer
     logo-3154: logo-4026
     copyright-1574: copyright-4409
     social-8871: social-7254
     totop-3944: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-2293: mobile-menu-9981
+    mobile-menu-3355: mobile-menu-1009

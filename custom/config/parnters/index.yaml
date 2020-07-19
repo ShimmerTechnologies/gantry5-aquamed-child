@@ -1,13 +1,13 @@
 name: parnters
-timestamp: 1593540134
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
   breadcrumbs: Breadcrumbs
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -16,14 +16,9 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-3791: Logo
-    logo-2880: 'Logo / Image'
-  menu:
-    menu-3642: Menu
   position:
-    position-position-2308: Header
     position-breadcrumbs: Breadcrumbs
+    position-position-5826: 'Widget Position'
     position-position-9268: Footer
   messages:
     system-messages-6398: 'System Messages'
@@ -32,6 +27,11 @@ particles:
   sample:
     sample-2217: 'Sample Content'
     sample-5549: 'Sample Content'
+  logo:
+    logo-3791: Logo
+    logo-2880: 'Logo / Image'
+  menu:
+    menu-3642: Menu
   copyright:
     copyright-2429: Copyright
   social:
@@ -39,19 +39,19 @@ particles:
   totop:
     totop-9211: 'To Top'
   mobile-menu:
-    mobile-menu-7932: Mobile-menu
+    mobile-menu-2827: 'Mobile Menu'
 inherit:
   default:
     header: header
-    logo-3791: logo-2741
-    menu-3642: menu-4332
-    position-position-2308: position-header
     navigation: navigation
     footer: footer
+    offcanvas: offcanvas
+    logo-3791: logo-2741
+    menu-3642: menu-4332
+    position-position-5826: position-position-7248
     position-position-9268: position-footer
     logo-2880: logo-4026
     copyright-2429: copyright-4409
     social-5681: social-7254
     totop-9211: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-7932: mobile-menu-9981
+    mobile-menu-2827: mobile-menu-1009

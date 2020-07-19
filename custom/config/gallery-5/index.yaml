@@ -1,12 +1,12 @@
 name: gallery-5
-timestamp: 1593799875
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: 4-rows
   timestamp: 1593705436
 positions:
-  header: Header
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -17,20 +17,18 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  content:
+    system-content-5575: 'Page Content'
+  html_link:
+    html_link-6144: 'HTML Link'
   logo:
     logo-1123: Logo
     logo-7603: 'Logo / Image'
   menu:
     menu-3970: Menu
   position:
-    position-position-8502: Header
+    position-position-9560: 'Widget Position'
     position-position-5784: Footer
-  title:
-    title-8341: Title
-  content:
-    system-content-5575: 'Page Content'
-  html_link:
-    html_link-6144: 'HTML Link'
   copyright:
     copyright-7920: Copyright
   social:
@@ -38,25 +36,27 @@ particles:
   totop:
     totop-9352: 'To Top'
   mobile-menu:
-    mobile-menu-6074: Mobile-menu
+    mobile-menu-6640: 'Mobile Menu'
+  title:
+    title-8341: Title
 inherit:
   default:
     header: header
+    footer: footer
+    offcanvas: offcanvas
     logo-1123: logo-2741
     menu-3970: menu-4332
-    position-position-8502: position-header
-    footer: footer
+    position-position-9560: position-position-7248
     position-position-5784: position-footer
     logo-7603: logo-4026
     copyright-7920: copyright-4409
     social-2497: social-7254
     totop-9352: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-6074: mobile-menu-9981
+    mobile-menu-6640: mobile-menu-1009
   gallery:
     mainsection: mainsection
-    title-8341: title-2592
     mainsection-2: mainsection-2
     mainsection-3: mainsection-3
+    title-8341: title-2592
   gallery-4:
     system-content-5575: system-content-8679

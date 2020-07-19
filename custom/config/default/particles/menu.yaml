@@ -4,6 +4,6 @@ base: /
 startLevel: '1'
 maxLevels: '0'
 renderTitles: '0'
-hoverExpand: '1'
+hoverExpand: '0'
 mobileTarget: '0'
 forceTarget: '0'

@@ -1,12 +1,12 @@
 name: other_services
-timestamp: 1593793185
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: 4-rows
   timestamp: 1593705436
 positions:
-  header: Header
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -17,14 +17,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-8652: Logo
-    logo-6895: 'Logo / Image'
-  menu:
-    menu-8538: Menu
-  position:
-    position-position-2730: Header
-    position-position-7209: Footer
   messages:
     system-messages-5667: 'System Messages'
   title:
@@ -36,6 +28,14 @@ particles:
     grid_two_by_two-4343: 'Pool Maintenance'
   services:
     services-4830: Services
+  logo:
+    logo-8652: Logo
+    logo-6895: 'Logo / Image'
+  menu:
+    menu-8538: Menu
+  position:
+    position-position-5882: 'Widget Position'
+    position-position-7209: Footer
   copyright:
     copyright-1049: Copyright
   social:
@@ -43,18 +43,18 @@ particles:
   totop:
     totop-5101: 'To Top'
   mobile-menu:
-    mobile-menu-1311: Mobile-menu
+    mobile-menu-2242: 'Mobile Menu'
 inherit:
   default:
     header: header
+    footer: footer
+    offcanvas: offcanvas
     logo-8652: logo-2741
     menu-8538: menu-4332
-    position-position-2730: position-header
-    footer: footer
+    position-position-5882: position-position-7248
     position-position-7209: position-footer
     logo-6895: logo-4026
     copyright-1049: copyright-4409
     social-6545: social-7254
     totop-5101: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-1311: mobile-menu-9981
+    mobile-menu-2242: mobile-menu-1009

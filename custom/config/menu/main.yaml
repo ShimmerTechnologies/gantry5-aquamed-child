@@ -1,0 +1,52 @@
+ordering:
+  about: ''
+  pools:
+    leisure-pools: ''
+    thursday-pools: ''
+    other-services: ''
+  partners:
+    leisure-pools: ''
+    thursday-pools: ''
+  gallery: ''
+  our-prices: ''
+  contact-us: ''
+  __widget-id0Lr: ''
+items:
+  about:
+    object_id: 8
+  pools:
+    object_id: 18
+  pools/leisure-pools:
+    object_id: 246
+  pools/thursday-pools:
+    object_id: 244
+  pools/other-services:
+    object_id: 44
+  partners:
+    object_id: 10
+  partners/leisure-pools:
+    object_id: 458
+  partners/thursday-pools:
+    object_id: 460
+  gallery:
+    object_id: 12
+  our-prices:
+    object_id: 14
+  contact-us:
+    object_id: 16
+  __widget-id0Lr:
+    type: particle
+    particle: widget
+    title: Search
+    options:
+      particle:
+        enabled: 1
+        widget:
+          type: widget
+          widget: search
+          title: Search
+          options:
+            widget:
+              title: ''
+      block:
+        extra: {  }

@@ -1,13 +1,13 @@
 name: leisure_pools
-timestamp: 1593623311
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
   breadcrumbs: Breadcrumbs
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -16,14 +16,9 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-7308: Logo
-    logo-8656: 'Logo / Image'
-  menu:
-    menu-7946: Menu
   position:
-    position-position-6132: Header
     position-breadcrumbs: Breadcrumbs
+    position-position-2009: 'Widget Position'
     position-position-8963: Footer
   messages:
     system-messages-5215: 'System Messages'
@@ -31,6 +26,11 @@ particles:
     title-5129: Title
   content:
     system-content-7581: 'Page Content'
+  logo:
+    logo-7308: Logo
+    logo-8656: 'Logo / Image'
+  menu:
+    menu-7946: Menu
   copyright:
     copyright-1620: Copyright
   social:
@@ -38,19 +38,19 @@ particles:
   totop:
     totop-3265: 'To Top'
   mobile-menu:
-    mobile-menu-8920: Mobile-menu
+    mobile-menu-6412: 'Mobile Menu'
 inherit:
   default:
     header: header
-    logo-7308: logo-2741
-    menu-7946: menu-4332
-    position-position-6132: position-header
     navigation: navigation
     footer: footer
+    offcanvas: offcanvas
+    logo-7308: logo-2741
+    menu-7946: menu-4332
+    position-position-2009: position-position-7248
     position-position-8963: position-footer
     logo-8656: logo-4026
     copyright-1620: copyright-4409
     social-7582: social-7254
     totop-3265: totop-8211
-    offcanvas: offcanvas
-    mobile-menu-8920: mobile-menu-9981
+    mobile-menu-6412: mobile-menu-1009

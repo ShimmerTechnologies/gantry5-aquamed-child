@@ -4,6 +4,9 @@
 .order_steps_particle {
 	position: relative;
 	height: 600px;
+	@media only all and (max-width: $breakpoints-tablet-container) {
+		height: 1038px;
+	}
 	h2 {
     	padding: 30px 0;
     	color: $white;
@@ -13,14 +16,34 @@
 		position: relative;
 	}
 	.g-grid {
-	    width: 75rem;
+		width: 100%;
+	    max-width: 75rem;
 		margin: 0 auto;
+
+		@media only all and (max-width: $breakpoints-tablet-container) {
+			flex-flow: column wrap;
+		}
 		div.g-block {
 		    flex: 0 50%;
-		     div.g-content {
+
+		    div.g-content {
 			    width: 95%;
 			    margin-bottom: 80px;
 			}
+			@include breakpoint(desktop-range){
+				&:nth-child(odd){
+					padding-left: 15px;
+				}
+			}
+			@include breakpoint(tablet-range){
+				&:nth-child(odd){
+					padding-left: 15px;
+				}
+			}
+			@media only all and (max-width: $breakpoints-tablet-container) {
+					padding-left: 15px;
+			}
+
 		}
 		.stepcircle {
 		    float: left;
@@ -43,6 +66,7 @@
 		    position: relative;
 		    h4, p {
 		 		color: $white;
+		 		text-align: left;
 			}
 			p {
 				margin-left: 99px;
@@ -54,12 +78,72 @@
 		height: 600px;
 		width:100%;
 		top: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		@media only all and (max-width: $breakpoints-tablet-container) {
+			height: 1038px;
+		}
 	}
 	.order_steps_image {
 		opacity: .3;
 	}
 	.order_steps_bgcolor {
 		background-color: $accent-color-1;
+	}
+}
+
+//partners on home page
+#g-mainsection-3 {
+	.g-grid {
+		.g-block.size-100.center.full-width .g-content {
+			margin: 0 auto !important;
+			max-width: 100%;
+			padding: 0;
+			display: inline-block;
+
+			.widget_sp_image {
+		    	margin: 0 !important;
+		    	padding-left: 50px;
+
+		    	@media only all and (max-width: $breakpoints-desktop-container) {
+		    		margin: 0 auto !important;
+		    		padding-left: 0;
+		    		float: none;
+		    	}
+
+		    	&:first-child {
+	    			padding-left: 0;
+				}
+			}
+		}
+		.img_page_widget {
+    			margin-top: 40%;
+    			@media only all and (max-width: $breakpoints-tablet-container) {
+    				margin: 10% 15px 30px;
+    			}
+    			.button {
+					background-color: $showcase-background;
+				}
+		}
+	}
+}
+
+//testimonials on home page
+.wpmtst-testimonial-inner.testimonial-inner {
+	.wpmtst-testimonial-content::before, .wpmtst-testimonial-content::after {
+		background-color:  $accent-color-2;
+	}
+	p{
+		font-family: get-font-family($base-quote-font);
+			color: $feature-text-color;
+			background-color: $feature-background;
+		    border-radius: 16px;
+		    padding: 45px 30px !important;	
+	}
+	.testimonial-name {
+	    font-weight: $font-weight-semibold;
+	    letter-spacing: .05rem;
+	    margin-top: 15px;
 	}
 }
 
@@ -70,43 +154,106 @@
 	}
 	.title-description {
 	    margin-bottom: 65px;
+	    @include breakpoint(mobile-only){
+	    	margin: 0 15px 65px 15px;
+	    }
 	}
-	.page.g-block {
-	    display: inline-block;
-	    .page_link {
-		    position: relative;
-			height: 260px;
-			width: 100%;
-			.page_links_image, .page_links_bgcolor {
-				border-radius: 15px;
-				width: 95%;
-				height: 245px;
-				max-width: 370px;
+	.page_links_particle {
+		.g-grid.pages {
+			@include breakpoint(mobile-only){
+				display: block;
 			}
-			.page_links_bgcolor	{
-				position: absolute;
-				top: 0;
-				opacity: 0.3;
-				background-color: $base-text-color;
+			.page.g-block {
+			    display: inline-block;
+			    .page_link {
+				    position: relative;
+					height: 260px;
+					width: 100%;
+					.page_links_image, .page_links_bgcolor {
+						border-radius: 15px;
+						width: 95%;
+						height: 245px;
+						max-width: 370px;
+					}
+					.page_links_bgcolor	{
+						position: absolute;
+						top: 0;
+						opacity: 0.3;
+						background-color: $base-text-color;
+					}
+				}
+				.description {
+				    margin-top: 0;
+				    max-width: 375px;
+				    width: 95%;
+				}
+				 h4 {
+					position: absolute;
+					color: $white;
+					bottom: 0;
+					padding-left: 15px;
+				}
+				&:last-child {
+		    		margin-right: -45px;
+		    		@include breakpoint(mobile-only){
+						margin-right: 0;
+					}
+				}
 			}
-		}
-		.description {
-		    margin-top: 0;
-		    max-width: 375px;
-		}
-		 h4 {
-			position: absolute;
-			color: $white;
-			bottom: 0;
-			padding-left: 15px;
-		}
-		&:last-child {
-    		margin-right: -45px;
 		}
 	}
 }
 
-//pools page
+//contact page
+#g-container-main {
+	.g-container .contactdetail {
+		div {
+			margin: 0.75rem 0 1.5rem 0;
+			.phone, .address, .email {
+				display: inline-block;
+			}
+		}
+		h5 {
+			margin: 0.25rem 0 0;
+		}
+		i {
+		 	border: 2px solid $accent-color-2;
+		 	color: $accent-color-2;
+			border-radius: 50%;
+			width: 34px;
+			height: auto;
+			margin: 0 10px 5px 0;
+			padding: 5px;
+			text-align: center;
+			display: block;
+			font-style: normal;
+			font-weight: normal;
+			float: left;
+		}	
+	} 
+}
+//pool info page
+.dataTables_wrapper .tablepress.tablepress-id-2 {
+	@media only all and (max-width: $breakpoints-tablet-container) {
+		margin: 0 auto 0 -20px !important;
+	}
+}
+
+//leisure and thursday pools page
+#pools {
+	@include breakpoint(desktop-range){
+	    display: grid;
+	    grid-template-rows: repeat(3, [row-start] 1fr [row-end]);
+	    grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+	    margin-left: 30px;
+	}
+	@include breakpoint(tablet-range){
+	    display: grid;
+	    grid-template-rows: repeat(3, [row-start] 1fr [row-end]);
+	    grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+	    margin-left: 45px;
+	}		
+}
 .single-pool-post {
 	display: inline-grid;
 	grid-template-columns: auto auto auto;
@@ -114,6 +261,16 @@
 	grid-row-gap: 20px;
 	&:nth-child(3n+0) {
 		grid-column-gap: 0;
+		@include breakpoint(desktop-range){
+			grid-column-gap: 20px;
+		}
+		@include breakpoint(tablet-range){
+			grid-column-gap: 20px;
+		}
+	}
+	@include breakpoint(mobile-only){
+		    display: grid;
+		    grid-template-columns: auto;
 	}
 	figure {
 		margin: 0 auto 30px;
@@ -145,24 +302,6 @@
 	}
 }
 
-.wpmtst-testimonial-inner.testimonial-inner {
-	.wpmtst-testimonial-content::before, .wpmtst-testimonial-content::after {
-		background-color:  $accent-color-2;
-	}
-	p{
-		font-family: get-font-family($base-quote-font);
-			color: $feature-text-color;
-			background-color: $feature-background;
-		    border-radius: 16px;
-		    padding: 45px 30px !important;	
-	}
-	.testimonial-name {
-	    font-weight: $font-weight-semibold;
-	    letter-spacing: .05rem;
-	    margin-top: 15px;
-	}
-}
-
 //single pool post
 .single-pool {
 	.pool {
@@ -170,7 +309,7 @@
 	    	margin-bottom: 40px;
 		}
 		h2 {
-			font-size: 3.2rem;
+			font-size: $h2-font-size;
 		}
 		.meta-videos {
 			.video_content {
@@ -230,12 +369,16 @@
     position: relative;
     height: 428px;
 
+    @media only all and (max-width: $breakpoints-tablet-container) {
+	    height: 1280px;
+	}
+
     h2 {
 	    padding: 30px 0;
-	    color: #fff;
+	    color: $white;
 	}
 	.experience_bgcolor {
-	    background-color: #0067a3;
+	    background-color: $accent-color-1;
 	}
 	.experience_image {
 	    opacity: 0.3;
@@ -245,6 +388,12 @@
 	    height: 410px;
 	    width: 100%;
 	    top: 0;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    
+	    @media only all and (max-width: $breakpoints-tablet-container) {
+	    	height: 1280px;
+	    }
 	}
 	.g-grid, .g-content {
 	    z-index: 1;
@@ -253,13 +402,16 @@
 	.g-grid {
 	    margin: 30px auto;
 
+	    .g-block .g-content {
+	    	padding: 30px 0;
+	    }
 	    .g-content {
 		    i {
-			    font-size: 6rem;
-			    font-weight: 500;
+			    font-size: $core-font-size + 5.0;
+			    font-weight: $font-weight-medium;
 			}
 			h4, h5, i {
-				color: #fff;
+				color: $white;
 			}
 			h4 {
 				margin-bottom: 0;
@@ -267,7 +419,7 @@
 			h5 {
 				margin-top: 0;
 				text-transform: uppercase;
-				font-weight: 600;
+				font-weight: $font-weight-semibold;
 			}
 		}
 	}
@@ -286,9 +438,18 @@
 
 	    .item.g-block {
 		    margin: 0 15px 0 auto;
+		    @include breakpoint(mobile-only){
+		    	margin: 15px 0 0;
+		    }
 
 		    h4 {
 				text-transform: uppercase;
+				@include breakpoint(desktop-range){
+					text-align: center;
+				}
+				@include breakpoint(tablet-range){
+					text-align: center;
+				}
 			}
 			.item_image_box {
 			    position: relative;
@@ -299,9 +460,42 @@
 					height: 200px;
 					max-width: 280px;
 					background-position: center center;
+					 @include breakpoint(desktop-range){
+						margin: 0 auto;
+						float: none;
+				    }
+				     @include breakpoint(tablet-range){
+						margin: 0 auto;
+						float: none;
+				    }
+				    @include breakpoint(mobile-only){
+						margin: 0 auto;
+						float: none;
+				    }
 				}
 			    .description {
 				    width: 45%;
+				     @include breakpoint(desktop-range){
+				     	width: 55%;
+						margin: 0 auto;
+						float: none;
+						padding-top: 15px;
+						text-align: left;
+				    }
+				    @include breakpoint(tablet-range){
+				    	width: 64%;
+				    	margin: 0 auto;
+						float: none;
+						padding-top: 15px;
+						text-align: left;
+					}
+					 @include breakpoint(mobile-only){
+				     	width: 58%;
+						margin: 0 auto;
+						float: none;
+						padding-top: 15px;
+						text-align: left;
+				    }
 				}
 			}
 		    &:last-child {
@@ -311,38 +505,6 @@
 	}
 }
 
-//parnters
-.partner-content {
-	.g-content.top {
-	    margin-bottom: 2.5rem;
-	}
-	.g-grid {
-	    flex-direction: column;
-
-	    .g-block {
-		    margin: 1.5rem 0;
-		}
-		.item-text {
-		    width: 48%;
-
-		    h3 {
-			    margin-top: 0;
-			    color: #005395;
-			}
-		}
-		.alignleft.item-text {
-		    margin: 0 3rem 0 auto;
-		}
-		.alignright.item-text {
-		    margin: 0 auto 0 3rem;
-		}
-		.item-image {
-		    width: 48%;
-		    margin: 0;
-		}
-	}
-} 
-
 //other services
 #grid_two_by_two-4343-particle {
     background: rgb(0,83,149);
@@ -350,11 +512,11 @@
 
     .grid_two_by_two_particle {
     	hr::before {
-		    background-color: #005395;
+		    background-color: $accent-color-2;
 		}
 		.g-content {
 			h2 {
-			    color: #fff;
+			    color: $white;
 			    padding-top: 1.5rem;
 			}
 		} 
@@ -367,10 +529,22 @@
 		    display: flex;
 		    flex-basis: calc(50% - 50px);
 		    margin-right: 50px;
+		    @include breakpoint(desktop-range){
+		    	margin: 0 auto 0 30px;
+		    }
+		    @include breakpoint(tablet-range){
+		    	margin: 0 auto 0 30px;
+		    }
+		    @include breakpoint(mobile-only){
+				flex-basis: auto;
+				margin-right: 0;
+				margin-left: 15px;
+		    }
+
 
 		    h4, .g-content {
 		    	text-align: left;
-    			color: #fff;
+    			color: $white;
 		    }
 		    i, p {
 			    float: left;
@@ -378,8 +552,8 @@
 		    }
 		    i {
 				width: 50px;
-				font-size: 2.5rem;
-				font-weight: 500;
+				font-size: $core-font-size + 1.5;
+				font-weight: $font-weight-medium;
 		    }
 		    p {
 		    	width: 80%;
@@ -392,8 +566,12 @@
     } 
 }
 
-
 .services-content {
+
+	@include breakpoint(mobile-only){  
+    	margin: 0 30px;
+    }
+
 	.g-content.top {
 	    margin-bottom: 2.5rem;
 	}
@@ -406,23 +584,136 @@
 		.item-text {
 		    width: 48%;
 
+		    @include breakpoint(desktop-range){   	
+		    	width: 46%;
+		    }
+
+		    @include breakpoint(tablet-range){   	
+		    	width: 47%;
+		    }
+
+		    @include breakpoint(mobile-only){   	
+		    	width: 100%;
+		    }
+
 		    h3 {
 			    margin-top: 0;
-			    color: #005395;
+			    color: $accent-color-2;
 			}
 		}
 		.alignleft.item-text {
 		    margin: 0 3rem 0 auto;
+		    @include breakpoint(desktop-range){
+				margin: 0 5.2rem 0 auto;
+			}
+			@include breakpoint(tablet-range){   	
+		    	margin: 0 3.3rem 0 auto;
+		    }
 		}
 		.alignright.item-text {
 		    margin: 0 auto 0 3rem;
+		    @include breakpoint(desktop-range){
+				margin: 0 auto 0 5.2rem;
+			}
+			@include breakpoint(tablet-range){   	
+		    	margin: 0 auto 0 3.3rem;
+		    }
+			
 		}
 		.item-image {
 		    width: 48%;
 		    margin: 0;
+
+		    @include breakpoint(desktop-range){   	
+		    	width: 46%;
+		    }
+
+		    @include breakpoint(tablet-range){   	
+		    	width: 47%;
+		    }
+
+		    @include breakpoint(mobile-only){   	
+		    	width: 100%;
+		    }
+
 		}
 	}
 }
+
+//parnters
+.partner-content {
+
+	@include breakpoint(mobile-only){  
+    	margin: 0 30px;
+    }
+	.g-content.top {
+	    margin-bottom: 2.5rem;
+	}
+	.g-grid {
+	    flex-direction: column;
+	    .g-block {
+		    margin: 1.5rem 0;
+
+		}
+
+		.item-text {
+		    width: 48%;
+
+		    @include breakpoint(desktop-range){   	
+		    	width: 46%;
+		    }
+
+		    @include breakpoint(tablet-range){   	
+		    	width: 47%;
+		    }
+
+		    @include breakpoint(mobile-only){   	
+		    	width: 100%;
+		    }
+
+		    h3 {
+			    margin-top: 0;
+			    color: $accent-color-2;
+			}
+		}
+		.alignleft.item-text {
+		    margin: 0 3rem 0 auto;
+
+		    @include breakpoint(desktop-range){
+				margin: 0 5.2rem 0 auto;
+			}
+			@include breakpoint(tablet-range){   	
+		    	margin: 0 3.3rem 0 auto;
+		    }
+		}
+		.alignright.item-text {
+		    margin: 0 auto 0 3rem;
+
+		    @include breakpoint(desktop-range){
+				margin: 0 auto 0 5.2rem;
+			}
+			@include breakpoint(tablet-range){   	
+		    	margin: 0 auto 0 3.3rem;
+		    }
+		}
+		.item-image {
+		    width: 48%;
+		    margin: 0;
+
+		    @include breakpoint(desktop-range){   	
+		    	width: 46%;
+		    }
+
+		    @include breakpoint(tablet-range){   	
+		    	width: 47%;
+		    }
+
+		    @include breakpoint(mobile-only){   	
+		    	width: 100%;
+		    }
+		}
+	}
+} 
 
 
 //our prices
@@ -449,7 +740,7 @@
 
 			 h4 {
 			    position: absolute;
-			    color: #fff;
+			    color: $white;
 				bottom: 20px;
 				padding-left: 20px;
 			}
@@ -462,7 +753,7 @@
 				    position: absolute;
 				    top: 0;
 				    opacity: 0.3;
-				    background-color: #333;
+				    background-color: $base-text-color;
 				}
 				.service_image, .service_bgcolor {
 					border-radius: 15px;
@@ -473,7 +764,7 @@
 			}
 			.service-price {
 				position: relative;
-				background-color: #005395;
+				background-color: $accent-color-2;
 				top: 20px;
 				width: 140px;
 				border-radius: 10px 0 0 10px;
@@ -481,8 +772,8 @@
 				p {
 				    margin: 5px 0 5px 15px;
 				    text-align: left;
-				    color: #fff;
-					font-weight: 700;
+				    color: $white;
+					font-weight: $font-weight-bold;
 				}
 			}
 			&:last-child {
@@ -491,3 +782,55 @@
 		}
 	}
 }
+
+/* footer 
+/*social links*/
+
+#g-footer {
+	.g-container {
+		.fa_contact_slinks_widget {
+			.contactdetail {
+				min-width: 240px;
+				div {
+						margin: 0.75rem 0 1.5rem 0;
+
+						.phone, .address, .email {
+						    display: inline-block;
+						    text-align: left;
+						}
+						@media only all and (max-width: $breakpoints-tablet-container) {
+
+							.phone, .address, .email {
+								clear: both;
+								width: 60%;
+							}
+						}
+				}
+				h5 {
+					color: $white;
+					margin: 0.25rem 0 0;
+
+				}
+				i {
+				 	border: 2px solid $white;
+					border-radius: 50%;
+					width: 34px;
+					height: auto;
+					margin: 0 10px 5px 0;
+					padding: 5px;
+					text-align: center;
+					display: block;
+					font-style: normal;
+					font-weight: normal;
+					float: left;
+				}
+			} 
+		}
+		@media only all and (max-width: $breakpoints-mobile-menu-breakpoint) {
+			.contactdetail {
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+	}
+} 

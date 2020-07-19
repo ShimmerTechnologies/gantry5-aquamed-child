@@ -18,31 +18,64 @@
   position: relative;
   height: 600px;
 }
-/* line 7, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (max-width: 55rem) {
+  /* line 7, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .order_steps_particle {
+    height: 1038px;
+  }
+}
+/* line 10, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle h2 {
   padding: 30px 0;
   color: #fff;
 }
-/* line 11, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 14, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-content, .order_steps_particle .g-grid {
   z-index: 1;
   position: relative;
 }
-/* line 15, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 18, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid {
-  width: 75rem;
+  width: 100%;
+  max-width: 75rem;
   margin: 0 auto;
 }
-/* line 18, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (max-width: 55rem) {
+  /* line 23, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .order_steps_particle .g-grid {
+    flex-flow: column wrap;
+  }
+}
+/* line 26, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid div.g-block {
   flex: 0 50%;
 }
-/* line 20, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 29, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid div.g-block div.g-content {
   width: 95%;
   margin-bottom: 80px;
 }
-/* line 25, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (min-width: 65rem) and (max-width: 74.99rem) {
+  /* line 7, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
+  /* line 34, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .order_steps_particle .g-grid div.g-block:nth-child(odd) {
+    padding-left: 15px;
+  }
+}
+@media only all and (min-width: 55rem) and (max-width: 64.99rem) {
+  /* line 13, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
+  /* line 39, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .order_steps_particle .g-grid div.g-block:nth-child(odd) {
+    padding-left: 15px;
+  }
+}
+@media only all and (max-width: 55rem) {
+  /* line 43, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .order_steps_particle .g-grid div.g-block {
+    padding-left: 15px;
+  }
+}
+/* line 48, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid .stepcircle {
   float: left;
   border-radius: 50%;
@@ -51,130 +84,227 @@
   font-size: 2.25rem;
   font-family: "Lato", sans-serif;
 }
-/* line 33, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 56, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid .step1 {
   background-color: #28bceb;
   color: #fff;
 }
-/* line 37, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 60, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid .step2 {
   background-color: #fff;
   color: #005395;
 }
-/* line 41, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 64, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid .g-content {
   z-index: 1;
   position: relative;
 }
-/* line 44, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 67, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid .g-content h4, .order_steps_particle .g-grid .g-content p {
   color: #fff;
+  text-align: left;
 }
-/* line 47, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 71, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .g-grid .g-content p {
   margin-left: 99px;
 }
-/* line 52, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 76, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .order_steps_image, .order_steps_particle .order_steps_bgcolor {
   position: absolute;
   height: 600px;
   width: 100%;
   top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* line 58, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (max-width: 55rem) {
+  /* line 83, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .order_steps_particle .order_steps_image, .order_steps_particle .order_steps_bgcolor {
+    height: 1038px;
+  }
+}
+/* line 87, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .order_steps_image {
   opacity: 0.3;
 }
-/* line 61, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 90, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .order_steps_particle .order_steps_bgcolor {
   background-color: #0067a3;
 }
-/* line 67, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 68, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 96, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 97, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 98, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-mainsection-3 .g-grid .g-block.size-100.center.full-width .g-content {
+  margin: 0 auto !important;
+  max-width: 100%;
+  padding: 0;
+  display: inline-block;
+}
+/* line 104, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-mainsection-3 .g-grid .g-block.size-100.center.full-width .g-content .widget_sp_image {
+  margin: 0 !important;
+  padding-left: 50px;
+}
+@media only all and (max-width: 55rem) {
+  /* line 108, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  #g-mainsection-3 .g-grid .g-block.size-100.center.full-width .g-content .widget_sp_image {
+    margin: 0 auto !important;
+    padding-left: 0;
+    float: none;
+  }
+}
+/* line 114, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-mainsection-3 .g-grid .g-block.size-100.center.full-width .g-content .widget_sp_image:first-child {
+  padding-left: 0;
+}
+/* line 119, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-mainsection-3 .g-grid .img_page_widget {
+  margin-top: 40%;
+}
+@media only all and (max-width: 55rem) {
+  /* line 121, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  #g-mainsection-3 .g-grid .img_page_widget {
+    margin: 10% 15px 30px;
+  }
+}
+/* line 124, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-mainsection-3 .g-grid .img_page_widget .button {
+  background-color: #28bceb;
+}
+/* line 132, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 133, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.wpmtst-testimonial-inner.testimonial-inner .wpmtst-testimonial-content::before, .wpmtst-testimonial-inner.testimonial-inner .wpmtst-testimonial-content::after {
+  background-color: #005395;
+}
+/* line 136, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.wpmtst-testimonial-inner.testimonial-inner p {
+  font-family: "Georgia+Italic";
+  color: #617585;
+  background-color: #f0f6f9;
+  border-radius: 16px;
+  padding: 45px 30px !important;
+}
+/* line 143, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.wpmtst-testimonial-inner.testimonial-inner .testimonial-name {
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  margin-top: 15px;
+}
+/* line 151, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 152, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .title-content {
   margin-bottom: 1.75rem;
 }
-/* line 71, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 155, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .title-description {
   margin-bottom: 65px;
 }
-/* line 74, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 158, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .page.g-block {
   display: inline-block;
 }
-/* line 76, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 160, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .page.g-block .page_link {
   position: relative;
   height: 260px;
   width: 100%;
 }
-/* line 80, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 164, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .page.g-block .page_link .page_links_image, .g-particle .page.g-block .page_link .page_links_bgcolor {
   border-radius: 15px;
   width: 95%;
   height: 245px;
   max-width: 370px;
 }
-/* line 86, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 170, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .page.g-block .page_link .page_links_bgcolor {
   position: absolute;
   top: 0;
   opacity: 0.3;
   background-color: #333;
 }
-/* line 93, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 177, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .page.g-block .description {
   margin-top: 0;
   max-width: 375px;
 }
-/* line 97, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 181, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .page.g-block h4 {
   position: absolute;
   color: #fff;
   bottom: 0;
   padding-left: 15px;
 }
-/* line 103, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 187, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .g-particle .page.g-block:last-child {
   margin-right: -45px;
 }
-/* line 110, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 194, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 195, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 196, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-container-main .g-container .contactdetail div {
+  margin: 0.75rem 0 1.5rem 0;
+}
+/* line 198, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-container-main .g-container .contactdetail div .phone, #g-container-main .g-container .contactdetail div .address, #g-container-main .g-container .contactdetail div .email {
+  display: inline-block;
+}
+/* line 202, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-container-main .g-container .contactdetail h5 {
+  margin: 0.25rem 0 0;
+}
+/* line 205, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-container-main .g-container .contactdetail i {
+  border: 2px solid #005395;
+  color: #005395;
+  border-radius: 50%;
+  width: 34px;
+  height: auto;
+  margin: 0 10px 5px 0;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  float: left;
+}
+/* line 223, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post {
   display: inline-grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
-/* line 115, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 228, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post:nth-child(3n+0) {
   grid-column-gap: 0;
 }
-/* line 118, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 231, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post figure {
   margin: 0 auto 30px;
 }
-/* line 120, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 233, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post figure img {
   border-radius: 15px;
 }
-/* line 123, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 236, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post figure a.post-thumbnail {
   position: relative;
 }
-/* line 127, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 240, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post figcaption, .single-pool-post .bg-color {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-/* line 132, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 245, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post .bg-color {
   background-color: #000;
   height: 50px;
   border-radius: 0 0 15px 15px;
   opacity: 0.3;
 }
-/* line 138, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 251, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool-post figcaption {
   padding: 0 0 10px 20px;
   color: #fff;
@@ -183,43 +313,24 @@
   text-transform: uppercase;
   font-size: 1.24rem;
 }
-/* line 148, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 149, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.wpmtst-testimonial-inner.testimonial-inner .wpmtst-testimonial-content::before, .wpmtst-testimonial-inner.testimonial-inner .wpmtst-testimonial-content::after {
-  background-color: #005395;
-}
-/* line 152, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.wpmtst-testimonial-inner.testimonial-inner p {
-  font-family: "Georgia+Italic";
-  color: #617585;
-  background-color: #f0f6f9;
-  border-radius: 16px;
-  padding: 45px 30px !important;
-}
-/* line 159, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.wpmtst-testimonial-inner.testimonial-inner .testimonial-name {
-  font-weight: 600;
-  letter-spacing: 0.05rem;
-  margin-top: 15px;
-}
-/* line 167, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 168, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 169, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 262, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 263, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 264, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .entry-header {
   margin-bottom: 40px;
 }
-/* line 172, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 267, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool h2 {
   font-size: 3.2rem;
 }
-/* line 175, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 176, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 270, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 271, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-videos .video_content {
   display: flex;
   width: 100%;
   margin: 1.5rem 0;
 }
-/* line 181, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 276, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-videos .video_content .epyt-video-wrapper {
   min-height: 1px;
   display: -webkit-box;
@@ -228,27 +339,27 @@
   display: flex;
   margin: 0 auto;
 }
-/* line 189, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 284, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-videos .video_content .epyt-video-wrapper iframe {
   border: medium none;
 }
-/* line 195, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 196, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 290, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 291, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-sizes img {
   margin: 1.5rem 0;
 }
-/* line 199, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 200, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 294, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 295, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-sizes .sizes_content table {
   margin: 1.5rem 0;
   border: medium none;
 }
-/* line 204, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 299, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-sizes .sizes_content table td {
   border: medium none;
 }
-/* line 210, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 211, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 305, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 306, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-colors .color_content {
   display: flex;
   flex-direction: row;
@@ -256,88 +367,122 @@
   margin: 0 auto;
   justify-content: center;
 }
-/* line 218, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 313, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .single-pool .pool .meta-colors .color_content .color {
   margin: 10px;
 }
-/* line 229, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 324, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content {
   position: relative;
   height: 428px;
 }
-/* line 233, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (max-width: 55rem) {
+  /* line 328, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .experience-content {
+    height: 1280px;
+  }
+}
+/* line 332, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content h2 {
   padding: 30px 0;
   color: #fff;
 }
-/* line 237, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 336, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .experience_bgcolor {
   background-color: #0067a3;
 }
-/* line 240, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 339, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .experience_image {
   opacity: 0.3;
 }
-/* line 243, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 342, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .experience_bgcolor, .experience-content .experience_image {
   position: absolute;
   height: 410px;
   width: 100%;
   top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* line 249, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (max-width: 55rem) {
+  /* line 350, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  .experience-content .experience_bgcolor, .experience-content .experience_image {
+    height: 1280px;
+  }
+}
+/* line 354, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .g-grid, .experience-content .g-content {
   z-index: 1;
   position: relative;
 }
-/* line 253, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 358, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .g-grid {
   margin: 30px auto;
 }
-/* line 256, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 257, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 361, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.experience-content .g-grid .g-block .g-content {
+  padding: 30px 0;
+}
+/* line 364, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 365, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .g-grid .g-content i {
   font-size: 6rem;
   font-weight: 500;
 }
-/* line 261, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 369, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .g-grid .g-content h4, .experience-content .g-grid .g-content h5, .experience-content .g-grid .g-content i {
   color: #fff;
 }
-/* line 264, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 372, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .g-grid .g-content h4 {
   margin-bottom: 0;
 }
-/* line 267, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 375, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .experience-content .g-grid .g-content h5 {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 278, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 279, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-/* line 280, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 386, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 387, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 388, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-content h2 {
   margin: 30px auto 20px;
 }
-/* line 284, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 392, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-grid.items {
   margin: 60px auto;
 }
-/* line 287, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 395, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-grid.items .item.g-block {
   margin: 0 15px 0 auto;
 }
-/* line 290, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (max-width: 54.99rem) {
+  /* line 25, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
+  .mission-content .g-grid.items .item.g-block {
+    margin: 15px 0 0;
+  }
+}
+/* line 401, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-grid.items .item.g-block h4 {
   text-transform: uppercase;
 }
-/* line 293, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (min-width: 65rem) and (max-width: 74.99rem) {
+  .mission-content .g-grid.items .item.g-block h4 {
+    text-align: center;
+  }
+}
+@media only all and (min-width: 55rem) and (max-width: 64.99rem) {
+  .mission-content .g-grid.items .item.g-block h4 {
+    text-align: center;
+  }
+}
+/* line 410, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-grid.items .item.g-block .item_image_box {
   position: relative;
   width: 100%;
 }
-/* line 296, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 413, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-grid.items .item.g-block .item_image_box .item_image {
   border-radius: 15px;
   width: 95%;
@@ -345,193 +490,234 @@
   max-width: 280px;
   background-position: center center;
 }
-/* line 303, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (min-width: 65rem) and (max-width: 74.99rem) {
+  .mission-content .g-grid.items .item.g-block .item_image_box .item_image {
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media only all and (min-width: 55rem) and (max-width: 64.99rem) {
+  .mission-content .g-grid.items .item.g-block .item_image_box .item_image {
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media only all and (max-width: 54.99rem) {
+  .mission-content .g-grid.items .item.g-block .item_image_box .item_image {
+    margin: 0 auto;
+    float: none;
+  }
+}
+/* line 432, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-grid.items .item.g-block .item_image_box .description {
   width: 45%;
 }
-/* line 307, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+@media only all and (min-width: 65rem) and (max-width: 74.99rem) {
+  .mission-content .g-grid.items .item.g-block .item_image_box .description {
+    width: 55%;
+    margin: 0 auto;
+    float: none;
+    padding-top: 15px;
+    text-align: left;
+  }
+}
+@media only all and (min-width: 55rem) and (max-width: 64.99rem) {
+  .mission-content .g-grid.items .item.g-block .item_image_box .description {
+    width: 64%;
+    margin: 0 auto;
+    float: none;
+    padding-top: 15px;
+    text-align: left;
+  }
+}
+@media only all and (max-width: 54.99rem) {
+  .mission-content .g-grid.items .item.g-block .item_image_box .description {
+    width: 58%;
+    margin: 0 auto;
+    float: none;
+    padding-top: 15px;
+    text-align: left;
+  }
+}
+/* line 457, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .mission-content .g-grid.items .item.g-block:last-child {
   margin-right: 0;
 }
-/* line 317, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 465, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 466, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-content.top {
   margin-bottom: 2.5rem;
 }
-/* line 320, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 469, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-grid {
   flex-direction: column;
 }
-/* line 323, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 472, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-grid .g-block {
   margin: 1.5rem 0;
 }
-/* line 326, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 475, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-grid .item-text {
   width: 48%;
 }
-/* line 329, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.partner-content .g-grid .item-image {
-  width: 48%;
-}
-/* line 332, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 478, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-grid .item-text h3 {
   margin-top: 0;
   color: #005395;
 }
-/* line 336, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 483, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-grid .alignleft.item-text {
   margin: 0 3rem 0 auto;
 }
-/* line 339, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 486, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-grid .alignright.item-text {
   margin: 0 auto 0 3rem;
 }
-/* line 342, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 489, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .partner-content .g-grid .item-image {
+  width: 48%;
   margin: 0;
 }
-/* line 347, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 497, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 #grid_two_by_two-4343-particle {
   background: #005395;
   background: linear-gradient(0deg, rgba(0, 103, 163, 1) 0%, rgba(0, 83, 149, 1) 100%);
 }
-/* line 351, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle hr::before {
+/* line 501, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 502, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle hr::before {
   background-color: #005395;
 }
-/* line 354, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-grid {
-  margin: 2.5rem auto;
-  padding-bottom: 1.5rem;
-}
-/* line 358, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-content h2 {
+/* line 505, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 506, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-content h2 {
   color: #fff;
   padding-top: 1.5rem;
 }
-/* line 362, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-block {
+/* line 511, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-grid {
+  margin: 2.5rem auto;
+  padding-bottom: 1.5rem;
+}
+/* line 515, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block {
   flex-direction: column;
   display: flex;
   flex-basis: calc(50% - 50px);
   margin-right: 50px;
 }
-/* line 368, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-block:nth-child(2n) {
-  margin-right: 0;
-}
-/* line 371, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-block h4, .grid_two_by_two_particle .g-block .g-content {
+/* line 521, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block h4, #grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block .g-content {
   text-align: left;
   color: #fff;
 }
-/* line 375, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-block .g-content i, .grid_two_by_two_particle .g-block .g-content p {
+/* line 525, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block i, #grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block p {
   float: left;
   margin: 0 1.5rem 1.5rem 0;
 }
-/* line 379, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-block .g-content i {
+/* line 529, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block i {
   width: 50px;
   font-size: 2.5rem;
   font-weight: 500;
 }
-/* line 384, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.grid_two_by_two_particle .g-block .g-content p {
+/* line 534, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block p {
   width: 80%;
 }
-/* line 388, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 537, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#grid_two_by_two-4343-particle .grid_two_by_two_particle .g-block:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 545, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 546, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-content.top {
   margin-bottom: 2.5rem;
 }
-/* line 391, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 549, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-grid {
   flex-direction: column;
 }
-/* line 394, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 552, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-grid .g-block {
   margin: 1.5rem 0;
 }
-/* line 397, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 555, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-grid .item-text {
   width: 48%;
 }
-/* line 400, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.services-content .g-grid .item-image {
-  width: 48%;
-}
-/* line 403, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 558, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-grid .item-text h3 {
   margin-top: 0;
   color: #005395;
 }
-/* line 407, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 563, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-grid .alignleft.item-text {
   margin: 0 3rem 0 auto;
 }
-/* line 410, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 566, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-grid .alignright.item-text {
   margin: 0 auto 0 3rem;
 }
-/* line 413, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 569, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .services-content .g-grid .item-image {
+  width: 48%;
   margin: 0;
 }
-/* line 418, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 578, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 579, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .outline-our_prices .meta-content.width75 {
   margin: 30px auto 0;
 }
-/* line 421, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 582, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .outline-our_prices .include_text {
   width: 42%;
   margin-right: 3% !important;
 }
-/* line 425, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 586, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .outline-our_prices .include_image {
   width: 55%;
 }
-/* line 428, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 591, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 592, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
 .other_services_particle .g-grid {
   margin: 0 auto;
   width: 98%;
 }
-/* line 432, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block {
+/* line 596, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block {
   display: inline-block;
 }
-/* line 435, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block:last-child {
-  margin-right: -30px;
-}
-/* line 438, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block .service_item {
-  position: relative;
-  height: 260px;
-  width: 100%;
-}
-/* line 443, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block .service_item .service_bgcolor {
-  position: absolute;
-  top: 0;
-  opacity: 0.3;
-  background-color: #333;
-}
-/* line 449, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block .service_item .service_image, .g-particle .service.g-block .service_item .service_bgcolor {
-  border-radius: 15px;
-  width: 95%;
-  height: 227px;
-  max-width: 370px;
-}
-/* line 455, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block h4 {
+/* line 599, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block h4 {
   position: absolute;
   color: #fff;
   bottom: 20px;
   padding-left: 20px;
 }
-/* line 461, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block .service-price {
+/* line 605, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block .service_item {
+  position: relative;
+  height: 260px;
+  width: 100%;
+}
+/* line 610, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block .service_item .service_bgcolor {
+  position: absolute;
+  top: 0;
+  opacity: 0.3;
+  background-color: #333;
+}
+/* line 616, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block .service_item .service_image, .other_services_particle .g-grid .service.g-block .service_item .service_bgcolor {
+  border-radius: 15px;
+  width: 95%;
+  height: 227px;
+  max-width: 370px;
+}
+/* line 623, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block .service-price {
   position: relative;
   background-color: #005395;
   top: 20px;
@@ -539,11 +725,66 @@
   border-radius: 10px 0 0 10px;
   float: right;
 }
-/* line 469, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
-.g-particle .service.g-block .service-price p {
+/* line 630, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block .service-price p {
   margin: 5px 0 5px 15px;
   text-align: left;
   color: #fff;
   font-weight: 700;
+}
+/* line 637, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+.other_services_particle .g-grid .service.g-block:last-child {
+  margin-right: -30px;
+}
+/* footer 
+ /*social links*/
+/* line 647, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 648, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 649, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+/* line 650, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-footer .g-container .fa_contact_slinks_widget .contactdetail {
+  min-width: 240px;
+}
+/* line 652, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-footer .g-container .fa_contact_slinks_widget .contactdetail div {
+  margin: 0.75rem 0 1.5rem 0;
+}
+/* line 655, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-footer .g-container .fa_contact_slinks_widget .contactdetail div .phone, #g-footer .g-container .fa_contact_slinks_widget .contactdetail div .address, #g-footer .g-container .fa_contact_slinks_widget .contactdetail div .email {
+  display: inline-block;
+  text-align: left;
+}
+@media only all and (max-width: 55rem) {
+  /* line 661, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  #g-footer .g-container .fa_contact_slinks_widget .contactdetail div .phone, #g-footer .g-container .fa_contact_slinks_widget .contactdetail div .address, #g-footer .g-container .fa_contact_slinks_widget .contactdetail div .email {
+    clear: both;
+    width: 60%;
+  }
+}
+/* line 667, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-footer .g-container .fa_contact_slinks_widget .contactdetail h5 {
+  color: #fff;
+  margin: 0.25rem 0 0;
+}
+/* line 671, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+#g-footer .g-container .fa_contact_slinks_widget .contactdetail i {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 34px;
+  height: auto;
+  margin: 0 10px 5px 0;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  float: left;
+}
+@media only all and (max-width: 50rem) {
+  /* line 687, wp-content/themes/g5_aquapools-child/custom/scss/custom.scss */
+  #g-footer .g-container .contactdetail {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=custom_about.css.map */

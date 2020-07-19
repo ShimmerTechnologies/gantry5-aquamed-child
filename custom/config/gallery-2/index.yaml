@@ -1,12 +1,12 @@
 name: gallery-2
-timestamp: 1593799808
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: 4-rows
   timestamp: 1593705436
 positions:
-  header: Header
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -27,7 +27,7 @@ particles:
   menu:
     menu-7051: Menu
   position:
-    position-position-4739: Header
+    position-position-2387: 'Widget Position'
     position-position-1267: Footer
   copyright:
     copyright-1269: Copyright
@@ -36,7 +36,7 @@ particles:
   totop:
     totop-2979: 'To Top'
   mobile-menu:
-    mobile-menu-4421: Mobile-menu
+    mobile-menu-9090: 'Mobile Menu'
   title:
     title-3379: Title
 inherit:
@@ -46,13 +46,13 @@ inherit:
     offcanvas: offcanvas
     logo-6481: logo-2741
     menu-7051: menu-4332
-    position-position-4739: position-header
+    position-position-2387: position-position-7248
     position-position-1267: position-footer
     logo-1651: logo-4026
     copyright-1269: copyright-4409
     social-9954: social-7254
     totop-2979: totop-8211
-    mobile-menu-4421: mobile-menu-9981
+    mobile-menu-9090: mobile-menu-1009
   gallery:
     mainsection: mainsection
     system-content-9479: system-content-7678

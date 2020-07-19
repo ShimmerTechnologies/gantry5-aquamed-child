@@ -113,7 +113,8 @@ legend small {
   color: #333;
 }
 /* line 2, wp-content/themes/g5_aquapools/scss/aquapools-wordpress/_pagination.scss */
-@media only all and (max-width: 49.99rem) {
+@media only all and (max-width: 54.99rem) {
+  /* line 25, wp-content/plugins/gantry5/engines/nucleus/scss/nucleus/mixins/_breakpoints.scss */
   /* line 4, wp-content/themes/g5_aquapools/scss/aquapools-wordpress/_pagination.scss */
   .pagination .pagination-list-item, .page-links .pagination-list-item {
     margin-bottom: 0.8rem;

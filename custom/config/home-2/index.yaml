@@ -1,5 +1,5 @@
 name: home-2
-timestamp: 1593452226
+timestamp: 1595012724
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -8,7 +8,7 @@ preset:
 positions:
   partners: partners
   widget-quote: 'Home Quote'
-  header: Header
+  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -30,7 +30,7 @@ particles:
   position:
     position-position-6000: partners
     position-position-9059: 'Home Quote'
-    position-position-8061: Header
+    position-position-9098: 'Widget Position'
     position-position-5856: Footer
   logo:
     logo-8089: Logo
@@ -44,7 +44,7 @@ particles:
   totop:
     totop-6678: 'To Top'
   mobile-menu:
-    mobile-menu-6335: Mobile-menu
+    mobile-menu-7156: 'Mobile Menu'
   messages:
     system-messages-6357: 'System Messages'
   order_steps_particle:
@@ -56,13 +56,13 @@ inherit:
     offcanvas: offcanvas
     logo-8089: logo-2741
     menu-6591: menu-4332
-    position-position-8061: position-header
+    position-position-9098: position-position-7248
     position-position-5856: position-footer
     logo-2059: logo-4026
     copyright-1541: copyright-4409
     social-2690: social-7254
     totop-6678: totop-8211
-    mobile-menu-6335: mobile-menu-9981
+    mobile-menu-7156: mobile-menu-1009
   home:
     mainsection: mainsection
     mainsection-1: mainsection-1
