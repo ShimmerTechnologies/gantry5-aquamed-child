@@ -90,6 +90,16 @@
 	}
 }
 
+@media only all and (max-width: 800px) {
+	#g-header {
+		.g-container {
+			width: 85%;
+			.g-main-nav {
+			    display:none;
+			}			
+		}
+	}
+}
 
 @media print {
 	#g-header {

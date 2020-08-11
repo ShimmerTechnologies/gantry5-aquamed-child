@@ -1,12 +1,12 @@
 name: _body_only
-timestamp: 1588097782
+timestamp: 1596133380
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
+  header: 'Widget Position'
   breadcrumbs: Breadcrumbs
   footer: Footer
 sections:
@@ -14,26 +14,41 @@ sections:
   navigation: Navigation
   main: Main
   footer: Footer
-  offcanvas: Offcanvas
+  offcanvas: Untitled
 particles:
   logo:
-    logo-1744: Logo
-  position:
-    position-header: Header
-    position-breadcrumbs: Breadcrumbs
-    position-footer: Footer
+    logo-6376: Logo
+    logo-3465: 'Logo / Image'
   menu:
-    menu-3124: Menu
+    menu-9577: Menu
+  position:
+    position-position-5702: 'Widget Position'
+    position-breadcrumbs: Breadcrumbs
+    position-position-9990: Footer
   messages:
     system-messages-7816: 'System Messages'
   content:
     system-content-7068: 'Page Content'
   copyright:
-    copyright-4101: Copyright
-  spacer:
-    spacer-1659: Spacer
-  branding:
-    branding-2128: Branding
+    copyright-6755: Copyright
+  social:
+    social-6475: Social
+  totop:
+    totop-2259: 'To Top'
   mobile-menu:
-    mobile-menu-3137: Mobile-menu
-inherit: {  }
+    mobile-menu-8389: 'Mobile Menu'
+inherit:
+  default:
+    header: header
+    logo-6376: logo-2741
+    menu-9577: menu-2967
+    position-position-5702: position-position-7248
+    navigation: navigation
+    footer: footer
+    position-position-9990: position-footer
+    logo-3465: logo-4026
+    copyright-6755: copyright-4409
+    social-6475: social-7254
+    totop-2259: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-8389: mobile-menu-1009

@@ -232,4 +232,6 @@ function my_extra_gallery_fields( $args, $attachment_id, $field ){
 }
 add_filter( 'acf_photo_gallery_image_fields', 'my_extra_gallery_fields', 10, 3 );
 
+
+
 ?>

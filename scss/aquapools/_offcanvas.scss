@@ -33,6 +33,7 @@
 		@media only all and (max-width: $breakpoints-mobile-menu-breakpoint) {
 			display: block;
 			position: relative;
+			float: left;
 		}
 	} @else {
 	    display: block !important;

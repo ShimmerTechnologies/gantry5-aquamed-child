@@ -1,5 +1,5 @@
 name: leisure_pools_partner
-timestamp: 1595012724
+timestamp: 1596130499
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,7 +30,7 @@ particles:
     logo-5509: Logo
     logo-6175: 'Logo / Image'
   menu:
-    menu-6354: Menu
+    menu-4601: Menu
   copyright:
     copyright-9788: Copyright
   social:
@@ -46,7 +46,7 @@ inherit:
     footer: footer
     offcanvas: offcanvas
     logo-5509: logo-2741
-    menu-6354: menu-4332
+    menu-4601: menu-2967
     position-position-6572: position-position-7248
     position-position-7357: position-footer
     logo-6175: logo-4026

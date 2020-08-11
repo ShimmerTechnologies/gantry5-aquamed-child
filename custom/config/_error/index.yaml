@@ -1,12 +1,12 @@
 name: _error
-timestamp: 1588097782
+timestamp: 1596133309
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
+  header: 'Widget Position'
   breadcrumbs: Breadcrumbs
   footer: Footer
 sections:
@@ -14,26 +14,41 @@ sections:
   navigation: Navigation
   main: Main
   footer: Footer
-  offcanvas: Offcanvas
+  offcanvas: Untitled
 particles:
   logo:
-    logo-7775: Logo
-  position:
-    position-header: Header
-    position-breadcrumbs: Breadcrumbs
-    position-footer: Footer
+    logo-7676: Logo
+    logo-4944: 'Logo / Image'
   menu:
-    menu-3790: Menu
+    menu-4939: Menu
+  position:
+    position-position-8719: 'Widget Position'
+    position-breadcrumbs: Breadcrumbs
+    position-position-6170: Footer
   messages:
     system-messages-2532: 'System Messages'
   content:
     system-content-6194: 'Page Content'
   copyright:
-    copyright-2197: Copyright
-  spacer:
-    spacer-7146: Spacer
-  branding:
-    branding-3002: Branding
+    copyright-7764: Copyright
+  social:
+    social-5617: Social
+  totop:
+    totop-6275: 'To Top'
   mobile-menu:
-    mobile-menu-8722: Mobile-menu
-inherit: {  }
+    mobile-menu-7162: 'Mobile Menu'
+inherit:
+  default:
+    header: header
+    logo-7676: logo-2741
+    menu-4939: menu-2967
+    position-position-8719: position-position-7248
+    navigation: navigation
+    footer: footer
+    position-position-6170: position-footer
+    logo-4944: logo-4026
+    copyright-7764: copyright-4409
+    social-5617: social-7254
+    totop-6275: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-7162: mobile-menu-1009

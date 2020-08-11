@@ -1,12 +1,12 @@
 name: _offline
-timestamp: 1588097782
+timestamp: 1596133270
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: default
   timestamp: 1587844427
 positions:
-  header: Header
+  header: 'Widget Position'
   breadcrumbs: Breadcrumbs
   footer: Footer
 sections:
@@ -14,26 +14,41 @@ sections:
   navigation: Navigation
   main: Main
   footer: Footer
-  offcanvas: Offcanvas
+  offcanvas: Untitled
 particles:
   logo:
-    logo-3511: Logo
-  position:
-    position-header: Header
-    position-breadcrumbs: Breadcrumbs
-    position-footer: Footer
+    logo-4895: Logo
+    logo-3495: 'Logo / Image'
   menu:
-    menu-5424: Menu
+    menu-4492: Menu
+  position:
+    position-position-9742: 'Widget Position'
+    position-breadcrumbs: Breadcrumbs
+    position-position-7485: Footer
   messages:
     system-messages-6142: 'System Messages'
   content:
     system-content-5929: 'Page Content'
   copyright:
-    copyright-2296: Copyright
-  spacer:
-    spacer-3570: Spacer
-  branding:
-    branding-8760: Branding
+    copyright-6146: Copyright
+  social:
+    social-7140: Social
+  totop:
+    totop-4673: 'To Top'
   mobile-menu:
-    mobile-menu-3589: Mobile-menu
-inherit: {  }
+    mobile-menu-9416: 'Mobile Menu'
+inherit:
+  default:
+    header: header
+    logo-4895: logo-2741
+    menu-4492: menu-2967
+    position-position-9742: position-position-7248
+    navigation: navigation
+    footer: footer
+    position-position-7485: position-footer
+    logo-3495: logo-4026
+    copyright-6146: copyright-4409
+    social-7140: social-7254
+    totop-4673: totop-8211
+    offcanvas: offcanvas
+    mobile-menu-9416: mobile-menu-1009

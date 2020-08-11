@@ -81,7 +81,7 @@ content:
       image: ''
       headline: 'Why choose us?'
       description: ''
-      link: 'http://localhost/aquamed/pools/'
+      link: 'https://dev.shimmertechno.com/aquamed/pools/'
       linktext: 'MORE INFO'
       samples:
         -

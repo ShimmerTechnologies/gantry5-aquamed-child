@@ -1,7 +1,7 @@
 #g-footer {
 	
 	background: $footer-background;
-	background-image: url('http://dev.shimmertechno.com/aquamed/wp-content/themes/g5_aquapools-child/images/footer.png');
+	background-image: url('https://www.aquamedpool.com/wp-content/themes/g5_aquapools-child/images/footer.png');
 	background-repeat: none;
 	background-size: cover;
 	color: $footer-text-color;
@@ -9,10 +9,10 @@
 	margin-top: 60px;
 	@include breakpoint(mobile-only) {
 		text-align: center;
-		background-image: url('http://dev.shimmertechno.com/aquamed/wp-content/themes/g5_aquapools-child/images/footer_mobile.png');
+		background-image: url('https://www.aquamedpool.com/wp-content/themes/g5_aquapools-child/images/footer_mobile.png');
 	}
 	@include breakpoint(tablet-range) {
-		background-image: url('http://dev.shimmertechno.com/aquamed/wp-content/themes/g5_aquapools-child/images/footer_tablet.png');
+		background-image: url('https://www.aquamedpool.com/wp-content/themes/g5_aquapools-child/images/footer_tablet.png');
 	}
 
 	.g-container {
@@ -120,6 +120,7 @@
 				.g-block.size-20,  .g-block.size-5 {
 					display: inline-table;
     				width: 50%;
+    				max-width: 50%;
 				}
 			} 
 		}

@@ -61,7 +61,7 @@
                 <header class="center g-content">
                 <h2 class="nomarginbottom">{{ specs_title }}</h2>
                 </header>
-                <div class="specs_text alignleft nomarginall g-content">
+                <div class="specs_text nomarginall g-content">
                 {% if specs_text %}
                     {% set html_content = function( 'htmlspecialchars_decode', specs_text ) %}
                     {{ html_content|e('wp_kses_post')|wpautop|trim }}   

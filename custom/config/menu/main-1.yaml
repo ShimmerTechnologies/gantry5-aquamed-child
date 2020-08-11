@@ -10,7 +10,7 @@ ordering:
     leisure-pools: ''
     thursday-pools: ''
   contact-us: ''
-  __widget-id0Lr: ''
+  __widget-4lrhM: ''
 items:
   about:
     object_id: 8
@@ -34,7 +34,7 @@ items:
     object_id: 460
   contact-us:
     object_id: 16
-  __widget-id0Lr:
+  __widget-4lrhM:
     type: particle
     particle: widget
     title: Search

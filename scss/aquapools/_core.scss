@@ -44,7 +44,7 @@ h3, h4, h5, h6, strong {
 	vertical-align: middle;
 	text-shadow: none;
 	@include transition(background 0.1s);
-	margin: 0 !important;
+	margin: 3px 0 0 0 !important;
 
 	&:hover {
 		background: lighten($accent-color-1, 5%);

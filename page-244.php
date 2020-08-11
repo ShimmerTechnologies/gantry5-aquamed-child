@@ -43,7 +43,7 @@ $args = array(
 	        array(
 	            'taxonomy' => 'pool-model',
 	            'field' => 'slug',
-	            'terms' => array('leisure-pools')
+	            'terms' => array('thursday-pools')
 	        )
 	    ),
 	    'orderby' => array(
@@ -53,5 +53,5 @@ $args = array(
 $post            = Timber::get_posts( $args );
 $context['pools'] = $post;
 
-Timber::render('page-leisure-pools.html.twig', $context);
+Timber::render('page-thursday-pools.html.twig', $context);
 

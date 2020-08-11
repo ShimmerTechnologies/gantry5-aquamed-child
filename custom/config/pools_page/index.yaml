@@ -1,5 +1,5 @@
 name: pools_page
-timestamp: 1595012724
+timestamp: 1596130500
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -36,7 +36,7 @@ particles:
     logo-5018: Logo
     logo-3154: 'Logo / Image'
   menu:
-    menu-7603: Menu
+    menu-9486: Menu
   copyright:
     copyright-1574: Copyright
   social:
@@ -52,7 +52,7 @@ inherit:
     footer: footer
     offcanvas: offcanvas
     logo-5018: logo-2741
-    menu-7603: menu-4332
+    menu-9486: menu-2967
     position-position-9657: position-position-7248
     position-position-8610: position-footer
     logo-3154: logo-4026

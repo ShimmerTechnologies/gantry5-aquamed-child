@@ -1,5 +1,5 @@
 name: thursday_pools_partner
-timestamp: 1595012724
+timestamp: 1596130500
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,7 +30,7 @@ particles:
     logo-5333: Logo
     logo-3982: 'Logo / Image'
   menu:
-    menu-7381: Menu
+    menu-8905: Menu
   copyright:
     copyright-4691: Copyright
   social:
@@ -46,7 +46,7 @@ inherit:
     footer: footer
     offcanvas: offcanvas
     logo-5333: logo-2741
-    menu-7381: menu-4332
+    menu-8905: menu-2967
     position-position-4743: position-position-7248
     position-position-3920: position-footer
     logo-3982: logo-4026

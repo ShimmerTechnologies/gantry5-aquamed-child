@@ -1,5 +1,5 @@
 name: home-2
-timestamp: 1595012724
+timestamp: 1596130499
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -36,7 +36,7 @@ particles:
     logo-8089: Logo
     logo-2059: 'Logo / Image'
   menu:
-    menu-6591: Menu
+    menu-7559: Menu
   copyright:
     copyright-1541: Copyright
   social:
@@ -55,7 +55,7 @@ inherit:
     footer: footer
     offcanvas: offcanvas
     logo-8089: logo-2741
-    menu-6591: menu-4332
+    menu-7559: menu-2967
     position-position-9098: position-position-7248
     position-position-5856: position-footer
     logo-2059: logo-4026

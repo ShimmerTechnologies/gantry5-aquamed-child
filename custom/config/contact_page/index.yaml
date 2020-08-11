@@ -1,15 +1,14 @@
 name: contact_page
-timestamp: 1595012724
+timestamp: 1596211063
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/2-col-left.png'
   name: form_sidebar
   timestamp: 1591397015
 positions:
+  header: 'Widget Position'
   widget-contact-sidebar: 'Contact Page'
   breadcrumbs: Breadcrumbs
-  mainbottom: Mainbottom
-  header: 'Widget Position'
   footer: Footer
 sections:
   header: Header
@@ -20,14 +19,18 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  title:
-    title-6984: Title
+  logo:
+    logo-4761: Logo
+    logo-3673: 'Logo / Image'
+  menu:
+    menu-9276: Menu
   position:
+    position-position-6841: 'Widget Position'
     position-sidebar: 'Contact Page'
     position-breadcrumbs: Breadcrumbs
-    position-mainbottom: Mainbottom
-    position-position-6841: 'Widget Position'
     position-position-8751: Footer
+  title:
+    title-6984: Title
   social:
     social-5318: Social
     social-5432: Social
@@ -35,11 +38,8 @@ particles:
     system-messages-4471: 'System Messages'
   content:
     system-content-2345: 'Page Content'
-  logo:
-    logo-4761: Logo
-    logo-3673: 'Logo / Image'
-  menu:
-    menu-3061: Menu
+  custom:
+    custom-4150: 'Custom HTML'
   copyright:
     copyright-2858: Copyright
   totop:
@@ -49,14 +49,14 @@ particles:
 inherit:
   default:
     header: header
-    footer: footer
-    offcanvas: offcanvas
     logo-4761: logo-2741
-    menu-3061: menu-4332
+    menu-9276: menu-2967
     position-position-6841: position-position-7248
+    footer: footer
     position-position-8751: position-footer
     logo-3673: logo-4026
     copyright-2858: copyright-4409
     social-5432: social-7254
     totop-8068: totop-8211
+    offcanvas: offcanvas
     mobile-menu-7800: mobile-menu-1009

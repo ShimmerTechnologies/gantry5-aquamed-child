@@ -127,7 +127,7 @@ h3, h4, h5, h6, strong {
   -webkit-transition: background 0.1s;
   -moz-transition: background 0.1s;
   transition: background 0.1s;
-  margin: 0 !important;
+  margin: 3px 0 0 0 !important;
 }
 /* line 49, wp-content/themes/g5_aquapools-child/scss/aquapools/_core.scss */
 .button:hover {
@@ -568,64 +568,65 @@ hr {
   .g-offcanvas-toggle {
     display: block;
     position: relative;
+    float: left;
   }
 }
-/* line 43, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 44, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 45, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 46, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul {
   background: #28bceb;
 }
-/* line 47, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 48, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 49, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li > .g-menu-item-container {
   color: #fff;
 }
-/* line 51, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 52, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 53, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover, #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active {
   background: #005a8f;
 }
-/* line 55, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 56, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module):hover > .g-menu-item-container, #g-offcanvas #g-mobilemenu-container ul > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active > .g-menu-item-container {
   color: #fff;
 }
-/* line 60, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 61, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 62, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 63, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator {
   background: transparent;
   border-radius: 0.1875rem;
   margin: -0.2rem 0 -0.2rem 0.5rem;
   padding: 0.2rem;
 }
-/* line 64, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 65, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul > li.g-menu-item-link-parent > .g-menu-item-container > .g-menu-parent-indicator:hover {
   background: #003c6c;
 }
-/* line 74, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 75, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-offcanvas #g-mobilemenu-container ul .g-dropdown-column {
   width: 17rem;
 }
-/* line 81, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 82, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 #g-mobilemenu-container {
   margin: inherit;
 }
 @media print {
-  /* line 86, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+  /* line 87, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
   #g-offcanvas {
     background: #fff !important;
     color: #000 !important;
   }
 }
-/* line 92, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 93, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 94, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 95, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 .g-offcanvas-open .g-offcanvas-left #g-page-surround {
   left: 17rem;
 }
-/* line 99, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 /* line 100, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
+/* line 101, wp-content/themes/g5_aquapools-child/scss/aquapools/_offcanvas.scss */
 .g-offcanvas-open .g-offcanvas-right #g-page-surround {
   right: 17rem;
 }
@@ -863,8 +864,19 @@ hr {
     right: 0.7rem;
   }
 }
-@media print {
+@media only all and (max-width: 800px) {
+  /* line 94, wp-content/themes/g5_aquapools-child/scss/aquapools/_header.scss */
   /* line 95, wp-content/themes/g5_aquapools-child/scss/aquapools/_header.scss */
+  #g-header .g-container {
+    width: 85%;
+  }
+  /* line 97, wp-content/themes/g5_aquapools-child/scss/aquapools/_header.scss */
+  #g-header .g-container .g-main-nav {
+    display: none;
+  }
+}
+@media print {
+  /* line 105, wp-content/themes/g5_aquapools-child/scss/aquapools/_header.scss */
   #g-header {
     background: #fff !important;
     color: #000 !important;
@@ -1105,12 +1117,13 @@ hr {
   #g-footer .g-container .g-grid:nth-child(2) .g-block.size-20, #g-footer .g-container .g-grid:nth-child(2) .g-block.size-5 {
     display: inline-table;
     width: 50%;
+    max-width: 50%;
   }
 }
 @media only all and (max-width: 50rem) {
-  /* line 129, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
   /* line 130, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
   /* line 131, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
+  /* line 132, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
   #g-footer .g-container .widget {
     width: 100%;
     margin: inherit;
@@ -1118,7 +1131,7 @@ hr {
   }
 }
 @media print {
-  /* line 141, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
+  /* line 142, wp-content/themes/g5_aquapools-child/scss/aquapools/_footer.scss */
   #g-footer {
     background: #fff !important;
     color: #000 !important;

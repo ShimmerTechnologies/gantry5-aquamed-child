@@ -26,7 +26,7 @@ layout:
             - system-content-2345
   /mainbottom/:
     -
-      - position-mainbottom
+      - custom-4150
   footer: {  }
   offcanvas: {  }
 structure:
@@ -51,7 +51,9 @@ structure:
   mainbottom:
     type: section
     attributes:
-      boxed: ''
+      boxed: '2'
+      class: ''
+      variations: ''
   footer:
     inherit:
       outline: default
@@ -91,6 +93,11 @@ content:
   position-breadcrumbs:
     attributes:
       key: breadcrumbs
-  position-mainbottom:
+  custom-4150:
+    title: 'Custom HTML'
     attributes:
-      key: mainbottom
+      html: '[wpgmza id="1"]'
+      twig: '1'
+      filter: '1'
+    block:
+      variations: 'full-width nomarginall nopaddingall'

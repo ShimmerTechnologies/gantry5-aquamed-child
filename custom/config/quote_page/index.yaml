@@ -1,5 +1,5 @@
 name: quote_page
-timestamp: 1595012724
+timestamp: 1596130500
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/2-col-left.png'
@@ -37,7 +37,7 @@ particles:
     logo-9339: Logo
     logo-9373: 'Logo / Image'
   menu:
-    menu-9927: Menu
+    menu-7803: Menu
   copyright:
     copyright-8461: Copyright
   totop:
@@ -50,7 +50,7 @@ inherit:
     footer: footer
     offcanvas: offcanvas
     logo-9339: logo-2741
-    menu-9927: menu-4332
+    menu-7803: menu-2967
     position-position-2354: position-position-7248
     position-position-2004: position-footer
     logo-9373: logo-4026

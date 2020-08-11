@@ -4,8 +4,12 @@
 .order_steps_particle {
 	position: relative;
 	height: 600px;
-	@media only all and (max-width: $breakpoints-tablet-container) {
+	@include breakpoint(mobile-only) {
 		height: 1038px;
+	}
+
+	@include breakpoint(small-mobile-range) {
+		height: 1300px;
 	}
 	h2 {
     	padding: 30px 0;
@@ -80,8 +84,11 @@
 		top: 0;
 		background-repeat: no-repeat;
 		background-size: cover;
-		@media only all and (max-width: $breakpoints-tablet-container) {
+		@include breakpoint(mobile-only) {
 			height: 1038px;
+		}
+		@include breakpoint(small-mobile-range) {
+			height: 1300px;
 		}
 	}
 	.order_steps_image {
@@ -169,6 +176,12 @@
 				    position: relative;
 					height: 260px;
 					width: 100%;
+					@include breakpoint(mobile-only){
+						margin: 0 8px;
+						h4 {
+							font-size: 1.25rem;
+						}
+					}
 					.page_links_image, .page_links_bgcolor {
 						border-radius: 15px;
 						width: 95%;
@@ -186,6 +199,9 @@
 				    margin-top: 0;
 				    max-width: 375px;
 				    width: 95%;
+				    @include breakpoint(mobile-only){
+				    	width: 100%;
+				    }
 				}
 				 h4 {
 					position: absolute;
@@ -205,37 +221,101 @@
 }
 
 //contact page
-#g-container-main {
-	.g-container .contactdetail {
-		div {
-			margin: 0.75rem 0 1.5rem 0;
-			.phone, .address, .email {
-				display: inline-block;
+.outline-contact_page, .outline-quote_page {
+	#g-container-main {
+		.g-container {
+			@include breakpoint(tablet-range) {
+				margin: 0 15px;
+			}
+			.contactdetail {
+				min-width: 240px;
+				div {
+					margin: 0.75rem 0 1.5rem 0;
+					.phone, .address, .email {
+						display: inline-block;
+						text-align: left;
+						@media only all and (max-width: $breakpoints-desktop-container) {
+							display: block;
+						    clear: both;
+						}
+						@media only all and (max-width: $breakpoints-tablet-container) {
+							width: 100%;
+							text-align: center;
+						}
+					}
+					@include breakpoint(desktop-range) {
+						.email {
+							font-size: .85rem;
+							h5 {
+								font-size: .9rem;
+							}
+						}
+					}
+					@include breakpoint(tablet-range) {
+						.email {
+							font-size: .85rem;
+							h5 {
+								font-size: .9rem;
+							}
+						}
+					}
+				}
+				h5 {
+					margin: 0.25rem 0 0;
+				}
+				i {
+				 	border: 2px solid $accent-color-2;
+				 	color: $accent-color-2;
+					border-radius: 50%;
+					width: 34px;
+					height: auto;
+					margin: 0 10px 5px 0;
+					padding: 5px;
+					text-align: center;
+					display: block;
+					font-style: normal;
+					font-weight: normal;
+					float: left;
+					@media only all and (max-width: $breakpoints-tablet-container) {
+						margin: 0 auto;
+						float: none;
+					}
+				}	
+				@media only all and (max-width: $breakpoints-tablet-container) {
+					width: 50%;
+					margin: 0 auto;
+				}
+			} 
+			.size-small .g-title, .g-social.social {
+				@media only all and (max-width: $breakpoints-tablet-container) {
+			    	text-align: center;
+			    }
+			}
+			.page .wpcf7 {
+				@include breakpoint(mobile-only){
+					margin: 0 15px;
+				}
 			}
 		}
-		h5 {
-			margin: 0.25rem 0 0;
-		}
-		i {
-		 	border: 2px solid $accent-color-2;
-		 	color: $accent-color-2;
-			border-radius: 50%;
-			width: 34px;
-			height: auto;
-			margin: 0 10px 5px 0;
-			padding: 5px;
-			text-align: center;
-			display: block;
-			font-style: normal;
-			font-weight: normal;
-			float: left;
-		}	
-	} 
+	}
+	iframe {
+    	width: 100%;
+		position: relative;
+		top: 6px;
+		margin-top: 15px;
+	}
+	footer { 
+		margin-top: 0 !important;
+	}
 }
+
+
 //pool info page
-.dataTables_wrapper .tablepress.tablepress-id-2 {
+.dataTables_wrapper table.tablepress {
+	display: table;
 	@media only all and (max-width: $breakpoints-tablet-container) {
-		margin: 0 auto 0 -20px !important;
+		margin: 0 auto !important;
+		display: block;
 	}
 }
 
@@ -271,6 +351,7 @@
 	@include breakpoint(mobile-only){
 		    display: grid;
 		    grid-template-columns: auto;
+		    margin: 0 15px;
 	}
 	figure {
 		margin: 0 auto 30px;
@@ -308,15 +389,39 @@
 		.entry-header {
 	    	margin-bottom: 40px;
 		}
+		p {
+			@include breakpoint(mobile-only){
+				margin: 1.5rem !important;
+			}
+		}
 		h2 {
 			font-size: $h2-font-size;
+		}
+		.meta-content {
+			.g-container {
+					@include breakpoint(mobile-only){
+						width: 90%;
+					}
+					header h2 {
+					    text-align: left;
+					    font-size: $core-font-size + .4 !important;
+					    color: $base-text-color;
+					}
+					@include breakpoint(mobile-only){
+						.specs_text {
+						    margin: 0 15px !important;
+						}
+					}
+				}
 		}
 		.meta-videos {
 			.video_content {
 			    display: flex;
 			    width: 100%;
 			    margin: 1.5rem 0;
-
+			    @include breakpoint(mobile-only){
+			    	display: block;
+			    }
 			    .epyt-video-wrapper {
 				    min-height: 1px;
 				    display: -webkit-box;
@@ -324,6 +429,12 @@
 				    display: -ms-flexbox;
 				    display: flex;
 					margin: 0 auto;
+					@include breakpoint(mobile-only){
+						margin: 1.5rem auto 0;
+					}
+					@include breakpoint(tablet-range){
+						margin: 0 1.5rem;
+					}
 
 					iframe {
 					    border: medium none;
@@ -334,6 +445,12 @@
 		.meta-sizes  {
 			img  {
 				margin: 1.5rem 0;
+				width: 100%;
+				max-width: 600px;
+				@include breakpoint(mobile-only){
+					margin: 1.5rem 1.5rem !important;
+					width: 85%;
+				}
 			}
 			.sizes_content { 
 				table {
@@ -494,7 +611,7 @@
 						margin: 0 auto;
 						float: none;
 						padding-top: 15px;
-						text-align: left;
+						text-align: center;
 				    }
 				}
 			}
@@ -570,8 +687,11 @@
 
 	@include breakpoint(mobile-only){  
     	margin: 0 30px;
-    }
 
+    	h2 {
+    		font-size: 2.5rem;
+    	}
+    }
 	.g-content.top {
 	    margin-bottom: 2.5rem;
 	}
@@ -587,15 +707,12 @@
 		    @include breakpoint(desktop-range){   	
 		    	width: 46%;
 		    }
-
 		    @include breakpoint(tablet-range){   	
 		    	width: 47%;
 		    }
-
 		    @include breakpoint(mobile-only){   	
 		    	width: 100%;
 		    }
-
 		    h3 {
 			    margin-top: 0;
 			    color: $accent-color-2;
@@ -617,8 +734,7 @@
 			}
 			@include breakpoint(tablet-range){   	
 		    	margin: 0 auto 0 3.3rem;
-		    }
-			
+		    }			
 		}
 		.item-image {
 		    width: 48%;
@@ -627,15 +743,12 @@
 		    @include breakpoint(desktop-range){   	
 		    	width: 46%;
 		    }
-
 		    @include breakpoint(tablet-range){   	
 		    	width: 47%;
 		    }
-
 		    @include breakpoint(mobile-only){   	
 		    	width: 100%;
 		    }
-
 		}
 	}
 }
@@ -677,7 +790,7 @@
 			}
 		}
 		.alignleft.item-text {
-		    margin: 0 3rem 0 auto;
+		    margin: 0 3rem 1.5rem auto;
 
 		    @include breakpoint(desktop-range){
 				margin: 0 5.2rem 0 auto;
@@ -687,7 +800,7 @@
 		    }
 		}
 		.alignright.item-text {
-		    margin: 0 auto 0 3rem;
+		    margin: 0 auto 1.5rem 3rem;
 
 		    @include breakpoint(desktop-range){
 				margin: 0 auto 0 5.2rem;
@@ -724,9 +837,27 @@
 	.include_text {
 	    width: 42%;
 	    margin-right: 3% !important;
+	    @include breakpoint(mobile-only){
+	    	width: 95%;
+			margin: 30% 15px 0 !important;
+	    }
+	    @include breakpoint(tablet-range){
+		    margin-right: 2% !important;
+		    margin-left: 10px !important;
+	    }
 	}
 	.include_image {
 	    width: 55%;
+	    @include breakpoint(mobile-only){
+	    	width: 100%;
+	    	img {
+			    margin: 0 auto;
+			    display: block;
+			}
+	    }
+	    @include breakpoint(tablet-range){
+	    	width: 53%;
+	    }
 	}
 }
 
@@ -734,6 +865,10 @@
 	.g-grid {
 	    margin: 0 auto;
 	    width: 98%;
+	    @include breakpoint(mobile-only){
+	    	max-width: 370px;
+	    }
+
 
 	    .service.g-block {
 			display: inline-block;
@@ -760,6 +895,9 @@
 				    width: 95%;
 				    height: 227px;
 				    max-width: 370px;
+				    @include breakpoint(mobile-only){
+				    	width: 100%;
+				    }
 				}
 			}
 			.service-price {
@@ -780,6 +918,209 @@
 				margin-right: -30px;
 			}
 		}
+	}
+}
+
+/*mobile sliders 
+/* price slider */
+@include breakpoint(large-desktop-range){
+	
+	.outline-our_prices .soliloquy-caption {
+		.price-title {
+			padding-top: 0;
+			.price {
+			    margin-top: 30px;
+			}
+		}
+	}
+	.soliloquy-pager {
+    	margin: 0 auto 0 10px !important;
+    }
+}
+
+@include breakpoint(desktop-range){
+	.outline-our_prices .soliloquy-caption {
+		.soliloquy-caption-inside {
+		h2 {
+		    	margin-bottom: 20px;
+		    }
+		}
+		.price-title {
+			padding-top: 0;
+			.price {
+			    margin-top: 0;
+			}
+		}
+	}
+}
+
+@include breakpoint(tablet-range){
+
+	.outline-our_prices .soliloquy-caption {
+		.soliloquy-caption-inside {
+		h2 {
+			font-size: 1.8rem;
+		    margin-bottom: 20px;
+		    border-bottom: 1px solid #fff;
+		    padding-bottom: 30px;
+		    width: 10%;
+		    }
+		}
+		.price-title {
+			text-align: left;
+		    padding-top: 0;
+		    margin-left: 215px;
+		    .description {
+			   h3, p { 
+			   	margin-top: -15px; 
+			   }
+			}
+			.price {
+			    margin-top: 0;
+			    p {
+				    font-weight: normal;
+				    margin-bottom: -10px;
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint(mobile-only){
+	.outline-our_prices .wp-block-soliloquy-soliloquywp {
+		margin-top: 25%;
+		.soliloquy-container .soliloquy-viewport {
+		transform: scale(3);
+
+		.soliloquy-caption {
+			.soliloquy-caption-inside {
+			h2 {
+			    margin-bottom: 0;
+				padding-bottom: 10px;
+				font-size: 100% !important;
+					@include breakpoint(small-mobile-range){
+				   		font-size: 60% !important;
+				   	}
+			    }
+			p {
+			    font-size: 55% !important;
+		   	 	margin-top: -10px;
+		   	 	@include breakpoint(small-mobile-range){
+		   	 		font-size: 40% !important;
+		   	 	}
+			}
+			}
+			.price-title {
+				padding-top: 0;
+				left: 0 !important;
+				position: absolute !important;
+				margin-left: 60%;
+			    .description {
+			    margin-top: -30px !important;
+				    @include breakpoint(small-mobile-range){
+				    	margin-top: -35px !important;
+				    }
+				   	h3, p { 
+				   		font-size: 60% !important;					   
+				   		@include breakpoint(small-mobile-range){
+					   		font-size: 5px !important;
+					  	}
+				   }
+				}
+				.price {
+				   margin-top: -15px;
+				   @include breakpoint(small-mobile-range){
+				   	margin-top: -25px;
+				   }
+				    p {
+					    margin-bottom: -30px;
+					}
+					p + p {
+					    margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+.outline-our_prices {
+	.soliloquy-container {
+		.soliloquy-prev, .soliloquy-next {
+			top: 180px !important;
+			@include breakpoint(small-mobile-range){
+				top: 130px !important;
+			}
+		}
+		.soliloquy-next {
+    		right: -80px !important;
+		}
+		.soliloquy-prev {
+	    	left: 260px !important;
+		}
+		.soliloquy-pager {
+			display: none !important;
+		}
+	} 
+}
+
+}
+.outline-our_prices .soliloquy-container {
+
+	@media only all and (max-width: 600px) {
+		.soliloquy-caption, .soliloquy-controls-auto {
+			display: block !important;
+		}
+	}
+	.soliloquy-caption {
+
+		@media only all and (max-width: 900px) {
+			right: 170px !important;
+		}
+		@media only all and (max-width: 750px) {
+			right: 120px !important;
+		}
+		@media only all and (max-width: 600px) {
+			right: 90px !important;
+		}
+		@include breakpoint(small-mobile-range){
+			right: 80px !important;
+		}
+
+	}
+}
+/* single pool slider */
+.pool-template-default .wp-block-soliloquy-soliloquywp .soliloquy-container {
+    text-align: center;
+    margin: 0 auto;
+    .soliloquy-prev, .soliloquy-next {
+		background-color: rgba(0, 83, 149, 0.7) !important;
+		border-radius: 16px;
+	}
+    .soliloquy-prev {
+		left: -47px !important;
+		@include breakpoint(mobile-only){
+			left: 10px !important;
+		}
+	}
+	.soliloquy-next {
+		right: -47px !important;
+		@include breakpoint(mobile-only){
+			right: 10px !important;
+		}
+	}
+}
+
+/* search */
+#full-screen-search {
+    background: rgba(16,74,92,0.95) !important;
+}
+#full-screen-search button.close {
+    color: #fff !important;
+}
+
+.search-results {
+	.wp-block-soliloquy-soliloquywp {
+		display: none;
 	}
 }
 

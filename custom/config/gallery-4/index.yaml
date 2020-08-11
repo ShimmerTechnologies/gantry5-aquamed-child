@@ -1,5 +1,5 @@
 name: gallery-4
-timestamp: 1595012724
+timestamp: 1596130499
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
@@ -25,7 +25,7 @@ particles:
     logo-9310: Logo
     logo-5679: 'Logo / Image'
   menu:
-    menu-6438: Menu
+    menu-3533: Menu
   position:
     position-position-7808: 'Widget Position'
     position-position-5004: Footer
@@ -45,7 +45,7 @@ inherit:
     footer: footer
     offcanvas: offcanvas
     logo-9310: logo-2741
-    menu-6438: menu-4332
+    menu-3533: menu-2967
     position-position-7808: position-position-7248
     position-position-5004: position-footer
     logo-5679: logo-4026

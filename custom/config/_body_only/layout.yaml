@@ -4,13 +4,8 @@ preset:
   name: default
   timestamp: 1587844427
 layout:
-  /header/:
-    -
-      - 'logo-1744 30'
-      - 'position-header 70'
-  /navigation/:
-    -
-      - menu-3124
+  header: {  }
+  navigation: {  }
   /main/:
     -
       - position-breadcrumbs
@@ -18,37 +13,38 @@ layout:
       - system-messages-7816
     -
       - system-content-7068
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'copyright-4101 40'
-      - 'spacer-1659 30'
-      - 'branding-2128 30'
-  offcanvas:
-    -
-      - mobile-menu-3137
+  footer: {  }
+  offcanvas: {  }
 structure:
   header:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - children
+        - attributes
   navigation:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
   main:
     attributes:
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
 content:
-  position-header:
-    attributes:
-      key: header
   position-breadcrumbs:
     attributes:
       key: breadcrumbs
-  position-footer:
-    attributes:
-      key: footer

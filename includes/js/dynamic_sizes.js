@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-	let max_fields		= 5;
+	let max_fields		= 6;
 	let wrapper			= $(".input_sizes");
 	let add_button		= $(".add_field_button");
 

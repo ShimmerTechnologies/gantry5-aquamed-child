@@ -64,7 +64,7 @@ content:
       image: 'gantry-media://2020/04/leisure-pools_logo.png'
       headline: ''
       description: 'Fiberglass swimming pool manufacturer Leisure Pools, is one of the largest in the World. Leisure Pools has developed the United States’ most experienced fiberglass swimming pool dealer network where they install quality fiberglass in ground swimming pools, fiberglass plunge pools, fiberglass lap pools and water features throughout the country.'
-      link: '#'
+      link: 'https://dev.shimmertechno.com/aquamed/partners/leisure-pools/'
       linktext: 'LEARN MORE'
       samples: {  }
   sample-5549:
@@ -73,6 +73,6 @@ content:
       image: 'gantry-media://2020/04/thursday-pools_logo.png'
       headline: ''
       description: ' The fiberglass pools people used to know are now a thing of the past. Thursday Pools are a fiberglass pool manufacturer with a deep passion for excellence, a simple desire to build a better fiberglass pool, and a strong commitment to supporting everyone involved to make our customers’ dreams a reality. From sharing our knowledge and expertise with our valued dealers to manufacturing artfully crafted, durable fiberglass pools we pour our heart and soul into each endeavor.'
-      link: '#'
+      link: 'https://dev.shimmertechno.com/aquamed/partners/thursday-pools/'
       linktext: 'LEARN MORE'
       samples: {  }
